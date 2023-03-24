@@ -102,3 +102,87 @@ const summation = n => n * (n + 1) / 2;
 - As a trio we got through all the tasks of the workshop and even managed to find some time at the end to add an array of cat images that would change at random along with the cat fact on display when the button was pressed.
 
 Another satisfying day today, and I was particularly glad to get the afternoon workshop finished, along with copious comments spelling out what each function was doing step by step. In the future I am sure that these will be superfluous, and indeed reliance on comments is proscribed in *Clean Code* in favour of well written code that speaks for itself but for the time being I find they help me both solidify my understanding of the code I have just written and give me confidence that when I look back over my work, I won't be stuck trying to work out what I was trying to achieve with each line.
+
+## Day 4
+*20230323*
+
+There was less time spent coding today than usual as in the afternoon we split into groups and each researched a particular topic.
+
+- I got everything right on today's morning quiz on async and fetch and finished quite quickly to boot which was encouraging.
+- We then split into groups and spent some time working on Code Wars.
+- We solved a couple of 7 kyuu kata:
+	- [Friend or Foe?](https://www.codewars.com/kata/55b42574ff091733d900002f/train/javascript)
+```js
+function friend(friends){
+  const regex = /^[a-zA-Z]+$/;
+  for (let i=0; i < friends.length; i++) {
+    if (friends[i].length !== 4 || !regex.test(friends[i])) {
+      friends.splice(i, 1)
+      i--;
+    }
+  }
+  return friends
+}
+```
+- [Get the Middle Character](https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript)
+```js
+function getMiddle(s)
+{
+  let stringLength = s.length
+  if (stringLength % 2 === 1) {
+    let oddMiddle = s.slice(Math.floor(stringLength/2),Math.ceil(stringLength/2))
+    return oddMiddle
+  }
+  else {
+    let evenMiddleTwo = s.slice((stringLength/2)-1, (stringLength/2)+1)
+    return evenMiddleTwo
+  }
+}
+```
+- One of the submitted solutions made use of a JS method that I had not yet encountered, `substring()` to solve the kata in a much simpler way:
+```js
+function getMiddle(s)
+{
+  return s.substring(Math.ceil(s.length/2)-1, Math.floor(s.length/2)+1)
+}
+```
+- We then had a lecture by Joseph on cognitive diversity in the workplace in which he talked about personality tests and how we can best get different types of people to work together.
+- In preparation for the session we were asked to do [this personality test](https://www.16personalities.com/) and I got "Commander ENTJ-A" which seemed to fit me fairly well, although I am always somewhat sceptical of personality tests such as these so I expect I will take the results with a pinch of salt.
+- We then had an engaging lecture by Paavan Buddhev on UX Design.
+- Apparently we will be looking into UX Design more next week so that should flesh out my understanding but as things stand it seems like Paavan gets to do some interesting work.
+- We then split into groups to research dev tools tabs, and I looked into **lighthouse**.
+- We combined our research into a 5-minute video to be shared with our fellow bootcampers.
+- We then spent the last half an hour or so working on our first 6 kyuu kata on Code Wars:
+	- [Sum of Digits / Digital Root](https://www.codewars.com/kata/541c8630095125aba6000c00/train/javascript)
+```js
+function summing(n) {
+  let digits = Array.from(String(n), Number);
+  let summedTotal = 0;
+  for (let i=0; i < digits.length; i++) {
+    summedTotal = summedTotal + digits[i]
+  }
+  return summedTotal
+}
+
+function digitalRoot(nextSum) {
+  let result = summing(nextSum)
+  while (result >= 10) {
+    result = summing(result)
+  }
+  return result
+  }
+```
+- This was definitely the longest we have spent solving a kata and we needed a helping hand from ChatGPT near the end to get us over the line.
+- As always, there was a better was of doing things, making use of some in-built JS methods that we have yet to come across, elucidated in the submitted solutions:
+```js
+function digital_root(n) {
+  if (n < 10) return n;
+  
+  return digital_root(
+    n.toString().split('').reduce(function(acc, d) { return acc + +d; }, 0));
+}
+```
+
+Today was a pleasant change of pace with less new material which should hopefully give us all a chance to consolidate everything we have learned thus far this week ready for tomorrow's hackathon.
+
+
