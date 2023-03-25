@@ -206,3 +206,54 @@ We spent the day working on a hackathon project using a [Pokemon API](https://po
 - I had another productive meeting with my mentor who recommended that I start on *The Clean Coder* when I get through *Clean Code*, and also lamented how some developers see the latter as the Bible rather than a guideline that need not always be followed to the letter.
 
 It felt great today to combine a week's learning into one project that, as a group, we could all be proud of. I can only imagine what sorts of projects we will be building in a few weeks' time!
+
+## Day 6
+*20230325*
+
+I was out of the house today until the late evening so I did not get a chance to do any coding until I was already very tired at the end of a long day. For that reason I decided to just try and solve some ostensibly simple Code Wars problems:
+
+- [Determine offspring sex based on genes XX and XY chromosomes](https://www.codewars.com/kata/56530b444e831334c0000020/train/javascript)
+```js
+function chromosomeCheck(sperm) {
+  if (sperm.includes("Y")) {
+    return "Congratulations! You're going to have a son."
+  }
+  else
+    return "Congratulations! You're going to have a daughter."
+}
+```
+- [Is your period late?](https://www.codewars.com/kata/578a8a01e9fd1549e50001f1/train/javascript)
+```js
+function periodIsLate(last, today, cycleLength) {
+  return today.getTime() - last.getTime() > cycleLength * 24 * 60 * 60 * 1000;
+}
+```
+- [Remove String Spaces](https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript)
+```js
+function noSpace(x){
+  return x.replace(/ /g, "")
+}
+```
+- [Simple Change Machine](https://www.codewars.com/kata/57238766214e4b04b8000011/train/javascript)
+```js
+function changeMe(moneyIn){
+  if (moneyIn === "20p") {
+    return "10p 10p";
+  }
+  else if (moneyIn === "50p") {
+    return "20p 20p 10p";
+  }
+  else if (moneyIn === "£1") {
+    return "20p 20p 20p 20p 20p"
+  }
+  else if (moneyIn === "£2") {
+    return "20p 20p 20p 20p 20p 20p 20p 20p 20p 20p"
+  }
+  else if (moneyIn === "£5") {
+    return "20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p"
+  }
+  else return moneyIn;
+}
+```
+
+I think it is pretty clear from my final solution that I was not at my best, as it is hardly the most elegant of solutions, and does not scale to support inputs outside of those specified in the kata. I guess it just goes to show how difficult it is to code when you are tired, and I am glad to have at least spent some time coding today.
