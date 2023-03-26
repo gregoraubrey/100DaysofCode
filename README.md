@@ -257,3 +257,48 @@ function changeMe(moneyIn){
 ```
 
 I think it is pretty clear from my final solution that I was not at my best, as it is hardly the most elegant of solutions, and does not scale to support inputs outside of those specified in the kata. I guess it just goes to show how difficult it is to code when you are tired, and I am glad to have at least spent some time coding today.
+
+## Day 7
+*20230326*
+
+I spent an hour or so working on the Recap Tasks we had been set on Friday that cover the content we learned during Week 2, and some more time reading *Clean Code* today.
+
+- The Recap Tasks were split into tasks 1, 2, and 3, along with a couple of bonus tasks.
+- I got throught the main 3 tasks, leaving me with just the bonus tasks to work on tomorrow before we kick things off for Week 3.
+- Task 1 covered for loops and creating new arrays from existing ones.
+- In completing it I learned of the `.startsWith()` method which helped me to create a new array only containing celebrities whose name starts with a vowel out of an existing one already filled with celebrities:
+```js
+let vowelCelebs = [];
+for (let i = 0; i < celebs.length; i++) {
+  if (celebs[i].startsWith('A') || celebs[i].startsWith('E') || celebs[i].startsWith('I') || celebs[i].startsWith('O') || celebs[i].startsWith('U')) {
+    vowelCelebs.push(celebs[i]);
+  }
+}
+```
+- Task 2 covered `setInterval` and `clearInterval` and saw me create a function to increment the count of a `<p>` element (which had text content "0" in the HTML) by 1 until it had reached 12:
+```js
+let countingParagraph = document.querySelector("#count");
+let incrementByOne = setInterval(()=> {
+    if (Number(countingParagraph.textContent) >= 12) {
+        clearInterval(incrementByOne);
+    }
+    else {
+        countingParagraph.textContent = Number(countingParagraph.textContent) + 1;
+    }
+}, 1000);
+```
+- I had to use the `Number()` method to convert the text content from a string into a number, lest "1" just be conactenated to the end of a string.
+- Task 3 covered async functions, fetch, and Promises as I had to send a GET request to a [cat API](https://thecatapi.com/) to get a random image of a cat:
+```js
+async function fetchCatImage() {
+  let catRequest = await fetch("https://api.thecatapi.com/v1/images/search");
+  let catData = await catRequest.json();
+  let catImage = document.querySelector("#cat-here");
+  catImage.src = catData[0].url;
+}
+```
+- After writing up the `fetchCatImage` function I had to create a button element using JS and then add an event listener so that the function would be called every time the button was clicked.
+- Other than initially forgetting the need for the `.appendChild()` method to make the new button element appear, it was pretty smooth sailing.
+- I capped off the day by reading some more of Robert C. Martin's *Clean Code*, and plan to move on to *The Clean Coder* when I finish the former, hopefully within a few days.
+
+Today's coding was pretty relaxed as the Recap Tasks just focused on consolidating things we had already been working on this week. It felt good to have remembered so much considering just how fast of a pace we are moving at, and I look forward to what Week 3 has in store!
