@@ -302,3 +302,29 @@ async function fetchCatImage() {
 - I capped off the day by reading some more of Robert C. Martin's *Clean Code*, and plan to move on to *The Clean Coder* when I finish the former, hopefully within a few days.
 
 Today's coding was pretty relaxed as the Recap Tasks just focused on consolidating things we had already been working on this week. It felt good to have remembered so much considering just how fast of a pace we are moving at, and I look forward to what Week 3 has in store!
+
+## Day 8
+*20230327*
+
+We had a great guest lecture today from Dave Adams, a former bootcamper, and then moved on to an introduction to Agile and UI and UX design.
+
+- I finished the bonus section of the Recap Tasks this morning which was satisfying. I needed a hint from ChatGPT in a couple of places but I understood the code it recommended which was a good sign.
+- I only got one question wrong on the morning quiz today, which which was question about callback functions. I asked ChatGPT for an explanation after the fact and I now feel like I have a grasp of what a callback function is so I'm not too concerned about that.
+- After the quiz we had a guest lecture from Dave Adams who was a part of cohort 2 of the bootcamp 4 or 5 years ago now.
+- He talked to us about his job working as an SRE (a job role I had never heard of before today!).
+- According to Dave the responsibilities of an SRE include:
+	- Finding performance bottlenecks and fixing them in order to increase the reliability of services.
+	- Communicating and mentoring others in using best practices for building reliable software.
+	- Monitoring processes to identify and solve issues before they magnify.
+- He talked about how open he is with his managers and how, unlike in his previous career as a teacher, he feels like if he is not enjoying his work that he can afford to quit and find a new role, which certainly sounds liberating. In fact, he did just that before joining his current company.
+- Dave mentioned how he never got on well with CSS and frontend design, hence why he drifted towards being an SRE.
+	- This resonated with me, which could be a problem this week since as far as I know we will be focusing on UI and UX!
+- After Dave's lecture, we were introduced to our programming partners for the week and we worked on a task in which we had to try and recreate the look of the Google homepage without the internet and with just the use of a plain text editor like Notepad.
+- Obviously this ended in disaster, which just goes to show how indsipensable modern development environments and research tools are for a programmer
+- We then had a lecture introducing Agile. Some of the concepts reminded me of bits of advice I have read in *Clean Code* so it was no surprise to see Robert C. Martin's name listed on the [Agile Manifesto](https://agilemanifesto.org/) website.
+- The lecture then moved on to talk about the differences between UI and UX design, with a particularly memorable example being a nice-looking glass ketchup bottle that is a nightmare to use versus a boring-looking plastic bottle that is far more wieldy.
+- The final part of the day was spent getting as far through [Flexbox Froggy](https://flexboxfroggy.com/) and [CSS Grid Garden](http://cssgridgarden.com/) as possible in order to learn about Flexbox and CSS Grid.
+- In our group we managed to get through all of Flexbox Froggy and got to the 26th out of 28 levels on CSS Grid Garden which I feel was pretty good going considering the time we had.
+- My last coding-related activity of the day was reading more *Clean Code*. I also discovered, to my delight, that *The Clean Coder* is available for free on Audible for members, so that's my next listen sorted!
+
+I have to admit that I was reticent about this week since I do not feel like UI and UX design will be my strong suit. With that said, I thoroughly enjoyed today so am excited for what the next few days will bring.
