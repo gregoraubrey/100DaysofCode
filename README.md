@@ -328,3 +328,56 @@ We had a great guest lecture today from Dave Adams, a former bootcamper, and the
 - My last coding-related activity of the day was reading more *Clean Code*. I also discovered, to my delight, that *The Clean Coder* is available for free on Audible for members, so that's my next listen sorted!
 
 I have to admit that I was reticent about this week since I do not feel like UI and UX design will be my strong suit. With that said, I thoroughly enjoyed today so am excited for what the next few days will bring.
+
+## Day 9
+*20230328*
+
+Our focus today was on design principles and we made a start on planning out an application process through paper prototyping.
+
+- We began the day by spending half an hour or so on Code Wars:
+- [Cat years, Dog years](https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript)
+```js
+var humanYearsCatYearsDogYears = function(humanYears) {
+  let catYears;
+  let dogYears;
+  if (humanYears === 1) {
+    catYears = 15;
+    dogYears = 15;
+    }
+  if (humanYears === 2) {
+    catYears = 24;
+    dogYears = 24;
+    }
+  if (humanYears >= 3) {
+    catYears = 24 + (humanYears - 2) * 4;
+    dogYears = 24 + (humanYears - 2) * 5;
+  }
+  return [humanYears, catYears, dogYears];
+}
+```
+- [Remove the minimum](https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/javascript)
+```js
+function removeSmallest(numbers) {
+  if (numbers.length === 0) {
+    return [];
+  }
+  let smallest = Math.min(...numbers)
+  let indexLocation = numbers.indexOf(smallest)
+  return numbers.slice(0, indexLocation).concat(numbers.slice(indexLocation + 1));
+};
+```
+- We struggled for a while to understand why `Math.min(numbers)` would not work before ChatGPT informed us of the **spread operator** which I swiftly added to my Anki deck.
+- After trying to use the `splice()` method on `numbers` we realised that, in order to pass the kata, we were not allowed to manipulate the argument.
+- That led us to the strange-looking final line of the function in which we take two slices, one going from the initial index up until the smallest value, and then one going to the end of the array and starting from the index one above the smallest value, before concatenating the two of them to make one long array.
+- After Code Wars we had a morning quiz on Agile, UI, and UX in which I got everything right which was encouraging.
+- We then had a lecture on [the 5 stages in the design thinking process](https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process):
+	- Empathise
+	- Define
+	- Ideate
+	- Prototype
+	- Test
+- In the Agile style, these stages do not have to be followed linearly.
+- We then split into groups and had to come up with our own idea for a type of bootcamp and then plan out an application process.
+- We decided on the *School of Chess* and spent the rest of the day planning out a hypothetical application process.
+
+We did not spend much time coding today, focusing instead on design principles. I am interested to see how we develop our *School of Chess* idea in the coming days but am still undecided as to where I stand with UI and UX!
