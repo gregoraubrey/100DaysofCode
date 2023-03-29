@@ -381,3 +381,56 @@ function removeSmallest(numbers) {
 - We decided on the *School of Chess* and spent the rest of the day planning out a hypothetical application process.
 
 We did not spend much time coding today, focusing instead on design principles. I am interested to see how we develop our *School of Chess* idea in the coming days but am still undecided as to where I stand with UI and UX!
+
+## Day 10
+*20230329*
+
+We focused on UI design today, learning about wireframes, CSS custom properties (variables), and CSS specificity.
+
+- We started the day with some Code Wars as usual:
+- [Gravity Flip](https://www.codewars.com/kata/5f70c883e10f9e0001c89673/train/javascript)
+```js
+const flip=(d, a)=>{
+  if (d === 'L') {
+    a.sort(function(a, b) {return b - a;});
+  }
+  if (d === 'R') {
+   a.sort(function(a, b) {return a - b;});
+  }
+  return a
+}
+```
+- [Split Strings](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
+```js
+function solution(str){
+   if (str.length === 0) {
+     return [];
+   }
+   else if (str.length % 2 === 0) {
+     let substring = str.match(/.{1,2}/g);
+     return substring;
+   }
+   else {
+     let substring = str.match(/.{1,2}/g);
+     let finalItem = substring[substring.length - 1];
+     finalItem = finalItem.substr(0, 1) + "_";
+     substring.pop();
+     substring.push(finalItem);
+     return substring;
+   }
+}
+```
+- The above was a 6 kyuu which felt great to solve, and taught me the `match()` method.
+- One of the submitted solutions managed to solve it in a much simpler way:
+```js
+function solution(s){
+   return (s+"_").match(/.{2}/g)||[]
+}
+```
+- We then had a morning quiz on the design thinking process and UX, in which I only got one question wrong. It concerned the prototyping stage of the design thinking process and the answer made sense after talking it through with some fellow bootcampers after the quiz.
+- We moved on to a lecture on UI which covered the elements and principles of design and highlighted some great websites for getting a colour palette together for a website.
+- We played around with https://coolors.co/ for a while, making a few different colour palettes that could be saved for future use.
+- We then moved on to CSS variables and specificity which was a nice change of pace, since we had not spent much time learning coding since the Code Wars in the morning.
+- The afternoon workshop involved attempting to recreate the Google homepage as we had done earlier in the week, and thankfully the results were slightly better this time, albeit still nowhere near good enough to fool anyone!
+
+All in all a satisfying day, and the colour palette tools were great fun to work with.
