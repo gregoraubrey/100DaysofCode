@@ -434,3 +434,74 @@ function solution(s){
 - The afternoon workshop involved attempting to recreate the Google homepage as we had done earlier in the week, and thankfully the results were slightly better this time, albeit still nowhere near good enough to fool anyone!
 
 All in all a satisfying day, and the colour palette tools were great fun to work with.
+
+## Day 11
+*20230330*
+
+Today was nice and varied, with a lecture on mindset, a guest lecture on UI/UX, and some research in the afternoon on best practices when making forms.
+
+- We started the day in our groups with some Code Wars:
+- [Decreasing Inputs](https://www.codewars.com/kata/555de49a04b7d1c13c00000e/train/javascript)
+```js
+function add(...args) {
+  let value;
+  let dividedVaLue;
+  let totalSum = 0;
+  let array = args.filter(input => input !== undefined);
+  if (array.length === 0) {
+    return 0;
+  }
+  for (let i = 0; i < array.length; i++) {
+    value = array[i];
+    dividedVaLue = value/(i + 1)
+    totalSum = totalSum + dividedVaLue
+  }
+  totalSum = Math.round(totalSum)
+  return totalSum;
+}
+```
+- Through solving this kata I learned about **rest parameter syntax**, for which I duly made an Anki card.
+- We then got to work on a 6 kyuu kata called [Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript) but did not finish it in time before getting called for a lecture.
+- I came back to the kata during lunch and, with the guiding hand of ChatGPT, managed to get a working solution:
+```js
+function toCamelCase(str) {
+  let words = str.split(/[-_]/g);
+  let firstWord = words[0];
+  let changeToCamelCase = firstWord.charAt(0) + firstWord.slice(1).toLowerCase();
+  let capitalisedWords = words.slice(1).map(word => {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  });
+  let camelCaseWords = [changeToCamelCase, ...capitalisedWords];
+  return camelCaseWords.join('');
+}
+```
+- I'm not sure if my solution is simply cumbersome or if I am just too new to coding, but despite understanding each line in isolation, it still takes me a long time to read through this function and understand it as a whole.
+- As always, somebody came up with a much slimmer solution:
+```js
+function toCamelCase(str){
+  return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
+}
+```
+- In the morning quiz on UI I got three questions wrong, one of which being a design choice error. Even after seeing the explanation (don't align related items to different sides) I still preferred the incorrect answer!
+- We then had a mindset lecture on communication and effective listening which is doubtless a huge part of any developer's day so I'm glad we spent time on it today.
+- Next we were lucky enough to have the CTO of a UK startup and one of their UX/UI designers give a lecture on design and what it is like transitioning into a new career.
+	- This lecture was full of great nuggets of wisdom and I took copious notes.
+- We then spent the afternoon in groups each working on a different research task.
+- Ours was tasked with forms and we came together to produce a 5-minute video by the end of the day on best practices and the various HTML elements that a form would feature, such as `<button>`, `<textarea>`, `<radio>`, etc.
+- To end the day I decided to work on a 7 kyuu kata called [Insert dashes](https://www.codewars.com/kata/55960bbb182094bc4800007b/train/javascript) on my own and was delighted to, for the first time (at least as far as I can remember), solve it rather painlessly, with my initial idea about how to tackle the kata being correct.
+	- I know it is only a basic problem but it felt so satisfying to just have everything click and to solve it quickly and easily.
+```js
+function insertDash(num) {
+   let numString = num.toString()
+   let numArray = numString.split("")
+   
+   for (let i = 0; i < numArray.length; i++) {
+     if (numArray[i] % 2 === 1 && numArray[i + 1] % 2 === 1) {
+       numArray.splice(i + 1, 0, "-")
+     }
+   }
+  return numArray.join("")
+}
+```
+
+Today was definitely my favourite day of the week thus far. We had two great lectures, and solved a few gratifying Code Wars kata. I wonder what we will be working on in tomorrow's hackathon?
