@@ -526,3 +526,13 @@ For today's hackathon we went through the full design process of building a land
 - Some of their work was particularly inspiring, with one group making clever use of `position: fixed` to create a nav bar that always stayed at the top of the screen.
 
 This week was not my favourite in terms of the topics we were diving into but I nonetheless learned a lot and thoroughly enjoyed working in my group. I have no idea what is in store for us next week but I expect that by delving into more JS I will be more within my comfort zone.
+
+## Day 13
+*20230401*
+
+Today was certainly not my busiest in terms of coding but I still went over some JS in preparation for next week and I believe that this revision will see me feel ready for Monday.
+- I read some more *Clean Code* and hope to have it finished in the next few days.
+- I then went over some of the code I had written for workshops in week 2 in order to refresh the JS that we had been forsaking this week as we studied UI/UX design.
+- After combing through my code I made a few more Anki cards to help me remember concepts that might not otherwise stick in my memory.
+
+This is by far the shortest write-up so far in my 100 Days of Code journal but I am still happy with what I worked on today, especially considering how little time I had to work with. I fear tomorrow may be similar in terms of commitments but I hope at the very least to get a couple more chapters of *Clean Code* finished by the end of this week.
