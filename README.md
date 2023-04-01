@@ -505,3 +505,24 @@ function insertDash(num) {
 ```
 
 Today was definitely my favourite day of the week thus far. We had two great lectures, and solved a few gratifying Code Wars kata. I wonder what we will be working on in tomorrow's hackathon?
+
+## Day 12
+*20230331*
+
+For today's hackathon we went through the full design process of building a landing page for a bootcamp of our choosing.
+
+- As a group we started off by making some user personas on [Hubspot](https://www.hubspot.com/make-my-persona).
+- We then created user stories based on our user personas that helped elucidate key design features, such as accessibility for colour-blind users.
+- After installing the drawio extension we created a flow diagram within our repo to outline the user journey through our website.
+- We then chose a colour palette that contained dark and light browns to fit with our "School of Chess" theme.
+- We tested these colours for contrast and settled on `#964D22`, `#FFFFFF`, `#000000`, `#FFE9C5`, and `#800000`.
+- Just before lunch we completed a low-fidelity wireframe to inform us when it came to coding the site up using HTML and CSS.
+- During our lunch break I had a mentor meeting in which we discussed a variety of topics, from recommended reading on object-oriented programming, to the pros and cons of ChatGPT and GitHub Copilot for programmers.
+- After lunch we made a start on our HTML and CSS.
+- We made use of the CSS variables that we had learned about earlier in the week to easily reuse the colours from our colour palette as decided on earlier in the day.
+- We used flexbox to style our header buttons to be spread out across the top of the screen and made them change colour when hovered over with the cursor for extra visibility and clarity for the user.
+- Before time was up we managed to get an image, in the form of a pawn, working as a button which would link back to our homepage when clicked but were unable to get a YouTube video working as the page would refuse to connnect to youtube.com.
+- We then gave a 2-minute presentation on our work and listened to other groups do the same.
+- Some of their work was particularly inspiring, with one group making clever use of `position: fixed` to create a nav bar that always stayed at the top of the screen.
+
+This week was not my favourite in terms of the topics we were diving into but I nonetheless learned a lot and thoroughly enjoyed working in my group. I have no idea what is in store for us next week but I expect that by delving into more JS I will be more within my comfort zone.
