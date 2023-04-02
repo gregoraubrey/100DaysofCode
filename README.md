@@ -536,3 +536,44 @@ Today was certainly not my busiest in terms of coding but I still went over some
 - After combing through my code I made a few more Anki cards to help me remember concepts that might not otherwise stick in my memory.
 
 This is by far the shortest write-up so far in my 100 Days of Code journal but I am still happy with what I worked on today, especially considering how little time I had to work with. I fear tomorrow may be similar in terms of commitments but I hope at the very least to get a couple more chapters of *Clean Code* finished by the end of this week.
+
+## Day 14
+*20230401*
+
+Today I had some friends round to play some poker and just hang out. This meant that I had precious little time to focus on the recap tasks so will have to work on them tomorrow morning.
+
+- I read through the School of Code's guide to clean code which was listed as one of our recap tasks.
+- Most of what it said was already familiar to me thanks to my reading *Clean Code*, for example the section on picking expressive names for functions and variables that will be of use to colleagues who have to look at your code in the future.
+- In the section on white space they wrote:
+	- "Although some of this is opinionated, it's widely thought that space allows our eyes to scan and identify items of interest more easily that clutter. Hopefully you'll agree, and space things out where possible."
+- My mentor similarly recommended that I space out code in the same way that paragraphs are used to space out text in a book.
+- On the other hand, I have heard it said that too much white space is bad since it means you cannot have as much meaningful code on your monitor at one time, which could actually make reading and understanding the code take longer.
+	- I will try and follow my mentor's advice regarding use of white space but can also imagine the benefits of more compactly written code.
+- The section on comments was informative, with a couple of examples of good and bad use of comments:
+
+**Bad**
+```js
+function printMessage() {
+  //calls a function
+  const comment = document.getElementbyID("comments").value; // declares a variable
+  if (comment !== null && comment !== "") {
+    //starts an if statement if there's a comment
+    return console.log("What a meaningful comment"); //prints a string to the console
+  }
+}
+```
+**Good**
+```js
+//checks to see if there's a comment. If so, returns a message.
+function printMessage() {
+  const comment = document.getElementbyID("comments").value;
+  if (comment !== null && comment !== "") {
+    return console.log("What a meaningful comment");
+  }
+}
+```
+- I feel like I have fallen into the trap recently of over-commenting, paranoid as I am that I will come back to the code and not understand what it is doing.
+- I talked to my mentor about this on Friday and his recommendation that I try not to rely on comments lest I never actually become "fluent" in code makes sense to me.
+- Lastly, I installed Node.js LTS as per the recap tasks and checked that it was working by running `node -v` and `npm -v` in a terminal emulator.
+
+Despite not getting much actual coding done today, I was glad to have met up with some friends whom I had not seen in months, so I feel like it was worth it. I am excited to get back in the coding swing tomorrow!
