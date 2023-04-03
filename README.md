@@ -538,7 +538,7 @@ Today was certainly not my busiest in terms of coding but I still went over some
 This is by far the shortest write-up so far in my 100 Days of Code journal but I am still happy with what I worked on today, especially considering how little time I had to work with. I fear tomorrow may be similar in terms of commitments but I hope at the very least to get a couple more chapters of *Clean Code* finished by the end of this week.
 
 ## Day 14
-*20230401*
+*20230402*
 
 Today I had some friends round to play some poker and just hang out. This meant that I had precious little time to focus on the recap tasks so will have to work on them tomorrow morning.
 
@@ -577,3 +577,32 @@ function printMessage() {
 - Lastly, I installed Node.js LTS as per the recap tasks and checked that it was working by running `node -v` and `npm -v` in a terminal emulator.
 
 Despite not getting much actual coding done today, I was glad to have met up with some friends whom I had not seen in months, so I feel like it was worth it. I am excited to get back in the coding swing tomorrow!
+
+## Day 15
+*20230403*
+
+Today we were introduced to **Node.js**, a runtime environment for JS. We were also lucky enough to have an insightful guest lecture from Nadeem, a developer with over 30-years' industry experience, and one of his colleagues, Elly, who is a former SoC bootcamper.
+
+- We started the day by giving feedback to our programming partners from last week which was rewarding and helpful in equal measure.
+- We then moved onto a guest lecture from Nadeem and Elly from Talis.
+- They talked about TDD, which I knew a bit about thanks to *Clean Code* but was nonetheless glad to have a formal introduction to.
+- Nadeem and Elly explained the pros and cons of manual and automatic testing and then revealed that at Talis they use fully automated testing.
+- Elly gave some great advice in terms of how to deal with all the new things to learn when you start work at a new company.
+	- She recommended just focusing on what you have to learn to solve the issue in front of you.
+	- For example, if she has a ticket on sending a query to a database, then the only thing she has to learn about in this moment is how to send a query to a database.
+- Nadeem was refreshingly candid and was full of wise words throughout the lecture:
+	- He stressed the importance of "disagree and commit" which, funnily enough, was one of the core company values at my previous job.
+	- He explained that during an interview he is much more interested in a candidate's capacity for self-motivation and their potential for working well in a team than their current level of coding knowledge.
+	- He mentioned how "great software developers are lazy" since they understand that the only problem that needs solving is the one in front of them right now, and they aim to solve it as quickly and with as little effort as possible. Nadeem said that you will probably end up editing this code in the next few days anyway so there is no sense in getting emotinoally invested in it and falling into the trap of "premature optimisation" (which in his view is the main factor separating juniors from seniors).
+- Next we met our new partners for the week. I am in a trio this week and both of my partners seem lovely! I was able to help one of them with some bash issues they were having and they were really appreciative of it which felt great.
+- We then moved on to a lecture on Node.js
+- I learned about `$_` in bash which lets you print the last argument of the previous command that you ran within the terminal:
+```bash
+touch index.html && code $_
+```
+- We learned about using `npm init -y` to initialise a new project and create a `package.json` file.
+- We ended the day with a workshop putting our nascent Node.js knowledge into practice.
+- As a group we got through all the main tasks so got to move onto the bonus tasks.
+- I ended up installing a [to-camel-case](https://github.com/ianstormtaylor/to-camel-case) package and got it working in a test `.js` file which was a satisying way to end the day.
+
+Today was really enjoyable, especially the guest lecture. The brief work we did with Node.js already feels more up my street than last week's UI/UX design so I am looking forward to what tomorrow has in store.
