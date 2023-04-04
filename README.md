@@ -606,3 +606,21 @@ touch index.html && code $_
 - I ended up installing a [to-camel-case](https://github.com/ianstormtaylor/to-camel-case) package and got it working in a test `.js` file which was a satisying way to end the day.
 
 Today was really enjoyable, especially the guest lecture. The brief work we did with Node.js already feels more up my street than last week's UI/UX design so I am looking forward to what tomorrow has in store.
+
+## Day 16
+*20230404*
+
+Today we started writing our own tests in JS to be checked via [Jest](https://jestjs.io/docs/getting-started) with `npm run test` (or simply `npm t` for short).
+
+- We started the day with some Code Wars.
+- We went straight for a 6 kyuu titled [Triple your Money!](https://www.codewars.com/kata/64294e2be00c71422d1f59c2/train/javascript) but soon discovered that it was very maths-heavy.
+- We stuck at it, created and adjusted a plan, and managed to work through the problem slowly but surely, ending up with a pair of simultaneous equations before we were called back for a lecture.
+- With a bit more time tomorrow I am sure we can get through this one!
+- We then had a morning quiz on Node.js, NPM, and ESM in which I managed to get 100%.
+	- I really flew through today's quiz which is an encouraging sign and reinforces that this is more my style than the UI/UX design of last week which will need more of my attention.
+- We read through some of the [Jest documentation](https://jestjs.io/docs/getting-started) to start getting used to combing through docs which is a key skill for any developer.
+- We then moved on to the **AAA Pattern** of **Arrange**, **Act**, and **Assert** which is a key concept in TDD.
+- We ended the day with an afternoon workshop in which we wrote various tests across 3 tasks and 1 bonus task.
+	- As a group we managed to get through the 3 main tasks and make a start on the bonus task so I am confident that we are ready for tomorrow.
+
+Today was really enjoyable and a fairly gentle introduction to writing tests for our code but I am sure that the unit testing will only get harder from here!
