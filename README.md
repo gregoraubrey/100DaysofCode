@@ -624,3 +624,73 @@ Today we started writing our own tests in JS to be checked via [Jest](https://je
 	- As a group we managed to get through the 3 main tasks and make a start on the bonus task so I am confident that we are ready for tomorrow.
 
 Today was really enjoyable and a fairly gentle introduction to writing tests for our code but I am sure that the unit testing will only get harder from here!
+
+## Day 17
+*20230405*
+
+Today marked a definited jump in difficulty as we started writing end-to-end tests.
+
+- We started the day with some Code Wars:
+- [Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript)
+```js
+function getCount(str) {
+  let count = 0
+  let array = str.split("");
+  for (let i=0; i<array.length; i++){
+    if (array[i] === "a" || array[i] === "e" || array[i] === "i" || array[i] === "o" || array[i] === "u") {
+    count++;
+    }
+  }
+  return count;
+}
+```
+- I managed to formulate the plan for this **7 kyuu** kata for our team almost instantly and it worked as intended!
+- Someone managed to solve it in a much nicer way using a regex:
+```js
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
+```
+- [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript)
+```js
+function disemvowel(str) {
+  let array = str.split("");
+  for (let i = array.length - 1; i >= 0; i--) {
+    if (/[aeiou]/ig.test(array[i])){
+      array.splice(i, 1);
+    }
+  }
+  return array.join("");
+}
+```
+- This **7 kyuu** kata caused us issues since we were trying to start the for loop at `i = 0` and then work upwards.
+- This causes the `splice()` method to skip the next letter after each successful deletion.
+- By working backwards from `i = array.length - 1` (i.e. the final index) towards `i = 0` the issue of `splice()` changing the indices does not affect us since it only changes the indices above `i`, not below it.
+- Once again someone solved it in a much simpler way:
+```js
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+```
+- I made an Anki card for `replace()` using this concise solution as a code example on the back of the card.
+- A few minutes later I had a thought about another way to counteract the `splice()` issue of skipping an index:
+```js
+function disemvowel(str) {
+  let array = str.split("");
+  for (let i = 0; i < array.length; i++) {
+    if (/[aeiou]/ig.test(array[i])){
+      array.splice(i, 1);
+      i--
+    }
+  }
+  return array.join("");
+}
+```
+- My thought was correct because this code passed on Code Wars too!
+	- It feels great to come up with multiple ways of solving a problem, although I am not sure how good of a solution this last one is in terms of memory usage
+- We then had a morning quiz on testing in which I got 100% and finished with time to spare which felt great!
+- We then had a lecture recapping some of the testing we learned yesterday before moving on to [Playwright](https://playwright.dev/).
+- After a brief introduction to Playwright and end-to-end testing we spent the afternoon completing a workshop that was much harder than anything we have previously worked on in testing since it required a lot of our own research into the documentation rather than applying what we had learned in lectures.
+- As a group we struggled to get various portions working and found it frustrating but after a short break I came back to the workshop after we had finished for the day and managed to see things with a clearer perspective, successfully rattling off a few basic tests in a row.
+
+All in all, today was one of the harder days so far but I am not too worried as I am sure we will have time to consolidate our learnings and get much faster at writing end-to-end tests.
