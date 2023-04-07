@@ -725,3 +725,18 @@ Today we worked through some more testing cases, heard a guest lecture on Linked
 		- One of the guest lecturers this week said that if you are not breaking anything, then you are not *doing* anything.
 		
 This week was the hardest so far, at least for me. Nonetheless, I feel like it went well and am not worried about testing, as we will be getting more than enough practice and can only get better and faster at writing tests from here. I am sure that before we know it, testing using Jest and Playwright will be as easy as writing a "Hello World!" program. Next week we will be moving on to **React** which is exciting, although I must admit I have no idea what to expect. My mentor mentioned that it adds some object-oriented functionality to JS which sounds interesting. I guess I will found out more soon enough!
+
+## Day 19
+*20230407*
+
+Today's bank holiday was not a particularly busy day for me in terms of coding but I did spend some more time consolidating what we learned this week about testing.
+
+- I watched a series of six videos that were linked in one of this week's workshops that explained testing in simple terms.
+- The videos started with very basic tests written with if statements that would throw an error `if (result !== expected)`.
+- Each video added a layer of complexity in terms of code and convenience in terms of the usefulness of the test.
+- Eventually, the code ended up looking just like the tests we were writing this week.
+- Thanks to the way that the narrator broke the testing process down and then built it back up, testing has become much clearer to me and I look forward to using Playwright in this week's Recap Tasks.
+- I also watched some videos and read some short articles on React in preparation for next week.
+- I think I will do some more research in the coming days just to make sure I am in the best possible position come Tuesday.
+
+Overall a fairly relaxed day that I feel I have earned after a tough week learning to write tests. Tomorrow I am meeting up with some fellow bootcampers in London which should be fun, and will be a great opportunity to share our experiences and reflections thus far.
