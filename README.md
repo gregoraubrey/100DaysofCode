@@ -694,3 +694,34 @@ function disemvowel(str) {
 - As a group we struggled to get various portions working and found it frustrating but after a short break I came back to the workshop after we had finished for the day and managed to see things with a clearer perspective, successfully rattling off a few basic tests in a row.
 
 All in all, today was one of the harder days so far but I am not too worried as I am sure we will have time to consolidate our learnings and get much faster at writing end-to-end tests.
+
+## Day 18
+*20230406*
+
+Today we worked through some more testing cases, heard a guest lecture on LinkedIn and how best to curate your profile, and spent the afternoon on a hackathon covering end-to-end testing.
+
+- Instead of doing Code Wars in the morning, as a group we consolidated what we had learned yesterday about testing with [Playwright](https://playwright.dev/docs/intro) and made sure that we understood all the work we had produced in yesterday's workshop.
+	- I feel this was definitely worthwhile as it set us up well for this afternoon's hackathon.
+- We then had a mindset lecture on *the inner critic* and building resilience.
+- We watched [this YouTube video](https://www.youtube.com/watch?v=d5aVvM4_zpQ) and then discussed different types of inner critic:
+	- **The Perfectionist**
+	- **The People-Pleaser**
+	- **The Pusher**
+- I feel like **the Pusher** fits me best, and it was definitely interesting to think about how different people self-assess and self-criticise in their own ways.
+- We then moved on to a guest lecture by two LinkedIn employees who covered a variety of topics:
+	- How to kickstart your content creation.
+	- The anatomy of a great LinkedIn post.
+	- Curating your profile.
+- I have always seen LinkedIn as a very static social media, only to be updated when you get a promotion or start work at a new company.
+- It seems like LinkedIn have made a deliberate push to move the platform from purely professional to both professional and personal.
+- I can see the networking benefits of consistently posting on LinkedIn but I also feel very uncomfortable with the idea of spamming my contacts with content that will probably mean very little and not be of much interest to most of them.
+- We then moved on to an afternoon hackathon (since tomorrow is a bank holiday) in which we had to read and understand a simple to-do list app and then start writing tests for a sensible user flow that we would come up with.
+- It took us a while to get into the swing of things but once we penetrated the syntax, we started to make decent progress.
+- I had a mentor meeting just after 17:00 and we spent some time talking about TDD.
+- I was surprised to hear that many engineers and many companies do not follow a testing philosophy.
+	- I feel like it has already been drilled into me, and had (perhaps naively) assumed that this was an industry standard that all developers would embody.
+	- My mentor did mention that he would not want to work at a company that does not follow TDD so it clearly works for him!
+	- We also talked about the importance of breaking things since it shows that you are pushing boundaries and adding new functionality to the codebase.
+		- One of the guest lecturers this week said that if you are not breaking anything, then you are not *doing* anything.
+		
+This week was the hardest so far, at least for me. Nonetheless, I feel like it went well and am not worried about testing, as we will be getting more than enough practice and can only get better and faster at writing tests from here. I am sure that before we know it, testing using Jest and Playwright will be as easy as writing a "Hello World!" program. Next week we will be moving on to **React** which is exciting, although I must admit I have no idea what to expect. My mentor mentioned that it adds some object-oriented functionality to JS which sounds interesting. I guess I will found out more soon enough!
