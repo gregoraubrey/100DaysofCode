@@ -740,3 +740,19 @@ Today's bank holiday was not a particularly busy day for me in terms of coding b
 - I think I will do some more research in the coming days just to make sure I am in the best possible position come Tuesday.
 
 Overall a fairly relaxed day that I feel I have earned after a tough week learning to write tests. Tomorrow I am meeting up with some fellow bootcampers in London which should be fun, and will be a great opportunity to share our experiences and reflections thus far.
+
+
+## Day 20
+*20230408*
+
+Today I met up with some of my fellow bootcampers in London.
+
+- We planned to meet up in King's Cross in the afternoon and were blessed with good weather.
+- A group of five of us walked along the canal for a couple of hours before eventually reaching a bar in Paddington.
+- We were joined by a few more bootcampers along with one graduate of bootcamp 13 with whom I had a really informative conversation.
+- We talked about interview prep, experiences on the bootcamp, mentors, and more.
+- After coming home I spent some time readig *Clean Code*.
+	- I have nearly finished it now but there has been a lot more code to read in recent chapters which I must admit has left me stumped, as I have struggled to understand the syntax considering I have only studied JS thus far.
+- I spent the evening reading up a bit more on React in order to prepare for next week.
+
+It was really enjoyable meeting up with some fellow bootcampers, having only ever seen them on the other side of a screen thus far. I hope we can organise another meet-up soon!
