@@ -756,3 +756,24 @@ Today I met up with some of my fellow bootcampers in London.
 - I spent the evening reading up a bit more on React in order to prepare for next week.
 
 It was really enjoyable meeting up with some fellow bootcampers, having only ever seen them on the other side of a screen thus far. I hope we can organise another meet-up soon!
+
+## Day 21
+*20230409*
+
+I spent today reading up some more on testing and React in order to consolidate last week's work and get prepared for Tuesday.
+
+- In terms of testing, [one article](https://blog.logrocket.com/javascript-testing-best-practices/) broke down how to write **detailed test descriptions** into three layers:
+	1. The unit to be tested, or test requirement
+	2. The specific scenario or action to be tested
+	3. The expected result
+- [Another article](https://www.freecodecamp.org/news/how-to-start-unit-testing-javascript/) highlighted the benefits of writing unit tests:
+	1. Be confident that the code works as intended
+	2. Make better architectural decisions
+		- E.g. you will not be tempted to give more than one responsibility to a code block as this would make unit testing difficult
+	3. Understand functionality before writing code
+- In terms of React, [one article](https://survivejs.com/react/getting-started/introduction-to-react/) explained the **Virtual DOM** that exists on top of the real DOM and allows for efficient state manipulation.
+	- "Whenever changes are made to it, it figures out the best way to batch the changes to the underlying DOM structure. It is able to propagate changes across its virtual tree".
+- I feel like the testing concepts have really sunk in but the React concepts not so much.
+- I suppose it is only natural since I have not had any hands-on experience with React yet.
+
+Tomorrow I will work on the recap tasks and should hopefully find them manageable considering all the reading I have done on testing, and after that I will try and get ready for React on Tuesday!
