@@ -801,3 +801,76 @@ function toScreamingKebab(...args) {
 - I had issues with Playwright not recognising text that my tests were inputting into the textboxes but other than that the tests worked as expected.
 
 Tomorrow we finally start on React which should be good fun.
+
+## Day 23
+*20230411*
+
+Today we made a start on React and learned about props.
+
+- We started the day with some Code Wars in our new groups.
+- [No oddities here](https://www.codewars.com/kata/51fd6bc82bc150b28e0000ce)
+```js
+function noOdds( values ){  
+  return values.filter( num => num %2 === 0)  
+}
+```
+- It felt great to get a one-line solution, even if it was only a 7 kyuu kata.
+- [Training on Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript)
+```js
+function solution(number){
+  if (number < 0) {
+    return 0
+  }
+  let arr = []
+  for (let i = number - 1; i >= 3; i--) {
+    arr.push(i)
+  }
+  arr = arr.filter(x => x % 3 === 0 || x % 5 === 0)
+  return arr.reduce((currentTotal, value) => currentTotal + value, 0)
+}
+```
+- This 6 kyuu kata took us significantly longer to solve but it was worth it as I learned about the `reduce()` method, for which I duly made an Anki card.
+- I find that trying to solve Code Wars kata is a great way to learn about JS methods and get to apply them straight away.
+- Somebody else submitted a much simpler solution that I like (other than their use of `var` instead of `let`):
+```js
+function solution(number){
+  var sum = 0;
+  
+  for(var i = 1;i< number; i++){
+    if(i % 3 == 0 || i % 5 == 0){
+      sum += i
+    }
+  }
+  return sum;
+}
+```
+- We moved on to an introductory lecture on React in which we covered the basics of what React actually is, and the reasons why developers might want to use it:
+- **Synchronous**
+	- React will keep your app in sync with changes
+- **Simplicity**
+	- Simple to use once you get the hang of it
+- **Modular**
+	- Reusable components to break down big tasks
+- **Scalable and Maintainable**
+	- Your app can grow and maintain efficiency
+- **Performance**
+	- Reduces latency
+- **Open-source**
+	- It is free to use and you can contribute to it too
+- Widely used and influential
+	- Once you know React, other frameworks are similar
+- We learned about **JSX**, a syntax extension that lets us write HTML-like code within JS files that will compile down to normal JS code.
+- ChatGPT gave me a useful example that compared normal JS code and JSX:
+```javascript
+const button = document.createElement('button');
+button.textContent = 'Click me';
+button.addEventListener('click', handleClick);
+```
+
+```jsx
+<button onClick={handleClick}>Click me</button>
+```
+- We spent the rest of the day working on two workshops.
+- The first was fairly manageable but the second was much more conceptually difficult as we were working with **props** that we had only just learned about in the afternoon.
+
+Today was enjoyable but I am not sure that I have fully grasped props yet. I am not too worried though, since we will have ample time to practise in the coming days.
