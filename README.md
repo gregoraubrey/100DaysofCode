@@ -777,3 +777,27 @@ I spent today reading up some more on testing and React in order to consolidate 
 - I suppose it is only natural since I have not had any hands-on experience with React yet.
 
 Tomorrow I will work on the recap tasks and should hopefully find them manageable considering all the reading I have done on testing, and after that I will try and get ready for React on Tuesday!
+
+## Day 22
+*20230410*
+
+I spent today working on the recap tasks ready for tomorrow.
+
+- The first task had me plan my own Code Wars kata and use Jest to write tests for it.
+- After writing a slew of tests I got to work on the actual code that would solve the kata:
+```js
+function toScreamingKebab(...args) {
+    const array = args.map(item => String(item));
+    const uppercaseArray = array.map(item => item.toUpperCase());
+    const hyphenatedUppercaseArray = uppercaseArray.map(item => item.replace(/[_-\s]+/g, "-"));
+    const finalString = hyphenatedUppercaseArray.join("-");
+    return finalString;
+}
+```
+- The above code takes one or more arguments, turns them all into strings, makes them uppercase, adds hyphens where appropriate within each string, then adds a hyphen between each argument.
+- I found writing the plan for this and executing it to be very straightforward, likely due to the amount of time I spent writing tests and thinking about how the function should work.
+	- Through doing this exercise I can see why TDD can lead a developer to write better code.
+- The second recap task involved using Playwright to write an e2e test of a simple tweeting application.
+- I had issues with Playwright not recognising text that my tests were inputting into the textboxes but other than that the tests worked as expected.
+
+Tomorrow we finally start on React which should be good fun.
