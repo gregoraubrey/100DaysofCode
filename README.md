@@ -874,3 +874,75 @@ button.addEventListener('click', handleClick);
 - The first was fairly manageable but the second was much more conceptually difficult as we were working with **props** that we had only just learned about in the afternoon.
 
 Today was enjoyable but I am not sure that I have fully grasped props yet. I am not too worried though, since we will have ample time to practise in the coming days.
+
+## Day 24
+*20230412*
+
+Today we covered `useState` in React and worked more on props over the course of a couple of workshops.
+
+- We started the day with some Code Wars kata.
+- [Digit*Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
+```js
+function squareDigits(num){
+  let arr = num.toString().split("")
+  for (let i = 0; i < arr.length; i++){
+    arr[i] = arr[i] ** 2
+  }
+  let str = arr.join("")
+  return parseInt(str);
+}
+```
+- This first one helped me learn how to use `parseInt()` correctly.
+- [The Feast of Many Beasts](https://www.codewars.com/kata/5aa736a455f906981800360d/train/javascript)
+```js
+function feast(beast, dish) {
+  let beastL1 = beast.charAt(0)
+  let beastLFin = beast.charAt(beast.length-1)
+  let dishL1 = dish.charAt(0)
+  let dishLFin = dish.charAt(dish.length-1)
+  if (beastL1 === dishL1 && beastLFin === dishLFin) {
+      return true 
+  }
+  else {
+     return false    
+  }
+}
+```
+- Someone solved it cleverly in one line:
+```js
+function feast(beast, dish) {
+	return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+}
+```
+- The regex in this solution seems crazy to me:
+```js
+const feast = (...args) => /^(.).*(.),\1.*\2$/.test(args);
+```
+- We then had a morning quiz on yesterday's intro to React in which I only got the final question wrong because I used `:` instead of `=` to assign values to props.
+- We then read through [State: A Component's Memory](https://react.dev/learn/state-a-components-memory) in our group.
+- Next came a lecture that covered the `useState` hook before we moved onto a morning workshop building a random name generator that changes the name displayed on screen at the press of a button by selecting a random index in an array full of names.
+- The afternoon workshop involved getting whatever the user typed into an input field to show up in real time in four different list items, each with its own typeface.
+- We managed to get it working just before 17:00 which was extremely satisfying considering how little progress we had made during yesterday's workshops in comparison.
+- I also had an "aha" moment in terms of object destructuring and was able to get my components working with and without destructuring:
+- **with:**
+```js
+export function Item({text, font}) {
+    return (
+        <li style={{ fontFamily: `${font}` }}>
+        {text}
+        </li>
+    );
+}
+```
+- **without:**
+```js
+export function Item(props) {
+    return (
+        <li style={{ fontFamily: `${props.font}` }}>
+        {props.text}
+        </li>
+    );
+}
+```
+
+I thoroughly enjoyed today, especially towards the end when things started falling into place in terms of how to use props.
