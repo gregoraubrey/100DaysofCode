@@ -946,3 +946,60 @@ export function Item(props) {
 ```
 
 I thoroughly enjoyed today, especially towards the end when things started falling into place in terms of how to use props.
+
+
+## Day 25
+*20230413*
+
+Today we learned about immutability, the spread operator, and the `map()` function and how it can be used in React.
+
+- We started the day with some Code Wars:
+- [Sort array by string length](https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/train/javascript)
+```js
+function sortByLength (array) {
+  return array.sort((a, b)=> a.length - b.length);
+};
+```
+- We solved this in one line because we knew about `sort()`
+- [Highest and Lowest](https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript)
+```js
+function highAndLow(numbers){
+  let arr = numbers.split(" ")
+  arr.sort((a,b) => a - b)
+  let HighLowArr = [arr[arr.length - 1], arr[0]]
+  return HighLowArr.join(" ")
+}
+```
+- Someone solved it using `Math.max()` and `Math.min()` which I liked:
+```js
+function highAndLow(numbers){
+  numbers = numbers.split(' ');
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
+```
+- [Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript)
+```js
+function domainName(url) {
+  url = url.replace("http://", "").replace("https://", "").replace("www.", "");
+  let endChar = url.indexOf(".");
+  return url.substring(0, endChar);
+}
+```
+- This was the first **5 kyuu** kata I have solved (I think!)
+- It took us a while and we only got it finished during lunch
+- I like this solution that someone submitted:
+```js
+function domainName(url){
+  url = url.replace("https://", '');
+  url = url.replace("http://", '');
+  url = url.replace("www.", '');
+  return url.split('.')[0];
+};
+```
+- We then had a quiz on `useState` in which I got 2 questions wrong, one of which was because I forgot that the `useState` hook must be called within the functional component body, and not inside an if statement.
+- We moved on to a mindset lecture on decision making where we learned about **dot voting** as a way to quickly make decisions that we could otherwise deliberate on for hours.
+- Next was a lecture on **immutability** and the **spread operator**.
+- We made a start on a workshop that covered array methods but did not have much time before we were called back to have a go at a second workshop.
+- The second workshop was on how we can make use of what we learned today within React but we did not have much time on this one either!
+
+Today was absolutely jam-packed but I feel like I learned a lot. I look forward to putting some of it into practice during tomorrow's hackathon!
