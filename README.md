@@ -1003,3 +1003,40 @@ function domainName(url){
 - The second workshop was on how we can make use of what we learned today within React but we did not have much time on this one either!
 
 Today was absolutely jam-packed but I feel like I learned a lot. I look forward to putting some of it into practice during tomorrow's hackathon!
+
+
+## Day 26
+*20230414*
+
+Today was Hackathon Friday, so we spent the whole day working on a **to-do list** React app.
+- We started off by planning out our components and the parent-child structure.
+- We decided to have `Input` and `List` that would both receive props from `App`.
+	- Looking back, we could have broken things down further and split `Input` into a *submit button component* and an *input field component*, and similarly split `List` into a *list item component* and a *delete button component*.
+	- This would have helped with separartion of concerns and made our components more modular and therefore more useful when it comes to reusing them, since you could access, say, the delete button without also accessing a list item.
+- We struggled at times to get our heads around which variable names were referencing what in the code.
+	- I am sure that this could have been remedied by starting off on the right foot with a more robust plan and tree diagram.
+- We learned about the `trim()` method, which we used in an if statement:
+```js
+function handleClick() {
+    if (text.trim() !== "") {
+      console.log("Adding item:", text);
+      setItems([...items, text]);
+      setText("");
+    }
+  }
+```
+- This allowed us to not make an empty list item appear when the button is clicked whilst the input field is empty.
+- The `trim()` method makes it so that the same applies even if the user spams the spacebar and then clicks the button, since the whitespace is trimmed down before being compared to `""`.
+- The rest of the function adds the current value of the input field to the end of the `items` array by using the **spread operator** to spread out each index already in the `items` variable.
+- Then we set the value of the input field back to an empty string so the user can start typing in a new to-do.
+- We also added a `console.log` to check that the value of the input field was being correctly passed into the function.
+- By the end of the day we had a working app and were nearly there with one of the bonus tasks which involved adding a button or checkbox to each list item that would strike through the text.
+- It was fun hearing from other groups during the presentations at the end, and it was really motivating to see the great work that they had produced.
+- Just after 17:00 I had an excellent mentor meeting that lasted for a full hour and was jam-packed with useful learnings and insights.
+- We talked about a whole range of topics:
+	- OOP vs functional programming.
+	- Strongly-typed vs weakly-typed languages, and "casting" variables in the former.
+	- Memory management and how best to approach learning it.
+	- Having the confidence to break programs and push the envelope of what the code can do.
+	
+This week has flown by, and thanks to the bank holiday on Monday we have had to whizz through React. I feel like I have learned so much in such a short space of time, although I recognise that there are definite gaps in my knowledge, for example my understanding of state variables and passing in unique keys when rendering components is not quite there yet. I cannot wait to jump into some more React next week and take things even further!
