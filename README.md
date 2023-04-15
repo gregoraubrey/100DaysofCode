@@ -1040,3 +1040,22 @@ function handleClick() {
 	- Having the confidence to break programs and push the envelope of what the code can do.
 	
 This week has flown by, and thanks to the bank holiday on Monday we have had to whizz through React. I feel like I have learned so much in such a short space of time, although I recognise that there are definite gaps in my knowledge, for example my understanding of state variables and passing in unique keys when rendering components is not quite there yet. I cannot wait to jump into some more React next week and take things even further!
+
+## Day 27
+*20230415*
+
+Today I spent time consolidating what we learned this week by reading articles, watching videos, and testing out some code.
+
+- I practiced switch statements after forgetting how they worked earlier this week by following along with [this YouTube video](https://www.youtube.com/watch?v=2gE2K8i5tvs&list=WL&index=75) that was nice and short but contained all the info I needed to remember how to use switch statements going forwards.
+- I then made an Anki card just to make sure I don't forget the syntax I practiced today.
+- I watched [another video](https://www.youtube.com/watch?v=NIq3qLaHCIs&list=WL&index=74&t=1s) from the same channel that covered array/object destructuring.
+- I followed along as the code went from simple examples of skipping items in an array (`const [first, second, third, , , sixth] = alphabet;`) to using object destructuring within the parameters of a function:
+```js
+function printPerson({ name, age, address: { city, country } }){
+	console.log(`Name is ${name}, age is ${age}, city is ${city}, and country is ${country}.`);
+}
+```
+- I feel like I understand enough about destructuring now to use it with confidence, although I am still not sure what is going on under the hood when you destructure an object.
+- I also read a few short articles on the basics of React and plan to dive deeper tomorrow as I work on the recap tasks for this week's content.
+
+Today was fairly relaxed and afforded me a much-needed rest after the lightning-quick pace with which we zoomed through the basics of React this week. I hope that what I have worked on today will stand me in good stead for tomorrow when I work on the recap tasks.
