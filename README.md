@@ -1090,3 +1090,44 @@ function handleCommentSubmit(commentData) {
 - It took a fair bit of help from ChatGPT to break things down and explain concepts but eventually I got a working MVP that would take a user's name and their comment, and then append it to the end of the current list of comments.
 
 I will definitely need to have a reread of my code tomorrow so I don't forget everything I have worked on today. It was tough at times to keep track of all the different variable names, props, and functions throughout all the files containing my components, so looking over the code with a fresh perspective should help cement everything I have learned in making this app. Despite how long it took and how tired I am right now, it feels great to have it working at last, and I know I will be able to refer back to this project next week if I get stuck on something, so that should be a great help.
+
+
+## Day 29
+*20230417*
+
+Today we learned about the `useEffect` hook in React and made a simple app using it along with the Pokemon API that we used a few weeks ago in a hackathon.
+
+- We started off the day by giving feedback to our programming partners from last week.
+- The three of us gave each other some encouraging feedback about how we had handled the hackathon last Friday and agreed that we would like to work together again, given the chance.
+- We then had a guest lecture by a UX designer who talked through the whole process of redesigning his company's US website which has been his main focus lately.
+- He talked about **Miller's Magic Number 7** which I had not heard of, and **Jakob's Law of Web Experience** which we had talked about briefly in Week 3.
+- Next was a lecture on `useEffect` and some time spent [reading the documentation](https://react.dev/learn/synchronizing-with-effects).
+- We also learned about **pure functions** and how React assumes that every component in a project is a pure function.
+- Pure functions always return the same output given the same input, and do not modify any data outside of the function's scope.
+- We ended the day with a workshop that involved using `fetch` to send a GET request to the [Pokemon API](https://pokeapi.co/?ref=public-apis) (that I used in my Week 2 hackathon) and then change the ID to a random number between 1 and 151 every time a button is clicked, which would cause the page to display the sprite, name, and pokedex number of the new Pokemon.
+- Here is a snippet from the `PokemonViewer` component:
+```js
+function PokemonViewer({ id }) {
+  const [pokemon, setPokemon] = useState(null);
+  useEffect(() => {
+    async function fetchPokemon() {
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+      const data = await response.json();
+      console.log(data);
+      setPokemon(data);
+    }
+    fetchPokemon();
+  }, [id]);
+```
+- And one from the `App` component:
+```js
+function App() {
+  const [id, setId] = useState(null);
+  function handleClick() {
+    let randomId = Math.floor(Math.random() * 151) + 1;
+    setId(randomId);
+    console.log(id);
+  }
+```
+
+Today felt much more well-paced than much of last week, and I was able to finish the whole of the workshop just after 17:00 which is a good sign. I still feel like I need to look over the recap tasks from Sunday just to consolidate all the code I wrote, so I will do that tomorrow.
