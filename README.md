@@ -1059,3 +1059,34 @@ function printPerson({ name, age, address: { city, country } }){
 - I also read a few short articles on the basics of React and plan to dive deeper tomorrow as I work on the recap tasks for this week's content.
 
 Today was fairly relaxed and afforded me a much-needed rest after the lightning-quick pace with which we zoomed through the basics of React this week. I hope that what I have worked on today will stand me in good stead for tomorrow when I work on the recap tasks.
+
+## Day 28
+*20230416*
+
+If yesterday was relaxed then today was the complete opposite! I spent the day reading more about React then started work on the recap tasks in the evening. Little did I know just how challenging they would be!
+
+- I read a few more articles on React throughout the day, not to learn anything new but rather to consolidate what I have already learned this week.
+- After dinner, I began work on the recap tasks thinking that they would take me no more than a couple of hours.
+- Unfortunately, I was sorely mistaken as the tasks involved building a funcional blog post page where the user could type in an **author** box and in a **comment** box too before clicking a **submit** button to have the inputs render at the end of a comment list underneath the blog post.
+- Conceptualising how the app would function and thinking about parent-child relations in terms of passing down props was not too difficult, and only took a few minutes of consideration.
+- The implementation started off smoothly enough but became a nightmare when the program got bigger and it came time to code the funcionality for having the `CommentForm` component receive a prop in the form of a function for handling the clicking of the submit button:
+```js
+function handleCommentSubmit(commentData) {
+    let author;
+    if (commentData.author.trim() === "") {
+      author = "Anon Author";
+    }
+    else {
+      author = commentData.author;
+    }
+    const newComment = {
+      id: comments.length + 1,
+      author: author,
+      content: commentData.comment,
+    };
+    setComments([...comments, newComment]);
+  };
+```
+- It took a fair bit of help from ChatGPT to break things down and explain concepts but eventually I got a working MVP that would take a user's name and their comment, and then append it to the end of the current list of comments.
+
+I will definitely need to have a reread of my code tomorrow so I don't forget everything I have worked on today. It was tough at times to keep track of all the different variable names, props, and functions throughout all the files containing my components, so looking over the code with a fresh perspective should help cement everything I have learned in making this app. Despite how long it took and how tired I am right now, it feels great to have it working at last, and I know I will be able to refer back to this project next week if I get stuck on something, so that should be a great help.
