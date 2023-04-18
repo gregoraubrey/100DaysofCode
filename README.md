@@ -1041,6 +1041,7 @@ function handleClick() {
 	
 This week has flown by, and thanks to the bank holiday on Monday we have had to whizz through React. I feel like I have learned so much in such a short space of time, although I recognise that there are definite gaps in my knowledge, for example my understanding of state variables and passing in unique keys when rendering components is not quite there yet. I cannot wait to jump into some more React next week and take things even further!
 
+
 ## Day 27
 *20230415*
 
@@ -1131,3 +1132,68 @@ function App() {
 ```
 
 Today felt much more well-paced than much of last week, and I was able to finish the whole of the workshop just after 17:00 which is a good sign. I still feel like I need to look over the recap tasks from Sunday just to consolidate all the code I wrote, so I will do that tomorrow.
+
+
+## Day 30
+*20230418*
+
+Today we learned about the `useReducer` hook in React and consolidated some of what we had learned yesterday and last week.
+
+- We started off the day with just under an hour of Code Wars.
+- [Adding Big Numbers](https://www.codewars.com/kata/525f4206b73515bffb000b21/train/javascript)
+```js
+function add(a, b) {
+  let aArr = a.split("").map(Number).reverse();
+  let bArr = b.split("").map(Number).reverse();
+  let resultArr = [];
+  let carry = 0;
+  for (let i = 0; i < Math.max(aArr.length, bArr.length); i++) {
+    let sum = (aArr[i] || 0) + (bArr[i] || 0) + carry;
+    resultArr.push( sum % 10);
+    carry = Math.floor(sum / 10);
+  }
+  if (carry > 0) {
+    resultArr.push(carry);
+  }
+  return resultArr.reverse().join("");
+}
+```
+- This was my first time solving a **4 kyuu** kata!
+- We needed some help from ChatGPT to explain why we could not use `BigInt()` and then realised that the whole point of the kata was to find a way around it.
+- [Remove the minimum](https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/javascript)
+```js
+function removeSmallest(numbers) {
+  let newArray = [...numbers]
+  let lowestNumber = Math.min(...numbers)
+  newArray.splice(newArray.indexOf(lowestNumber), 1)
+  return newArray;
+}
+```
+- This **7 kyuu** kata was fairly quick to solve and was a nice contrast with the previous kata that had taken us around 40 minutes to solve.
+- We then had a morning quiz on `useEffect` in which I only made one mistake, opting to put the word `async` before the callback function (`useEffect(()=> {`) instead of before the function on the line below (`function getJoke() {`).
+- After the quiz we had a short lecture on **switch statements**, since they appear in the docs for `useReducer`.
+	- I felt very comfortable here since I talked about switch statements during my progress interview last Thursday as a way to improve some of code I was shown, and I also revised them over the weekend.
+- Next we learned about `useReducer` and [read some documentation](https://react.dev/learn/extracting-state-logic-into-a-reducer).
+- We started work on a workshop that saw us refactoring an app with two buttons (one for adding 1 to a count and one for subtracting 1) by replacing `useState` with `useReducer`.
+- We did not get the whole task finished before lunch but we had some time before the end of the day to get it done which was satisfying.
+- The second part of the task involved refactoring an app that lets the user input a name, and upon the click of a button makes that name appear at the end of an unordered list.
+- We took it from `useState` to `useReducer` and also added a unique key to each list item by including an extra key-value pair in the object:
+```js
+function namesReducer(state, action) {
+  switch (action.type) {
+    case "ADD_NAME":
+      return {
+        names: [...state.names, {
+          name: action.payload.newName,
+          id: action.payload.id,
+        }],
+      };
+    default:
+      throw new Error();
+  }
+}
+```
+- The rest of the day was given over to us to spend time looking back over all we have studied thus far in React to give us a chance to brush up on areas that we did not get the first time round.
+- Our group used this time to add the unique key functionality shown above, before splitting off to read over some docs that we used last week.
+
+Today was confusing at first but after seeing a couple of examples of `useReducer` in action I feel like I have a decent grasp of how to use it. I am sure that things will only get clearer the more we see this hook come up in the code that we read or write.
