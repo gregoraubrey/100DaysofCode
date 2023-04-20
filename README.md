@@ -1197,3 +1197,74 @@ function namesReducer(state, action) {
 - Our group used this time to add the unique key functionality shown above, before splitting off to read over some docs that we used last week.
 
 Today was confusing at first but after seeing a couple of examples of `useReducer` in action I feel like I have a decent grasp of how to use it. I am sure that things will only get clearer the more we see this hook come up in the code that we read or write.
+
+
+## Day 31
+*20230419*
+
+Today we started learning how to test React components using [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
+
+- We started off the day with a pretty unsuccessful Code Wars session.
+- We started work on one kata before discovering that people had left comments saying that the tests do not work as intended for JS, so we had to cut our losses and move on to another one.
+- [Find Cracker.](https://www.codewars.com/kata/59f70440bee845599c000085/train/javascript)
+```js
+function findHack(arr) {
+  let lettersArr;
+  let sum = 0;
+  let hackers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] && arr[i][2]) { // Check if arr[i] and arr[i][2] are defined
+    lettersArr = arr[i][2]
+    sum = 0;
+    for (let j = 0; j < lettersArr.length; j++) {
+      switch (lettersArr[j]) {
+          case "A":
+            sum = sum + 30;
+            break;
+          case "B":
+            sum = sum + 20;
+            break;
+          case "C":
+            sum = sum + 10;
+            break;
+          case "D":
+            sum = sum + 5;
+            break;
+          default:
+            break;
+      }
+      console.log(sum);
+      if (lettersArr.length >= 5 && lettersArr.every((x)=> x === "A" || x === "B")) {
+        sum = sum + 20
+      }
+      if (sum > 200) {
+        sum = 200
+      }
+      }
+      if (sum !== arr[i][1]) {
+        hackers.push(arr[i][0]);
+      }
+    }
+  }
+  return hackers
+}
+```
+- The above is our attempt thus far (that does not pass the tests).
+- We may well come back to this **6 kyuu** kata tomorrow.
+- After Code Wars we had a morning quiz on `useReducer` in which I scored 100% which was delightful after the fruitless Code Wars session prior.
+	- I say fruitless, it was still useful despite our not passing any of the kata, as we had the chance to practise writing switch statements and build on our problem solving skills in general.
+- Next came a lecture on using `git checkout -b new_branch_name` to create new branches, and the consequences of that, such as solving merge conflicts when attempting to merge the new branch into master/main.
+- I felt fairly confident in this having gone through the [Oh My Git!](https://ohmygit.org/) game as part of the pre-course learning.
+- We moved onto a workshop in which our group of 3 had to make various edits to a file in our own branches before attempting to push the changes and merge the branches into main.
+- We managed it without too many hiccups, although one member of our group was used to using VS Code's graphical VCS instead of the CLI, so we had to lend a helping hand in terms of explaining the basic git commands and what they accomplish.
+- After that we had a lecture on testing React componenents during which we were sent into breakout rooms to read through three doc pages:
+	- [Introduction](https://testing-library.com/docs/react-testing-library/intro/)
+	- [Code example](https://testing-library.com/docs/react-testing-library/example-intro)
+	- [Details on render](https://testing-library.com/docs/react-testing-library/api#render)
+- We then came back and discussed our learnings from this reading and discussed a few key questions that we had been posed before we began looking at the docs.
+- I really enjoyed this method of going through the docs with specific questions in mind and then sharing our thoughts in the main room, and the more practice we get reading documentation the better, since I know it will be a big part of any developer's future.
+- Having read the docs, we worked on a second workshop, this time focusing on using React testing library to test a pre-built app that takes a user input and adds it to a list, and then allows the user to click on the list item to strike through it.
+- This was fine as soon as we read up on mocking and `jest.fn()` which was needed in order to complete each task.
+- I duly made an Anki card on the concept of **mocking** so I don't forget about it in a few days' time!
+
+Overall today was well-paced and the testing felt reasonably comfortable and manageable since it built on the testing we have done with Jest and Playwright. The more practice we get with git branches, the better, and I am sure that we will get a lot of that during next week's project!
