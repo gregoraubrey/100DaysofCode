@@ -1268,3 +1268,54 @@ function findHack(arr) {
 - I duly made an Anki card on the concept of **mocking** so I don't forget about it in a few days' time!
 
 Overall today was well-paced and the testing felt reasonably comfortable and manageable since it built on the testing we have done with Jest and Playwright. The more practice we get with git branches, the better, and I am sure that we will get a lot of that during next week's project!
+
+
+## Day 32
+*20230420*
+
+Today we focused on the Agile methodology to make sure we understand what an Agile team actually looks like, in preparation for next week's project.
+
+- We started the day with some Code Wars as usual.
+- [Who likes it?](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript)
+```js
+function likes(names) {
+  if (names.length === 0) {return "no one likes this"};
+  if (names.length === 1) {return `${names[0]} likes this`};
+  if (names.length === 2) {return `${names[0]} and ${names[1]} like this`};
+  if (names.length === 3) {return `${names[0]}, ${names[1]} and ${names[2]} like this`};
+  if (names.length > 3) {
+    return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+  }
+}
+```
+- We solved this **6 kyuu** kata pretty quickly, and our first idea of how to go about it was the right approach, which felt great!
+- One of the submitted solutions used a switch statement which, looking back, makes much more sense than having a load of if statements one after the other.
+	- I am surprised that none of us thought to use a switch statement since we have just practiced them. I suppose we just came up with our approach so quickly that we never stopped to look back and refactor our code before submitting, which could be an area for improvement.
+- [Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript)
+```js
+function count(string) {  
+  const occurrences = {};  
+  for (let i = 0; i < string.length; i++) {  
+    const char = string[i];  
+    if (occurrences[char]) {  
+      occurrences[char]++;  
+    }
+    else {  
+      occurrences[char] = 1;  
+    }  
+  }  
+  return occurrences;
+}
+```
+- This was another **6 kyuu** kata but this one was much harder.
+- I had to work on this one after the Code Wars session and needed guidance from ChatGPT to get it working.
+- The `if (occurrences[char])` condition was the main issue I was having. Once I understood that, the rest seemed fairly simple in comparison.
+- After Code Wars we moved onto the morning quiz which covered git branching and React testing.
+- I got 100% again which felt great, and reaffirmed my confidence that I had taken in yesterday's material.
+- Next came a mindset lecture on **Team Dynamics** and how best to realign after an issue has come up.
+- We talked about "psychological safety" which was apparently the critical factor to team performance according to Google's Project Aristotle, although I must confess I had never heard of the phrase before today.
+- Our next session was a lecture on the Agile methodology in which we dived into the 4 core values and the 12 Agile principles, at one point splitting up into groups and matching up the principles to the core values as we saw fit.
+	- We found that a large percentage of the principles could be linked to more than one core value which suggests a cohesion and synergy throughout the whole methodology.
+- Our final task of the day was to research various terms to do with Agile development, such as **scrum**, **product backlog**, **kanbans** (which we used at my previous job!), and **Extreme Programming** to name a few.
+
+Overall, today was not too heavy on the coding, although the second Code Wars kata certainly took some time and effort. I feel the itch to dive back into React having hardly touched it today and I feel I am ready to hit the ground running in tomorrow's hackathon!
