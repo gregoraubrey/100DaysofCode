@@ -1319,3 +1319,37 @@ function count(string) {
 - Our final task of the day was to research various terms to do with Agile development, such as **scrum**, **product backlog**, **kanbans** (which we used at my previous job!), and **Extreme Programming** to name a few.
 
 Overall, today was not too heavy on the coding, although the second Code Wars kata certainly took some time and effort. I feel the itch to dive back into React having hardly touched it today and I feel I am ready to hit the ground running in tomorrow's hackathon!
+
+
+## Day 33
+*20230421*
+
+Today we spent the whole day on a hackathon in which we were given free rein to pick an API and make whatever React app we could think of.
+
+- We were given [this list](https://apilist.fun/) of APIs for inspiration, and we ended up picking [Intellexer](https://apilist.fun/api/intellexer) because the possibilities seemed really interesting since it uses big data.
+- We used [Postman](https://www.postman.com/) for the first time which let us test out the functionality of the API in a quick and easy manner.
+- After one of our team members signed up to Intellexer for free, we got given an API key and started to get responses on Postman.
+- Not all of the features were working, such as the summarisation of multiple URLs, so in the interest of time and getting an MVP up and running, we scaled back and decided to focus our app on just the spell-checker feature of the API.
+- This required us to use the POST method to send a string of one or more misspelled words to the API, which would then return a response that we could parse into an object that contained the corrected string nested within a one-item array as one of the key-value pairs of the object.
+- We used [Trello](https://trello.com/), which we learned about yesterday, to try and adopt an Agile workflow by moving small tasks through the pipeline, although after we finished making a workspace, we never went back to it for the rest of the day, so there is room for improvement there.
+	- I am sure that Trello will prove indispensable next week when we will be working on a project for a week instead of just a day.
+- We also used Figma to make a lo-fi wireframe of our intended MVP that still ended up having more features than the final result.
+	- I guess the takeaway is that the MVP should be just that, the smallest possible implementation that does the job. We definitely started out with lofty ambitions that slowed us down at points. Having a clear idea of a bare-bones MVP would have streamlined our work and helped us to get a working app much sooner.
+- After some issues retrieving the relevant string from the API's response, we got a working app that was simple enough (although not at all simple to make at the time!).
+- There was an input field, a submit button, an undo button, and an unordered list underneath the input field that would save all of the corrected text.
+- Each time the button was clicked (unless the input field was empty, thanks to `if (text.trim() !== "") {`, a `fetch` request would go to the API containing the current value of the input field (thanks to an updating state) at the time the button was clicked.
+- The response would be parsed, then the relevant string would be filtered out and sent down as a prop to the Output component, once again thanks to an updating state via the following function which adds the latest string to the array containing all the previous responses:
+```js
+setCorrectedText(prevCorrectedText => [...prevCorrectedText, data.processedSentences[0]]);
+```
+- The function that is called `onClick` when the undo button is pressed is similar:
+```js
+function handleUndo() {
+    setCorrectedText(prevCorrectedText => prevCorrectedText.slice(0, -1))
+}
+```
+- We hastily added some CSS right at the end to make the app look clean and professional, and then it was presentation time!
+- As always it was a delight to see what other people had come up with, from pictures of Mars to cocktail recipes.
+- Our presentation went well because we had devoted a few minutes before 16:00 to planning out who would say what and in which order, and that was definitely time well-spent.
+
+Today was a real lesson in making sure the MVP is truly as minimal as can be. Despite not managing to implement all the features we would have liked, we ended up creating a legitimately useful spell-checker, and used POST for the first time. I had a mentor meeting after 17:00 in which we talked about looking back on an app and thinking, "wow, I could have made that in an hour or two", which he says is part and parcel of creating software: you never know exactly what you are building until it is done, and then once you look back the path seems obvious, but only because you have already trodden it. I am going to take it easy over the weekend and just revise some of the React from this week before we begin our project on Monday. Exciting times ahead!
