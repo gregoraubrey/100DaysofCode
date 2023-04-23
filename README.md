@@ -1353,3 +1353,19 @@ function handleUndo() {
 - Our presentation went well because we had devoted a few minutes before 16:00 to planning out who would say what and in which order, and that was definitely time well-spent.
 
 Today was a real lesson in making sure the MVP is truly as minimal as can be. Despite not managing to implement all the features we would have liked, we ended up creating a legitimately useful spell-checker, and used POST for the first time. I had a mentor meeting after 17:00 in which we talked about looking back on an app and thinking, "wow, I could have made that in an hour or two", which he says is part and parcel of creating software: you never know exactly what you are building until it is done, and then once you look back the path seems obvious, but only because you have already trodden it. I am going to take it easy over the weekend and just revise some of the React from this week before we begin our project on Monday. Exciting times ahead!
+
+
+## Day 34
+*20230422*
+
+I did not do too much coding today, choosing to take a break after a long week. Nonetheless, I am happy with how I spent my time and look forward to a more active day tomorrow.
+
+- I went through some videos on React once more just to make sure I am keeping on top of things:
+	- [What Is React Testing Library?](https://www.youtube.com/watch?v=JKOwJUM4_RM&list=WL&index=69)
+	- [Learn useReducer In 20 Minutes](https://www.youtube.com/watch?v=kK_Wqx3RnHk&list=WL&index=67&t=3s)
+- I also read some more of *The Clean Coder* which I am greatly enjoying so far, although I am only 3 chapters in.
+- The author's attitude towards professionalism and the responsibility of a clean coder to be honest about delivery times and thorough in their implementing and testing of code has left an impression on me, and I hope I can emulate this approach in my career.
+- I also went back over the workshops we did this week and read through the code to make sure I remembered what it was all doing and why it was there.
+- In some cases I needed a hint from ChatGPT but on the whole I was pretty comfortable looking back on the code we had written, which is a good sign that I am not just using what we learn in the lectures and then forgetting it all the next day.
+
+Tomorrow I will look into the tasks we have been set this weekend in order to get ready for Monday, and hopefully get through another decent chunk of *The Clean Coder* so that I will be ready to start on a new book sometime next week.
