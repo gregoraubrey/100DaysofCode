@@ -1387,3 +1387,23 @@ Today I went through the tasks we were set for the weekend and spent some more t
 - I ended the day by reading some more of *The Clean Coder* and hope to have it finished in the next couple of days.
 
 All in all this weekend has been fairly laid-back, with a bit of revision, reading, and research to tide me over before Monday. I am honestly not sure what to expect from the first day of our week-long project but I am certainly excited!
+
+
+## Day 36
+*20230424*
+
+Today marked the start of our week-long project!
+
+- I began the day by meeting my three teammates for this project, two of whom I have worked with in previous weeks.
+	- We got on really well when we worked together last so that bodes well for this week.
+- Chris Meah gave a brief introduction to project week and had us work in our teams on **10-second intros** that outlined why we were interested in technology, which are sort of like an elevator pitch but for yourself instead of a product or business.
+- Our first task as a team involved coming up with a manifesto, which ended up being 10 bulletpoints that we all agreed on fairly quickly, with topics ranging from how to approach writing code, to how to treat one another.
+- Our brief was to pick up on a common issue that has been affecting bootcampers in their learning journey and, over the course of a week, make an app that could alleviate that issue.
+- We brainstormed and used dot-voting on [FigJam](https://www.figma.com/figjam/) to eventually decide upon a flashcard app to help people remember content from past weeks that they would otherwise forget due to not seeing it come up in their code for an extended period of time.
+- Next, we drafted up an MVP along with various stretch goals.
+	- We were very careful to make the MVP as minimal as possible, so that we would not run into the issue I had in the previous hackathon in which our initial conception of an MVP ends up actually being far too complicated to achieve within the given timeframe.
+	- There is no harm in labelling some fairly standard features as stretch goals in this case (e.g. the ability to add tags to a flashcard).
+- We made a very basic lo-fi wireframe using [Figma](https://www.figma.com) before making a [Trello](https://trello.com/) workspace based on a community template.
+- That was all we had time for today before our new daily retrospective, in which we agreed that we had done a good day's work and were excited to pick up from where we had left off tomorrow.
+
+I feel like we have made a really strong start to project week and cannot wait for tomorrow so we can make more progress!
