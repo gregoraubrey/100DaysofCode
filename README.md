@@ -1369,3 +1369,21 @@ I did not do too much coding today, choosing to take a break after a long week. 
 - In some cases I needed a hint from ChatGPT but on the whole I was pretty comfortable looking back on the code we had written, which is a good sign that I am not just using what we learn in the lectures and then forgetting it all the next day.
 
 Tomorrow I will look into the tasks we have been set this weekend in order to get ready for Monday, and hopefully get through another decent chunk of *The Clean Coder* so that I will be ready to start on a new book sometime next week.
+
+
+## Day 35
+*20230423*
+
+Today I went through the tasks we were set for the weekend and spent some more time reading *The Clean Coder*.
+
+- This week's recap tasks were not focused on writing code but rather researching in preparation for Monday.
+- I acquainted myself with [Midjourney](https://docs.midjourney.com/docs/quick-start), which will apparently help us "create user-centric and visually appealing designs more efficiently".
+	- Some of its creations are startlingly good, and had me thinking both about the ways in which this technology will disrupt existing industries, and the issues around copyright law and its enforcement.
+- Next I looked into the basics of a couple of React UI libraries:
+	- [Material UI](https://mui.com/)
+	- [Chakra UI](https://chakra-ui.com/)
+- By leveraging UI libraries we can spend more time on the features and functionality of our app rather than focusing on designing components, so I am sure that these will come in handy next week.
+- The last things to look into were [Trello](https://trello.com/), which I had already used briefly during Friday's hackathon, and [FigJam](https://www.figma.com/figjam/), a real-time collaboration program that could help us brainstorm ideas.
+- I ended the day by reading some more of *The Clean Coder* and hope to have it finished in the next couple of days.
+
+All in all this weekend has been fairly laid-back, with a bit of revision, reading, and research to tide me over before Monday. I am honestly not sure what to expect from the first day of our week-long project but I am certainly excited!
