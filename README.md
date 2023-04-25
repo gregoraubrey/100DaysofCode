@@ -1407,3 +1407,28 @@ Today marked the start of our week-long project!
 - That was all we had time for today before our new daily retrospective, in which we agreed that we had done a good day's work and were excited to pick up from where we had left off tomorrow.
 
 I feel like we have made a really strong start to project week and cannot wait for tomorrow so we can make more progress!
+
+
+## Day 37
+*20230425*
+
+Today we completed a hi-fi wireframe and made a start on coding our app!
+
+- We kicked the day off with a stand-up meeting in which we discussed our targets for the day and made one or two changes to the Trello workspace to reflect our discussion.
+- After this we had a guest lecture from a former bootcamper (cohort 2) who talked about his experiences in the industry thus far.
+- He gave some really useful advice in terms of spotting whether a company will be good for your development or not, and talked through various misconceptions that we might have about the industry and about a normal working day.
+- His insights into the Personal Development Plan you have at a company were valuable, and he is the first guest lecturer to have mentioned a PDP.
+- He mentioned that by the time we reach the end of the bootcamp and are working on our final project, an average day for us will be quite similar to an average day for him in industry, which is both exciting and intimidating in equal measure.
+- After the guest lecture, we got back to work on our project and finsihed up our component tree so that we could split up the files amongst the four of us and start coding them up.
+- Before we made a start on coding, we made a hi-fi wireframe together.
+- I used [Midjourney](https://www.midjourney.com/) to generate a plethora of sample images that we could use in our wireframe (and eventually our final app).
+	- I must not be very good at prompt engineering, since I tried and failed multiple times to get Midjourney to create a sheet of paper with torn edges.
+	- Instead, it kept creating strange pieces of art with shards of paper growing out of a sheet of A4.
+- After we agreed on the final version of our hi-fi wireframe, we split into pairs and made a start on coding up the components.
+- My partner and I worked on the `Input` component and made a random number generator that would be used to select a random index of the array containing all the flashcard data inputted by the user.
+- We worked in separate branches and merged them into `main` when we were done, but had to deal with a minor merge conflict due to both pairs making slight changes to the `App` component.
+- This was easy enough to resolve on GitHub, although had we had more time at the end of the day I would have liked to try and have a go at resolving the issue purely in the terminal to get some practice in.
+	- This just goes to show the importance of separation of concerns in an app, and of being explicit when agreeing on who will work on what in a project, so that one team's work does not impede another's.
+- We did not have much time for coding before it was time for our end-of-day retro but I am not concerned as we will have all of Wednesday and Thursday to dive into the coding side of things.
+
+I feel like we are keeping a good pace and I expect that by the end of the day tomorrow we will have completed our MVP and be deciding on which stretch goal to aim for first. I can't wait to get back to the code and get it all working!
