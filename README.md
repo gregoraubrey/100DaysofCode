@@ -1432,3 +1432,19 @@ Today we completed a hi-fi wireframe and made a start on coding our app!
 - We did not have much time for coding before it was time for our end-of-day retro but I am not concerned as we will have all of Wednesday and Thursday to dive into the coding side of things.
 
 I feel like we are keeping a good pace and I expect that by the end of the day tomorrow we will have completed our MVP and be deciding on which stretch goal to aim for first. I can't wait to get back to the code and get it all working!
+
+
+## Day 38
+*20230426*
+
+Today we got our MVP functional and then spent the rest of the afternoon trying to sort out some styling with CSS.
+
+- We began with our daily stand-up meeting in which one of my teammates explained that he had been researching local storage last night and was interested in trying to integrate it into our app, so that the flashcard array would not be wiped if the user refreshes the webpage.
+- We got our MVP working just before lunch which was very satisfying, since it meant that we would have more than a day free to work on additional features.
+- After lunch, I worked with my aforementioned teammate on implementing the local storage functionality and got it working which felt great since we had managed to add a feature that we have not studied at any point thus far during the course.
+- We then spent the rest of the afternoon as a group of four attempting to sort out all the styling using the Midjourney images I generated.
+	- We definitely need to work on our CSS knowledge because getting the CSS to work in the way we had envisioned was just as hard as coding up the logic of our flashcard app!
+- We ended the day with a retro in which we agreed that we would split into two teams tomorrow to work on testing and the rest of the CSS.
+- I ended the day by running `prettier -w` on our components to make sure that the formatting stays consistent.
+
+Today was the most enjoyable of the week so far since we managed to get our MVP done and dusted. Having it completed really takes the pressure off so I am looking forward to testing tomorrow and hopefully adding some of the additional features that we laid out in our stretch goals on Monday.
