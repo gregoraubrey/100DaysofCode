@@ -1448,3 +1448,40 @@ Today we got our MVP functional and then spent the rest of the afternoon trying 
 - I ended the day by running `prettier -w` on our components to make sure that the formatting stays consistent.
 
 Today was the most enjoyable of the week so far since we managed to get our MVP done and dusted. Having it completed really takes the pressure off so I am looking forward to testing tomorrow and hopefully adding some of the additional features that we laid out in our stretch goals on Monday.
+
+
+## Day 39
+*20230427*
+
+Today we put the finishing touches on our app and planned out our presentation ready for tomorrow.
+
+- We kicked off the day with our daily stand-up in which one of my teammates showed us the CSS he had been working on to try and get our images to appear in the right place.
+- We merged these changes into `main` with no conflicts.
+	- This is one area in which we have improved a lot. We were having all sorts of merge conflicts when we started out but in the last two days we have not had a single one.
+- Today it was my turn to go and present to the coaches what we had been up to, so I talked about how we had finished our MVP and were planning to finalise our CSS, sort out the one bug we had noticed, and then start planning out our presentation.
+- The bug in our code showed up whenever a user refreshed the page and then immediately clicked Test Me before adding another flashcard.
+- In this case, only the premade flashcards would show up, and the flashcards saved in local storage would only resurface when the Add Flashcard button had been pressed (successfully) at least once.
+- We realised that our state variable was causing the issue, since it was declared as:
+```js
+const [data, setData] = useState(dummyDataSet);
+```
+- The issue here is that when the state initially renders upon the reloading of the page, the `data` array is always set to the original `dummyDataSet` variable which contains three premade flashcards.
+- In order to fix this we had to set the `data` array to the value of the local storage first, and only use the value of `dummyDataSet` if there was no local storage to be found:
+```js
+const [data, setData] = useState(
+    JSON.parse(localStorage.getItem(keyName)) || dummyDataSet
+  );
+```
+- The variable `keyName` in this instance is just a long string of random characters.
+	- This was based on a recommendation from one of my teammate's mentors, since if we had gone with a common name such as "data", then if any other program used that same name, we would have run the risk of having our local storage overwritten.
+- After that quick fix, I worked with another teammate on testing using React Testing Library whilst the other half of the team finalised the CSS, including putting our team logo (created by Midjourney) in the corner of the app.
+- We certainly did not achieve 100% code coverage but we did write some useful passing tests, such as one that checks if clicking the Add Flashcard button appends the data in the input boxes to the end of the array.
+- In future projects I would like to at least try following [Red, Green, Refactor](https://www.codecademy.com/article/tdd-red-green-refactor)/[the three laws of TDD](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd) since they make so much sense to me conceptually.
+	- I do not feel too bad about not adhering to them in this case since we had such a short amount of time to actually write the code for an entire project.
+	- With that said, I definitely want to get into the habit of writing good unit tests as soon as possible since I know they will be indispensable in industry.
+- In the afternoon we watched a couple of recordings of presentations given by the previous cohort that one of the coaches had shared with us.
+- Using these videos as inspiration, we set to work on a Google Slides document, making use of all the screenshots we had taken along the way to show the journey of our app.
+	- Taking screenshots at regular intervals was definitely a good idea and one to use again as it has made planning our presentation so much easier.
+- We ended the day with a retro in which we all agreed that we had done a good day's work and were delighted to finally have the CSS debacle behind us.
+
+Tomorrow we will finalise our presentation before delivering it in front of some of School of Code's employer partners which is a real privilege and should be a lot of fun!
