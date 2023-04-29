@@ -1509,3 +1509,19 @@ Today we finalised and practised our presentation before delivering it to the So
 	- how much actual presenting software developers do, and how it changes depending on their seniority.
 	
 Today was definitely my favourite day thus far on the bootcamp! My teammates and I all agreed that we worked brilliantly together and are going to be sad not to be able to continue that relationship come next week. I cannot wait to dive into back-end work now!
+
+
+## Day 41
+*20230429*
+
+Today I took it easy after a long week working on our project, choosing to look over some code I had written in previous weeks and read some more of *The Clean Coder*.
+
+- I looked back at the whole codebase for our week-long project and focused especially on the CSS, since that is definitely a weak-point of mine right now.
+	- I spent some time reading up on CSS Grid and Flexbox again as all four of us on the team had issues with getting elements to appear in their intended place on the page.
+- I looked over some of the code I had written that made use of `useEffect`, since that did not come up in our project this week.
+- I also rewatched a couple of short introductory videos to said hook on YouTube.
+- In the evening I read some more of *The Clean Coder*.
+	- I am really glad that my mentor recommended it to me as I am finding it very useful, and a lot easier of a read than *Clean Code* in which most of the example code and some of the concepts went right over my head.
+- I am nearly done with *The Clean Coder* now and hope to have it finished by Monday.
+
+All in all a restful day, though a deserved one in my eyes. Tomorrow I intend to do some more revision and finish *The Clean Coder*.
