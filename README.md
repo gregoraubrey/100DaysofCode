@@ -1485,3 +1485,27 @@ const [data, setData] = useState(
 - We ended the day with a retro in which we all agreed that we had done a good day's work and were delighted to finally have the CSS debacle behind us.
 
 Tomorrow we will finalise our presentation before delivering it in front of some of School of Code's employer partners which is a real privilege and should be a lot of fun!
+
+
+## Day 40
+*20230428*
+
+Today we finalised and practised our presentation before delivering it to the SoC judges.
+
+- We began the day with our daily stand-up in which we merged one small change that a teammate had made on a separate branch which removed the grey border from the input textboxes and rounded the edges slightly.
+- We then got to practising, attempting to get our whole presentation done in as close to ten minutes as possible by timing ourselves with each trial run.
+- At one point, one of the coaches came and watched a trial run and gave us some feedback and mentioned some potential questions that the judges might ask, such as:
+	- Git branching - what was your strategy?
+	- How did you make decisions when there was a conflict?
+	- Working as a team - how did you handle feedback?
+- We kept practising until it was finally presentation time in the afternoon.
+- The presentation went really well, and one of the judges complimented us on how smoothly the presentation went and said that it was clear that we had practised a lot!
+- It felt amazing to have a week of hard work culminate in such a successful presentation!
+	- I can only imagine how good it will feel to present at the end of our 5-week project.
+- Just after 17:00 I had a mentor meeting in which we discussed various topics including...
+	- people's attitude to learning and progressing beyond junior and mid-level roles.
+	- how to incorporate TDD into my own work now so that it does not feel foreign when I am in a job.
+		- This is something that I am very keen to get in the habit of following since, despite writing some good tests, we only implemented our tests after writing the code to make them pass during this project.
+	- how much actual presenting software developers do, and how it changes depending on their seniority.
+	
+Today was definitely my favourite day thus far on the bootcamp! My teammates and I all agreed that we worked brilliantly together and are going to be sad not to be able to continue that relationship come next week. I cannot wait to dive into back-end work now!
