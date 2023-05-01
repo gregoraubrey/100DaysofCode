@@ -1525,3 +1525,21 @@ Today I took it easy after a long week working on our project, choosing to look 
 - I am nearly done with *The Clean Coder* now and hope to have it finished by Monday.
 
 All in all a restful day, though a deserved one in my eyes. Tomorrow I intend to do some more revision and finish *The Clean Coder*.
+
+
+## Day 42
+*20230430*
+
+Today I spent more time going over previous topics and then finished *The Clean Coder* in the evening.
+
+- I looked over some of my code that featured `useReducer` in the same way that I looked back at `useEffect` yesterday.
+- I rewatched [this YouTube video](https://www.youtube.com/watch?v=kK_Wqx3RnHk) on `useReducer` just to make sure I was understanding the code I was reading correctly.
+- In the evening I finished reading *The Clean Coder*.
+- I have taken a lot of notes on a variety of topics from this excellent book, including:
+	- Not building "walls of ownership" around code.
+	- Calculating the cost of being in a meeting.
+	- The Three Laws of TDD.
+	- Working overtime as a developer.
+- I am not sure what book to read next, although I am leaning towards [The Object-Oriented Thought Process by Matt Weisfeld](https://www.goodreads.com/book/show/4795641-the-object-oriented-thought-process) which was recommended to me by my mentor as a good introduction to OOP.
+
+It is always a nice feeling to finish a book, especially when I have gained so much from the reading experience! Tomorrow is a bank holiday so I think I will take the opportunity to do some more revision and perhaps start on another book if I feel like it.
