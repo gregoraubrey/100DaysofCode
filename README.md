@@ -1557,3 +1557,89 @@ Today I started reading another programming book and read through some programmi
 	- I try to go through my backlog at least once every couple of weeks just to avoid ending up with a daunting pile of articles that I will realistically never get around to reading.
 	
 Today was not too involved as I spent a lot of the day outside enjoying the sunshine. I am itching to get back into the swing of things tomorrow!
+
+
+## Day 44
+*20230502*
+
+Today we began revising topics that we have studied thus far, which will be our focus for this week.
+
+- I had been under the impression that we would start work on the back-end this week but it turns out that we will be spending a week revising all of the front-end material we have learned before moving onto the back-end next week.
+- We will also be learning more about employability and job-hunting this week which sounds interesting.
+- We began the day with some Code Wars in our project group but we mostly just chatted about last week.
+- We did get a couple of **7 kyuu** kata done:
+- [String ends with?](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript)
+```js
+function solution(str, ending){
+  return str.endsWith(ending)
+}
+```
+- [Alphabet war](https://www.codewars.com/kata/59377c53e66267c8f6000027/train/javascript)
+```js
+function alphabetWar(fight) {
+  let array = fight.split("");
+  let leftScore = 0;
+  let rightScore = 0;
+  for (let i = 0; i < array.length; i++) {
+    switch(array[i]) {
+      case "w":
+        leftScore += 4;
+        break;
+      case "p":
+        leftScore += 3;
+        break;
+      case "b":
+        leftScore += 2;
+        break;
+      case "s":
+        leftScore += 1;
+        break;
+      case "m":
+        rightScore += 4;
+        break;
+      case "q":
+        rightScore += 3;
+        break;
+      case "d":
+        rightScore += 2;
+        break;
+      case "z":
+        rightScore += 1;
+        break;
+      default:
+        break;
+    }
+  }
+  if (leftScore > rightScore) {
+      return "Left side wins!";
+    }
+    if (leftScore < rightScore) {
+      return "Right side wins!";
+    }
+    else {
+      return "Let's fight again!";
+    }
+}
+```
+- We solved this kata initially with eight if statements but then refactored the solution into one switch statement.
+- Someone submitted a clever solution that was much more concise:
+```js
+function alphabetWar(fight) {
+    let map = { w: -4, p: -3, b: -2, s: -1, m: 4, q: 3, d: 2, z: 1 };
+    let result = fight.split('').reduce((a, b) => a + (map[b] || 0), 0);
+    return result ? (result < 0 ? "Left" : "Right") + " side wins!" : "Let's fight again!";
+}
+```
+- We then had a lecture on how to hold a retro at the end of a project, before being sent back to our breakout rooms to perform said retro focusing on 5 key points:
+	- What to do more of.
+	- What to do less of.
+	- What do start doing.
+	- What to stop doing.
+	- What to keep doing.
+- I found this a useful exercise and, since we all did this individually at the start, we were able to see some common themes come up, such as everyone saying we need to revise CSS!
+- We then all performed a personal "Learning Audit" in which we graded everything we had covered thus far on a scale from 1 to 5.
+- The rest of the afternoon was given over to us to make a study plan and begin tackling the topics that we felt most needed our attention.
+	- For me that was CSS Grid today.
+- We also got some written feedback for our presentation from the judges which was very positive, and made for a gratifying end to the day.
+
+Today certainly was not what I was expecting but I appreciate having the opportunity to consolidate what we have learned, as it really does seem like a lot when you look at all the topics listed on one page!
