@@ -1543,3 +1543,17 @@ Today I spent more time going over previous topics and then finished *The Clean 
 - I am not sure what book to read next, although I am leaning towards [The Object-Oriented Thought Process by Matt Weisfeld](https://www.goodreads.com/book/show/4795641-the-object-oriented-thought-process) which was recommended to me by my mentor as a good introduction to OOP.
 
 It is always a nice feeling to finish a book, especially when I have gained so much from the reading experience! Tomorrow is a bank holiday so I think I will take the opportunity to do some more revision and perhaps start on another book if I feel like it.
+
+
+## Day 43
+*20230501*
+
+Today I started reading another programming book and read through some programming articles I had saved for later.
+
+- I decided that I would make a start on the fifth edition of [The Object-Oriented Thought Process by Matt Weisfeld](https://www.goodreads.com/book/show/4795641-the-object-oriented-thought-process?from_search=true&from_srp=true&qid=WMwHuvxxft&rank=1).
+- I have only finished the introduction but am feeling encouraged since the author has stressed that this is a book for beginners about concepts and is not targeted towards any one specific OO language.
+- I also spent some time reading various programming articles that I had saved for later over the last couple of weeks.
+	- These articles covered everything from testing to job hunting.
+	- I try to go through my backlog at least once every couple of weeks just to avoid ending up with a daunting pile of articles that I will realistically never get around to reading.
+	
+Today was not too involved as I spent a lot of the day outside enjoying the sunshine. I am itching to get back into the swing of things tomorrow!
