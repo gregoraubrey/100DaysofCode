@@ -1643,3 +1643,62 @@ function alphabetWar(fight) {
 - We also got some written feedback for our presentation from the judges which was very positive, and made for a gratifying end to the day.
 
 Today certainly was not what I was expecting but I appreciate having the opportunity to consolidate what we have learned, as it really does seem like a lot when you look at all the topics listed on one page!
+
+
+## Day 45
+*20230503*
+
+Today we had an introductory lecture on the post-course employability sessions and spent the afternoon doing self-directed learning.
+
+- We did some Code Wars in our new group in the morning:
+- [Persistent Bugger.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript)
+```js
+function persistence(num) {
+  let count = 0;
+  let array = num.toString().split("").map(Number);
+  let product;
+  console.log(array)
+  
+  if (num >= 10) {
+    product = array.reduce(function(a,b) {
+      return a * b;    
+    }, 1)
+    count++;
+    console.log(`product is ${product}`);
+    console.log(`count is ${count}`);
+    } 
+  
+  while (product >= 10) {
+    array = product.toString().split("").map(Number);
+    product = array.reduce(function(a,b) {
+      return a * b;    
+    }, 1)
+    count++;
+    console.log(`product is ${product}`);
+    console.log(`count is ${count}`);
+  }
+  return count;
+}
+```
+- We solved this **6 kyuu** kata once we realised that a while loop would be all we needed to abstract away the infinite if statements that check if the product of the latest multiplication was at least 10.
+- Unfortunately, we still needed one if statement at the start so there is some duplication in our solution that could be improved.
+-  Someone submitted a clever solution:
+```js
+function persistence(num) {
+   var times = 0;
+   
+   num = num.toString();
+   
+   while (num.length > 1) {
+     times++;
+     num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+   }
+   
+   return times;
+}
+```
+- Next came a lecture on employability that was really encouraging and showcased the ways in which SoC continues to support its graduates long after the course has ended.
+- During the afternoon's self-directed learning I took the chance to read some more of *The Object-Oriented Thought Process* and then span up a quick React project to make a to-do list just to see if I could remember how to do it on my own.
+	- I am still in the process of making this so I will return to it tomorrow in the afternoon (assuming we have another self-directed learning session).
+
+I really enjoyed today's employability lecture and it has filled me with confidence that the SoC team will do everything they can to help all us bootcampers to launch our careers in tech.
