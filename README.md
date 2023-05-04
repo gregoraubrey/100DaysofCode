@@ -1702,3 +1702,68 @@ function persistence(num) {
 	- I am still in the process of making this so I will return to it tomorrow in the afternoon (assuming we have another self-directed learning session).
 
 I really enjoyed today's employability lecture and it has filled me with confidence that the SoC team will do everything they can to help all us bootcampers to launch our careers in tech.
+
+
+## Day 46
+*20230504*
+
+Today we spent the morning learning all about networking and how to write a good CV for a tech role. In the afternoon we had more self-directed learning time.
+
+- We began the day with some Code Wars:
+- [Beginner - Lost Without a Map](https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript)
+```js
+function maps(x){
+  return x.map(int => int * 2)
+}
+```
+- We started off nice and easy with the above basic **8 kyuu** kata using the `.map()` method.
+- [Max sum between two negatives](https://www.codewars.com/kata/6066ae080168ff0032c4107a/train/javascript)
+```js
+function maxSumBetweenTwoNegatives(a) {
+  let negativeIndices = [];
+  let summedValues = [];
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] < 0) {
+      negativeIndices.push(i);
+    }
+  }  
+  if (negativeIndices.length < 2) {
+    return -1;
+  }
+  for (let i = 0; i < negativeIndices.length - 1; i++) {
+    sum = 0;
+    for (let j = negativeIndices[i] + 1; j < negativeIndices[i + 1]; j++) {
+      sum += a[j];
+    }
+    summedValues.push(sum);
+  }
+  return Math.max(...summedValues);
+}
+```
+- This **7 kyuu** kata was much more of a challenge, the nested for loop especially.
+- Someone solved it in a much shorter way:
+```js
+function maxSumBetweenTwoNegatives(a) {
+  let i=0,c=0,m=-1;
+  while(i<a.length&&a[i]>=0) i++;
+  while(++i<a.length){
+    if(a[i]<0){ m=m<c?c:m; c=0; }
+    else c+=a[i];
+  }
+  return m;
+}
+```
+- We had a lecture on how to write a good CV for a tech role and we spent some time drafting one up.
+	- We have until the 19th of May to come up with a first draft of a CV to hand in to the coaches, which should be more than enough time to update my current iteration.
+- We then had a second lecture that focused on networking and attending meetups in particular as a great way to meet new developers and potentially hear about job listings before they go live.
+- The coaches also fed back some really useful tips based off of their interactions with employer partners and what they look for in a junior developer:
+	- Keep coding on a regular basis after the bootcamp.
+	- Update your GitHub accordingly, and even contribute to open-source projects.
+	- Prepare for interviews by researching the company.
+- We spent the afternoon doing more self-directed learning.
+- I took the time to finish my to-do list React app that I started yesterday.
+- I certainly was not able to do it all from memory but I was happy with what I could do by heart, and with some help from ChatGPT (especially on the CSS!) I managed to make myself a useful little app.
+- I then created a public GitHub repo called [to-do-list-with-react](https://github.com/gregoraubrey/to-do-list-with-react) and pushed my local repo up, preserving my commit history.
+
+It felt great to make a clean, functional app on my own and the employability lectures this morning were very insightful, so today was probably the best day of the week so far!
