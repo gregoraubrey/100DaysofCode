@@ -1767,3 +1767,119 @@ function maxSumBetweenTwoNegatives(a) {
 - I then created a public GitHub repo called [to-do-list-with-react](https://github.com/gregoraubrey/to-do-list-with-react) and pushed my local repo up, preserving my commit history.
 
 It felt great to make a clean, functional app on my own and the employability lectures this morning were very insightful, so today was probably the best day of the week so far!
+
+
+## Day 47
+*20230505*
+
+Today we had a hackathon that involved building a fake e-commerce website using the [Fake Store API](https://fakestoreapi.com/).
+
+- One of our team members was at a funeral today so there were only two of us to work on the project.
+- We started things off by making a `.drawio` file and building a component tree:
+	- App
+		- NavBar
+		- ProductList
+			- ProductItem
+		- ShoppingCart
+			- CartItem
+		- Footer
+- We did not get around to implementing the CartItem component since we did not have time to work on a feature that shows what is currently in your cart.
+	- We did, however, manage to implement all the other componenents, even though we got a bit carried away when writing the ProductList component and had to cut and paste some of that code into ProductItem:
+```js
+import React, { useState, useEffect } from "react";
+import fetchProductsFromAPI from "../API/index.js";
+import "./index.css";
+import ProductItem from "../ProductItem";
+
+function ProductList({ selectedCategory, handleClick }) {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchThenSetProducts() {
+      const fetchedData = await fetchProductsFromAPI();
+      setProducts(fetchedData);
+    }
+    fetchThenSetProducts();
+  }, []);
+
+  return (
+    <div>
+      <h1>Product List</h1>
+      <ul className="product-list">
+        {products
+          .filter((x) => !selectedCategory || x.category === selectedCategory)
+          .map((item) => {
+            return <ProductItem item={item} handleClick={handleClick} />;
+          })}
+      </ul>
+    </div>
+  );
+}
+
+export default ProductList;
+```
+- The logic below was originally written into ProductList before we refactored:
+```js
+import React from "react";
+import "./index.css";
+
+function ProductItem({ item, handleClick }) {
+  return (
+    <li key={item.id} className="product-item">
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+      <img src={item.image} alt={item.title} className="item-image"></img>
+      <p>£{item.price}</p>
+      <button className="cart-button" onClick={() => handleClick(item)}>
+        Add to cart
+      </button>
+    </li>
+  );
+}
+
+export default ProductItem;
+```
+- The feature I was happiest to get working was one that tracked and displayed the live total of a user's cart price by reading the `price` property of each object in the `cartCount` array:
+```js
+const [cartCount, setCartCount] = useState([]);
+```
+- Here is the function that handles a user clicking on the "Add to cart" button:
+```js
+function handleClick(item) {
+    console.log(
+      "handleClick has been called. See the current cartCount array below:"
+    );
+    console.log(cartCount);
+    setCartCount([...cartCount, item]);
+  }
+```
+- Here is the ShoppingCart component that tracks the number of items in the cart, and the total price:
+```js
+import React from "react";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.css";
+
+function ShoppingCart({ cartCount }) {
+  const totalPrice = cartCount
+    .reduce((accum, item) => {
+      return accum + item.price;
+    }, 0)
+    .toFixed(2);
+
+  return (
+    <div className="cart-icon-container">
+      <div className="cart-icon-wrapper">
+        <FontAwesomeIcon icon={faShoppingCart} />
+        <p className="cart-count">({cartCount.length})</p>
+      </div>
+      <p className="total-price">£{totalPrice}</p>
+    </div>
+  );
+}
+export default ShoppingCart;
+```
+- The presentation went really well and we got some lovely compliments in the Zoom chat!
+- I had a mentor meeting in which we talked a bit about *The Object-Oriented Thought Process*, networking, and keeping your skills sharp in a language/framework that you are not currently using each day at work.
+
+Today was hectic considering we got a React app up and running with just two people but it was certainly a fun experience. Next week we move onto the backend and I can't wait!
