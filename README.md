@@ -1883,3 +1883,19 @@ export default ShoppingCart;
 - I had a mentor meeting in which we talked a bit about *The Object-Oriented Thought Process*, networking, and keeping your skills sharp in a language/framework that you are not currently using each day at work.
 
 Today was hectic considering we got a React app up and running with just two people but it was certainly a fun experience. Next week we move onto the backend and I can't wait!
+
+
+## Day 48
+*20230506*
+
+Today I took things easy by just going over the codebase for yesterday's hackathon to make sure I did not forget any of the logic, and then reading some articles and making some brief edits to my CV.
+
+- I found it really worthwhile looking over the codebase from Friday, and I think I will come back to it again next week just to keep things fresh, especially since we will be working on the back-end and no longer React.
+- I then read a couple of articles on React and how to build a mental model of the library:
+	- [A visual guide to React mental models](https://obedparla.com/code/a-visual-guide-to-react-mental-models/)
+	- [A visual guide to React mental models - part 2](https://obedparla.com/code/a-visual-guide-to-react-mental-models-part-2-use-state-use-effect-and-lifecycles/)
+- The first article focused on the basics of React whilst the second handled `useState` and `useEffect` which I found particularly beneficial as my understanding of state is still a bit fuzzy if I am being honest.
+- I ended the day by making a couple of edits to my CV, which mainly involved trimming down unnecessary sections such as irrelevant work experience.
+	- I will spend more time on this tomorrow to get it presentable since my mentor has generously offered to look over my CV for me.
+
+Today was nice and quiet and I assume tomorrow will be similar since I plan to focus primarily on editing my CV. I hope to read some more of *The Object-Oriented Thought Process* also.
