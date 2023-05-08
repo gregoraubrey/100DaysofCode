@@ -1899,3 +1899,44 @@ Today I took things easy by just going over the codebase for yesterday's hackath
 	- I will spend more time on this tomorrow to get it presentable since my mentor has generously offered to look over my CV for me.
 
 Today was nice and quiet and I assume tomorrow will be similar since I plan to focus primarily on editing my CV. I hope to read some more of *The Object-Oriented Thought Process* also.
+
+
+## Day 49
+*20230507*
+
+Today I spent some time working on my CV (which took longer than I thought), read some more, and went back over the code from the hackathon again along with the code from the week-long project.
+
+- I spent some time working on an introductory paragraph to my CV which I found harder than expected.
+	- I will have to finalise it tomorrow so that I can send it on to my mentor.
+- After progress ground to a halt on the CV, I decided to move onto some reading.
+	- I am deliberately trying to go slowly as I read *The Oject-Oriented Thought Process* as most of these ideas are completely new to me.
+- In the evening I spent some more time going over the codebase for Friday's hackathon.
+- I reminded myself of the `reduce()` method that I used to display a live total of the cart price:
+```js
+import React from "react";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.css";
+
+function ShoppingCart({ cartCount }) {
+  const totalPrice = cartCount
+    .reduce((accum, item) => {
+      return accum + item.price;
+    }, 0)
+    .toFixed(2);
+
+  return (
+    <div className="cart-icon-container">
+      <div className="cart-icon-wrapper">
+        <FontAwesomeIcon icon={faShoppingCart} />
+        <p className="cart-count">({cartCount.length})</p>
+      </div>
+      <p className="total-price">£{totalPrice}</p>
+    </div>
+  );
+}
+export default ShoppingCart;
+```
+- I also briefly went over the codebase for the week-long project in order to not forget any of our work from two weeks ago.
+
+Today was another relaxed day, apart from the frustration of struggling to finish a draft of my CV. I am sure that I will be able to get it done tomorrow when I come back with a fresh perspective.
