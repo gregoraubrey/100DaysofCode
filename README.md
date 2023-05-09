@@ -1940,3 +1940,19 @@ export default ShoppingCart;
 - I also briefly went over the codebase for the week-long project in order to not forget any of our work from two weeks ago.
 
 Today was another relaxed day, apart from the frustration of struggling to finish a draft of my CV. I am sure that I will be able to get it done tomorrow when I come back with a fresh perspective.
+
+
+## Day 50
+*20230508*
+
+Today I got a first draft of my CV done and read up a little on Node.js in preparation for starting on the back-end tomorrow.
+
+- I spent some time in the morning working on my CV and was finally able to come up with an introductory paragraph that I am happy with.
+- I will send this on to my mentor tomorrow after proofreading it one last time.
+- In the afternoon I spent some time reading some articles and watching some videos on Node.js:
+	- [W3Schools Introduction to Node.js](https://www.w3schools.com/nodejs/nodejs_intro.asp)
+	- [What is Node js? | Simplified Explanation](https://www.youtube.com/watch?v=yEHCfRWz-EI)
+	- [Node.js Ultimate Beginner’s Guide in 7 Easy Steps](https://www.youtube.com/watch?v=ENrzD9HAZK4&t=5s)
+- I feel prepared for tomorrow and keen to get going with writing some code!
+
+It felt great to finally get my CV into a state that I am happy with, and reading up on Node.js has definitely got me excited for the week ahead!
