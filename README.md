@@ -1956,3 +1956,49 @@ Today I got a first draft of my CV done and read up a little on Node.js in prepa
 - I feel prepared for tomorrow and keen to get going with writing some code!
 
 It felt great to finally get my CV into a state that I am happy with, and reading up on Node.js has definitely got me excited for the week ahead!
+
+
+## Day 51
+*20230509*
+
+Today we made a start on Node.js and used the UUID package to create objects with a unique identifier.
+
+- We started the day by giving feedback to our group from last week.
+- None of us had a lot to say considering we really only spent one day writing code together, and one of our team members was away that day.
+- Next we met up with our new pair programming partners for the week.
+	- My partners this week seem really nice, and we worked well together today which is a good sign.
+- The first thing we did together was some Code Wars:
+- [Target Date](https://www.codewars.com/kata/569218bc919ccba77000000b/train/javascript)
+```js
+function dateNbDays(a0, a, p) {  
+  let initialDate = new Date(2016, 0, 1);  
+  let finalDate;  
+  let days = 0;  
+  let currentAmount = a0;
+  while (currentAmount < a) {  
+    currentAmount = currentAmount + currentAmount * (p / 36000);  
+    days = days + 1;  
+  }
+  finalDate = new Date(initialDate.getTime() + days * 24 * 60 * 60 * 1000);  
+  let year = finalDate.getFullYear();  
+  let month = ("0" + (finalDate.getMonth() + 1)).slice(-2);  
+  let day = ("0" + finalDate.getDate()).slice(-2);
+  let formattedDate = `${year}-${month}-${day}`;  
+  return formattedDate;  
+}
+```
+- This was only a **7 kyuu** kata but it took us a long time to solve.
+- It was worth it, however, as we learned about various date methods in JS.
+- Next up was a lecture on Node.js where we learned about various terms such as...
+	- I/O
+	- Runtime environment
+	- Event-driven programming
+	- Blocking and non-blocking
+	- JavaScript engine
+- We moved onto a mini workshop in which we used ` import fs from "node:fs/promises";` to write JSON data to a file and then read it in another file.
+- In the afternoon we tackled a workshop that involved writing various functions and using the [NPM UUID package](https://www.npmjs.com/package/uuid)
+- We had to write various functions that handled operations such as deleting an object if its UUID matches the argument passed into the function, adding a new object to the array, and changing the text property of a specific object.
+- For the final function, our code was not passing the test that was provided but we had no idea why.
+- One of the coaches joined our room and said that our code looked fine, and when she ran it on her computer it passed the test, which was certainly strange.
+
+Today was great fun, and a much more gentle introduction than what I was expecting. If it stays this easy then the back-end will be a doddle, but I am sure that things will only ramp up from here!
