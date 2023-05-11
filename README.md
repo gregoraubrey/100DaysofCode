@@ -2002,3 +2002,71 @@ function dateNbDays(a0, a, p) {
 - One of the coaches joined our room and said that our code looked fine, and when she ran it on her computer it passed the test, which was certainly strange.
 
 Today was great fun, and a much more gentle introduction than what I was expecting. If it stays this easy then the back-end will be a doddle, but I am sure that things will only ramp up from here!
+
+
+## Day 52
+*20230510*
+
+Today we learned about some web fundamentals and built our first REST API in the afternoon!
+
+- We started the day off with some Code Wars:
+- [Help the bookseller !](https://www.codewars.com/kata/54dc6f5a224c26032800005c)
+```js
+function stockList(listOfArt, listOfCat){
+  // For loop to find the codes start with ListOfCat
+  // 
+  let matches = [];
+  let letter;
+  for (let i = 0; i < listOfCat.length; i++)
+    {
+      letter = listOfCat[i]
+      for (let j = 0; j < listOfArt.length; j++) 
+      {
+        if (listOfArt[j].startsWith(letter)) 
+          {
+            matches.push(listOfArt[j])
+          } 
+        else { 
+          // push starting letter to matches along with number 0
+          matches.push(`(${letter} : 0)`)
+        } 
+      }
+    } console.log(matches);
+}
+```
+- This was all we managed on this **6 kyuu** kata.
+- We have made some good progress so I am sure we will be able to get it finished during tomorrow's Code Wars session.
+- Next we had an excellent guest lecture by a back-end engineer who was a part of cohort 4 of the bootcamp.
+	- I particularly enjoyed her advice around collaborating with seniors in order to learn as quickly as possible.
+- After the guest lecture came a quiz on Node.js and File System on which I scored 100%!
+	- I expect the quizzes will get harder from here since today is only our second day covering the back-end.
+- Our next lecture covered web fundamentals:
+	- IP addresses (IPv4 and IPv6)
+	- Ports and Sockets
+	- Domain Names and DNS
+	- The Client-Server Model
+	- HTTP and HTTPS
+	- Popular HTTP Methods
+	- HTTP Status Codes
+- We then made a start on **Express.js** to send a simple GET request:
+```js
+import express from "express";
+
+const app = express();
+
+const port = 3000;
+
+// req for request, res for response
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
+app.listen(port, () => {
+  console.log(`Server is up and running on port: ${port}`);
+});
+```
+- In the afternoon we stared using **Thunder Client** instead of the browser so that we could send POST requests as well.
+- This all culminated in a workshop in which we used various HTTP methods (GET, POST, PATCH, DELETE) to update an array of objects that each contained a UUID (generated using [an NPM package](https://www.npmjs.com/package/uuid)) and a quotation as a string.
+- As a group we managed to finish the whole workshop with time to spare which was a great feeling after a long day!
+
+Today's lectures were definitely the most challenging thus far on the back-end but the fact that we were able to finish the workshop fills me with confidence for the rest of the week!
