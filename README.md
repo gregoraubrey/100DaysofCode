@@ -2149,3 +2149,86 @@ next();
 - Our afternoon task involved first implementing a custom middleware function before adding a third-party middleware function and then serving a static image file from the `public` folder.
 
 Learning about middleware was confusing at first and I am not sure that I totally grasp the concept, but the implementation in the afternoon task went much smoother than I expected and we finished with time to spare which always feels good. Tomorrow we have the hackathon and I can only assume we will be building a RESTful API from scratch which should be a fun challenge!
+
+
+## Day 54
+*20230512*
+
+Today we had a hackathon in which we built a RESTful API from scratch and hooked it up to a pre-built front-end.
+
+- We started the day off with a quiz where I got one question wrong because I put down morgan as built-in middleware when it is actually third-party (the answer was `express.json()`).
+- After that we moved straight onto the hackathon for the day, which concerned recipe objects with properties of "title", "image", "instructions", and 
+ingredients".
+- We began by writing up all our CRUD funcionality with functions that read from the `recipes.json` file, parsed the data, performed the relevant action on the data, then wrote to file after stringifying the updated recipe array.
+- Below is one example that we used for PATCH requests:
+```js
+// UPDATE A RECIPE BY ID
+export async function updateRecipeByID(id, updatedRecipe) {
+    try {
+        const data = await fs.readFile(fileName);
+        const recipes = JSON.parse(data);
+        const index = recipes.findIndex((r) => r.id === id);
+        if (index === -1) {
+            throw new Error("We couldn't find a recipe by this ID!");
+        }
+        recipes[index] = { id, ...updatedRecipe };
+        await fs.writeFile(fileName, JSON.stringify(recipes));
+        return recipes[index];
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+```
+- We then wrote up the functions that send the requests to the server.
+- Below is the example for a PATCH request:
+```js
+app.patch("/api/recipes/:id", async (req, res) => {
+  try {
+    const recipe = await updateRecipeByID(req.params.id, req.body);
+    res.status(200).send({
+      success: true,
+      payload: recipe,
+    });
+  }
+  catch (error) {
+    console.error(error);
+    if (error.message === "We couldn't find a recipe by this ID!") {
+      return res.status(404).send({
+        success: false,
+        payload: [],
+        message: error.message,
+      });
+    }
+    res.status(400).send({
+      success: false,
+      payload: [],
+    });
+  }
+});
+```
+- After we finished coding up the bare-bones of the API, we spend a couple of hours trying to make our API as RESTful as possible by adding expressive error messages and by using the most appropriate HTTP status codes, such as `201` for "created" when a POST request was successful.
+- After making the API as RESTful as we could, we hooked it up to the pre-built front-end and had it working in our browsers which was a great feeling, as it is the first time we have ever linked the back-end and the front-end!
+- We had some time to spare at the end of the day so we coded up a delete button to go on each recipe card that would send a DELETE request to the server with the relevant ID.
+- Below is a snippet of the code from the `createRecipeView()` function that I wrote up to add the delete button and have it functional:
+```js
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "Delete Recipe";
+  deleteButton.addEventListener("click", async ()=> {
+    try {
+      const response = await fetch(`${url}/api/recipes/${id}`, {
+        method: "DELETE",
+      });
+      if (response.ok) {
+        article.remove();
+      } else {
+        console.error(`Error: ${response.statusText}`);
+      }
+    } catch (error) {
+      console.error(`Fetch error: ${error}`);
+    }
+```
+- We spent 20 minutes or so at the end of the day preparing our presentation which was well worth it because our presentation went really well and we got some nice compliments in the chat about our documentation of the day's work (since we had been taking screenshots of our progress throughout).
+- I ended the day with another excellent mentor meeting in which we talked about various topics to do with the back-end such as REST versus other types of APIs, the differences between different languages in the back-end, how to structure your API to be useful for front-end colleagues, and why people do not always follow the guidelines around what the HTTP methods should be used for and how that can cause issues down the line.
+
+This week has flown by but I have enjoyed every minute of it. Next week we are moving onto SQL and, much like this time last week, I have no idea what to expect but I am keen to dive in!
