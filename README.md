@@ -2070,3 +2070,82 @@ app.listen(port, () => {
 - As a group we managed to finish the whole workshop with time to spare which was a great feeling after a long day!
 
 Today's lectures were definitely the most challenging thus far on the back-end but the fact that we were able to finish the workshop fills me with confidence for the rest of the week!
+
+
+## Day 53
+*20230511*
+
+Today we had lectures on middleware in Express.js and an introduction to RESTful APIs, before attempting to build our own API in the afternoon.
+
+- We started the day off with some Code Wars:
+- [Help the bookseller !](https://www.codewars.com/kata/54dc6f5a224c26032800005c)
+```js
+function stockList(listOfArt, listOfCat) {
+  let books = [];
+  let letter;
+  let sum;
+  let quantity;
+  let totalSum = 0;
+  for (let i = 0; i < listOfCat.length; i++) {
+    letter = listOfCat[i];
+    sum = 0;
+    for (let j = 0; j < listOfArt.length; j++) {
+      if (listOfArt[j].startsWith(letter) === true) {
+        quantity = parseInt(listOfArt[j].split(" ")[1]);
+        sum += quantity;
+      }
+      totalSum += sum
+    }
+    books.push(`(${letter} : ${sum})`);
+  }
+  if (totalSum === 0) {
+    return ""
+  }
+  return books.join(" - ");
+}
+```
+- We got this **6 kyuu** from yesterday working!
+- Somebody used a clever if statement to return `""` when there are zero books:
+```js
+function stockList(listOfArt, listOfCat) {
+  if (!listOfArt.length || !listOfCat.length) return ''
+  return listOfCat.map(w => {
+    const s = listOfArt.reduce((a, b) => a + (b.charAt(0) === w ? +b.split(' ')[1] : 0), 0)
+    return `(${w} : ${s})`
+  }).join(' - ')
+}
+```
+- [Salesman's Travel](https://www.codewars.com/kata/56af1a20509ce5b9b000001e/train/javascript)
+```js
+function travel(r, zipcode) {
+  if (!r.includes(zipcode)) {
+      return `${zipcode}:/`
+      }
+  const array = r.split(",");
+  let copy = [...array];
+  console.log(array);
+  for (let i = 0; i < array.length; i++) {
+    if (!array[i].includes(zipcode)) {
+      //filter this index out
+      copy.filter(()=> )
+    }
+  }
+}
+```
+- The above is our progress thus far on a **6 kyuu** kata that we had a look at after finishing the one we began yesterday.
+- We had a morning quiz on Express.js and web fundamentals on which I scored 100% again which felt great, although once again the questions were not particularly challenging.
+- Next up was a lecture introducting middleware as software that exists between two layers.
+- We had a go at writing some custom middleware functions:
+```js
+app.use((req, res, next) => {
+  console.log("Hello from the middleware 👋");
+  console.log(`[${new Date().toISOString()}] ${req.method} to ${req.path}`);
+next();
+});
+```
+- After playing around with custom middleware functions we had a guest lecture about RESTful APIs and what this entails, such as the server being client-state agnostic and using nouns instead of verbs in the path.
+- We then had a lecture on third-party middleware libraries and how to use them.
+	- We learned about [morgan](https://www.npmjs.com/package/morgan) and how it can be useful for logging various bits of metadata in the console when a client sends a request, such as the path, the date and time, and the HTTP status code.
+- Our afternoon task involved first implementing a custom middleware function before adding a third-party middleware function and then serving a static image file from the `public` folder.
+
+Learning about middleware was confusing at first and I am not sure that I totally grasp the concept, but the implementation in the afternoon task went much smoother than I expected and we finished with time to spare which always feels good. Tomorrow we have the hackathon and I can only assume we will be building a RESTful API from scratch which should be a fun challenge!
