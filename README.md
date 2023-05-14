@@ -2246,3 +2246,22 @@ Today I (finally!) had my graduation ceremony so I spent very little time coding
 - After the ceremony I spent a little bit of time reading some more of *The Object-Oriented Thought Process* and that was it for the day.
 
 Today was not about coding but rather celebrating all my hard work for the last 4 years at university and during my year abroad. It was so nice to see some of my friends whom I have not seen in almost a full year! Tomorrow I will get back on track and do the recap tasks we have been set for the start of next week.
+
+## Day 56
+*20230514*
+
+Today I completed the recap task and read some articles that I had saved over the last week or so.
+
+- The recap task involved coding up a back-end similar to the one we made during the hackathon.
+- My API had to be RESTful, and support all the CRUD routes.
+- I found it very smooth sailing which was encouraging, and I made a git commit after each function was up and running in order to have a verbose commit history and keep track of my work.
+- There are some bonus tasks such as adding relevant HTTP status codes and building a front-end that I would like to work on next week if I can find the time.
+- During one of the lectures this week, somebody asked a question about why we could manipulate the contents of an array despite its being declared with `const`.
+- This prompted me to read an article called [The "const" Deception](https://www.joshwcomeau.com/javascript/the-const-deception/) to better understand what this keyword means.
+- I read another article that I had saved a while ago titled [The Interactive Guide to Rendering in React](https://ui.dev/why-react-renders).
+	- I feel it is important to keep coming back to React whilst we focus on the back-end because I would hate to waste time at the start of the final project having to relearn a bunch of React concepts that I understood when we were first studying them.
+- The last article I read was titled [Git Merge – The Definitive Guide](https://www.freecodecamp.org/news/the-definitive-guide-to-git-merge/).
+	- Since git is something that I will be using day-in day-out as a developer, I think it is worth getting good at now.
+	- Whether I am working on the front-end, the back-end, or both, git is going to be an indispensable part of my workflow.
+
+Today was great fun as I completed the recap task in much less time than I was expecting. It shows just how much of the week's content I have already managed to grasp and gives me confidence going into next week.
