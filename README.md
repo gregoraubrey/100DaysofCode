@@ -2232,3 +2232,17 @@ app.patch("/api/recipes/:id", async (req, res) => {
 - I ended the day with another excellent mentor meeting in which we talked about various topics to do with the back-end such as REST versus other types of APIs, the differences between different languages in the back-end, how to structure your API to be useful for front-end colleagues, and why people do not always follow the guidelines around what the HTTP methods should be used for and how that can cause issues down the line.
 
 This week has flown by but I have enjoyed every minute of it. Next week we are moving onto SQL and, much like this time last week, I have no idea what to expect but I am keen to dive in!
+
+
+## Day 55
+*20230513*
+
+Today I (finally!) had my graduation ceremony so I spent very little time coding.
+
+- I spent about half an hour in the morning going over the notes I had written during the lectures this week.
+- I definitely need to take a closer look at the HTTP status codes and what they mean.
+	- Despite using a lot of them yesterday, I could not remember what they stood for apart from the basic ones like `200` and `404`.
+	- I made some Anki cards to help me remember what the most common HTTP status codes mean.
+- After the ceremony I spent a little bit of time reading some more of *The Object-Oriented Thought Process* and that was it for the day.
+
+Today was not about coding but rather celebrating all my hard work for the last 4 years at university and during my year abroad. It was so nice to see some of my friends whom I have not seen in almost a full year! Tomorrow I will get back on track and do the recap tasks we have been set for the start of next week.
