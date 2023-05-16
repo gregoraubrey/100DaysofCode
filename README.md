@@ -2279,3 +2279,23 @@ Today I was not online as I attended my Gold Duke of Edinburgh's Award Scheme Pr
 - I spent some time in the evening going through a few of the SQLBolt lessons and plan to continue tomorrow morning.
 
 Today was great fun, meeting up with some people I have not seen in years at the DofE event. In terms of SQL, it seems simple enough so far but I am sure that it will only get harder from here.
+
+
+## Day 58
+*20230516*
+
+Today we learned some more about SQL and tested out our knowledge by practising some queries.
+
+- We started the day with a Code Wars session during which I actually spent the whole time going through more [SQLBolt](https://sqlbolt.com/lesson/) in order to catch up what I missed yesterday.
+	- My pair programming partner was really helpful and gave me hints when I got stuck on some of the exercises at the end of each lesson.
+- Next we had a guest lecture by [Stuart Langridge](https://www.kryogenix.org/) that was really eye-opening, and felt very different from most of the other guest lectures we have had so far on the course.
+	- Stuart focused on knowing your worth (avoiding unpaid internships, unpaid overtime, etc.)
+	- He talked about the importance of paying it forwards and building a good reputation instead of withholding information from your colleagues for short-term gain.
+	- I asked a question about automated testing and he linked testing to doing maintenance on a car.
+		- Unlike for cars, with software there is no yearly MOT so if the code is not thoroughly tested, it will start to rot.
+- We then had a quiz on SQL in which I scored 100% despite having to take a guess at one or two of the answers.
+- Next up was a lecture on Entity Relationship Diagrams (ERD).
+- In the afternoon we worked through a set of [SQL Joins & Subqueries](https://pgexercises.com/questions/joins/) questions.
+- After solving a few of these problems (and taking a long time to wrap our heads around self-joining!) we spent a short while using [Lucid Chart](https://www.lucidchart.com/pages/) to build our own ERD.
+
+Today was fairly well-paced as we spent a lot of the time directing our own learning which was a refreshing change of pace. I really appreciated Stuart's talk and took away some true nuggets of wisdom.
