@@ -2247,6 +2247,7 @@ Today I (finally!) had my graduation ceremony so I spent very little time coding
 
 Today was not about coding but rather celebrating all my hard work for the last 4 years at university and during my year abroad. It was so nice to see some of my friends whom I have not seen in almost a full year! Tomorrow I will get back on track and do the recap tasks we have been set for the start of next week.
 
+
 ## Day 56
 *20230514*
 
@@ -2265,3 +2266,16 @@ Today I completed the recap task and read some articles that I had saved over th
 	- Whether I am working on the front-end, the back-end, or both, git is going to be an indispensable part of my workflow.
 
 Today was great fun as I completed the recap task in much less time than I was expecting. It shows just how much of the week's content I have already managed to grasp and gives me confidence going into next week.
+
+
+## Day 57
+*20230515*
+
+Today I was not online as I attended my Gold Duke of Edinburgh's Award Scheme Presentation (having completed it in 2018!). This meant that I had some catching up to do in the evening.
+
+- Before I left home in the morning I messaged my new pair programming partners for the week to ask if they could let me know what they cover during the day and tell me what I should be getting on with in the evening.
+- At 17:00 they let me know that I should work through some [SQLBolt](https://sqlbolt.com/lesson/) lessons to learn the basics of SQL.
+- It seems that we were pretty much left to our own devices today to learn SQL which is lucky for me since I did not miss a lecture-heavy day.
+- I spent some time in the evening going through a few of the SQLBolt lessons and plan to continue tomorrow morning.
+
+Today was great fun, meeting up with some people I have not seen in years at the DofE event. In terms of SQL, it seems simple enough so far but I am sure that it will only get harder from here.
