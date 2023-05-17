@@ -2299,3 +2299,89 @@ Today we learned some more about SQL and tested out our knowledge by practising 
 - After solving a few of these problems (and taking a long time to wrap our heads around self-joining!) we spent a short while using [Lucid Chart](https://www.lucidchart.com/pages/) to build our own ERD.
 
 Today was fairly well-paced as we spent a lot of the time directing our own learning which was a refreshing change of pace. I really appreciated Stuart's talk and took away some true nuggets of wisdom.
+
+
+## Day 59
+*20230517*
+
+We looked at PostgreSQL today and the `dotenv` NPM package, which allowed us to keep our database URL in a secure `.env` file.
+
+- We started the day with some Code Wars.
+- [Reverse Vowels In A String](https://www.codewars.com/kata/585db3e8eec141ce9a00008f/train/javascript)
+```js
+function reverseVowels(str) {
+  const vowelArray = [];
+  const indexArray = [];
+  const strArray = str.split("");
+  let counter = 0;
+  for (let i = 0; i < strArray.length; i++) {
+    if (/^[aeiou]$/i.test(strArray[i])) {
+      vowelArray.push(strArray[i]);
+      indexArray.push(i);
+      strArray.splice(i, 1, " ");
+      }
+  }
+  vowelArray.reverse();
+  for (let i = 0; i < strArray.length; i++) {
+    if (i === indexArray[counter]) {
+      strArray.splice(i, 1, vowelArray[counter])
+      counter++;
+    }
+  }
+  return strArray.join("");
+}
+```
+- We completed this **6 kyuu** kata this morning.
+- I ranked up to **5 kyuu** after submitting the solution which was a nice surprise!
+- Someone solved it in a much simpler way:
+```js
+const reverseVowels = str => {
+  let vowels = str.replace(/[^aeiou]/gi, '').split('');
+  return str.replace(/[aeiou]/gi, _ => vowels.pop());
+};
+```
+- We then had a morning quiz on "Advanced SQL".
+	- I scored 100% once more but this quiz was much harder than some of the previous ones and a couple of the questions gave me pause.
+- Next up was a lecture on [ElephantSQL](https://www.elephantsql.com/), a cloud-based DBAS (database as a service) company.
+	- By using ElephantSQL we do not have to manage the database and we do not have to host it on our local machine.
+- We spent half an hour or so tinkering with ElephantSQL queries, creating a `books` and an `authors` table and selecting various rows from them.
+- The only query that gave us issues was one that required the use of `GROUP BY` and `HAVING` since we had not seen these keywords before:
+```SQL
+-- Find all authors who have written more than one book.
+SELECT authors.first_name, authors.last_name 
+FROM authors 
+JOIN books ON books.author_id = authors.id 
+GROUP BY authors.id 
+HAVING COUNT(books.id) > 1;
+```
+- After acquainting ourselves with ElephantSQL, we had a lecture on the [dotenv NPM package](https://www.npmjs.com/package/dotenv) which allows us to "load environment variables from a `.env` file into `process.env`" to use the documentation's own words.
+- We combined this with [node-postgres](https://node-postgres.com/) in order to write an `app.js` file that could query our ElephantSQL database:
+```js
+///// app.js /////
+
+// import the pg package
+import pg from "pg";
+
+// set the database connection string
+const connectionString = process.env.DB_CONNECTION_STRING;
+
+// create a new client to use
+const client = new pg.Client({
+  connectionString, // this is shorthand for `connectionString: connectionString`
+});
+
+// connect to the database
+await client.connect();
+
+// send a query
+const result = await client.query("SELECT * FROM books;");
+console.log(result.rows);
+
+// close the connection
+await client.end();
+```
+- We ended the day by adding another JS file that served as a database reset script.
+	- It contained a function that dropped the two tables, then created them again and inserted the starting data into them.
+- I had some time to spare at the end so I also made a JS file that inserted an extra book each time it was executed.
+
+We learned a lot today and I am not sure that I am going to retain it all at the first time of asking. I hope we get to keep putting this into practice tomorrow before Friday's hackathon. On another note, I am going to be attending a React meetup tomorrow in Shoreditch with some fellow bootcampers which should be a fun way to spend the evening!
