@@ -2385,3 +2385,57 @@ await client.end();
 - I had some time to spare at the end so I also made a JS file that inserted an extra book each time it was executed.
 
 We learned a lot today and I am not sure that I am going to retain it all at the first time of asking. I hope we get to keep putting this into practice tomorrow before Friday's hackathon. On another note, I am going to be attending a React meetup tomorrow in Shoreditch with some fellow bootcampers which should be a fun way to spend the evening!
+
+
+## Day 60
+*20230518*
+
+Today we learned about parameterised queries and the MVC design pattern.
+
+- We started the day with a quiz on "Connecting Node to Postgres".
+	- I got 100% again which was satisfying, although the quiz was not particularly hard today.
+	- One of the things I learned through doing the quiz is that there are two times when you should use a pool over a client:
+		- When you need to perform a large number of database queries.
+		- When you need to handle many simultaneous connections.
+- Next up was a lecture on parameterised queries.
+- We learned about SQL injection attacks and how using placeholders (parameters) can help prevent these from happening.
+- Here is a simple example that we saw during the lecture:
+```js
+// Import the pg package
+import pg from "pg";
+
+// Set the database connection string
+const connectionString = process.env.DB_CONNECTION_STRING;
+
+// Create a new client to use
+const client = new pg.Client({
+  connectionString,
+});
+
+// Connect to the database
+await client.connect();
+
+// Send a query
+const id = 1;
+const values = [id];
+const query = `SELECT * FROM BOOKS WHERE id = $1;`;
+const result = await client.query(query, values);
+console.log(result.rows);
+
+// Close the connection
+await client.end();
+```
+- After learning about parameterised queries we had a guest lecture from [Dileep Marway](https://uk.linkedin.com/in/dileepmarway).
+	- He talked about QA which was completely new to me outside of the brief mention that it gets in *Clean Code* (or was it *The Clean Coder*?) in which Robert Martin laments the dynamic that can grow between engineers and QA when QA gets bonuses for finding bugs.
+	- I asked a question about the risks of QA being pushed out of a job due to engineers being encouraged to write their own automated tests.
+	- Dileep gave a good response in which he highlighed the unique skills of a QA to spot potential issues in the future.
+		- He gave one example of a QA who managed to keep the company's website up during Black Friday by considering a potential issue months in advance.
+- After lunch, we were introduced to MVC before working on a workshop in which all of the code was separated out into different files.
+- It took a while for us to get our heads around all the files in the repo, but eventually things started to make sense and we got the workshop finished by connecting the library to our ElephantSQL database.
+- In the evening I attended the [React Advanced Meetup](https://www.meetup.com/React-Advanced/) with ten or so fellow bootcampers.
+	- It was a pleasure to meet everyone in person and mingle, although to be honest we did hardly any networking!
+	- The talks were interesting, if a little over my head.
+	- One speaker talked about [tree-sitter](https://github.com/tree-sitter/tree-sitter), which I have heard of in the context of adding syntax highlighting to Neovim, but other than that, I did not really understand most of what was said.
+	- Nonetheless I had a great time and am keen to attend another meetup soon!
+
+Today was a lot of fun, especially the meetup in Shoreditch in the evening. I have been told that there is no hackathon tomorrow so I wonder what we will be doing instead?
