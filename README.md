@@ -2439,3 +2439,28 @@ await client.end();
 	- Nonetheless I had a great time and am keen to attend another meetup soon!
 
 Today was a lot of fun, especially the meetup in Shoreditch in the evening. I have been told that there is no hackathon tomorrow so I wonder what we will be doing instead?
+
+
+## Day 61
+*20230519*
+
+Today had a very different feel to most Fridays on the course. Instead of a hackathon, we had two representatives from [Couchbase](https://www.couchbase.com/) come and spend the day giving us an introduction to the platform.
+
+- In my group, we started off the day by comparing our CVs, since we were supposed to submit them to the employability team by the end of the day.
+- Next we were straight into the tasks that we would spend the whole day on:
+	- learning about NoSQL and how it compares to SQL.
+	- Learning about Couchbase.
+	- Downloading and configuring Couchbase.
+	- Connecting to the database with the Node.js SDK.
+	- Accessing data.
+- It all felt a bit chaotic, with a lot of new terms like "bucket" and "cluster" getting foisted upon us before we were hurried on to a new topic.
+- Eventually, I did manage to get everything set up and was able to send successful GET, POST, PUT, and DELETE requests, although I am not sure that I could recreate the code on my own a second time!
+- I had a very productive meeting with my mentor after 17:00.
+	- We talked about the good bits and bad bits of my CV.
+		- I later made some of the changes that we talked about before submitting it to the employability team in the evening.
+	- We talked about the meetup I attended yesterday and I told him about some of the talks from that evening:
+		- We discussed monolithic versus microservices architecture in particular, and the pros and cons of each.
+	- We also discussed QA and the role it plays in the software development process.
+	- Lastly, we talked about salaries, how to make sure that you are being paid your worth, and why (especially as a junior) you should aim to find a company that will help you learn and progress rather than just one that will pay you a high salary.
+
+Today was a bit underwhelming considering how we were just thrown into the deep-end with Couchbase without really understanding why we were learning it and what its use case was. With that said, today's meeting with my mentor was extremely productive and lasted well over an hour, which I am very grateful for.
