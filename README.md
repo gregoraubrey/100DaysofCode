@@ -2464,3 +2464,18 @@ Today had a very different feel to most Fridays on the course. Instead of a hack
 	- Lastly, we talked about salaries, how to make sure that you are being paid your worth, and why (especially as a junior) you should aim to find a company that will help you learn and progress rather than just one that will pay you a high salary.
 
 Today was a bit underwhelming considering how we were just thrown into the deep-end with Couchbase without really understanding why we were learning it and what its use case was. With that said, today's meeting with my mentor was extremely productive and lasted well over an hour, which I am very grateful for.
+
+
+## Day 62
+*20230520*
+
+I did not do much coding today, instead opting to have a restful day after a long week.
+
+- I spent some time in the morning reading a freeCodeCamp article titled [How to Write Clean Code – Tips and Best Practices (Full Handbook)](https://www.freecodecamp.org/news/how-to-write-clean-code/).
+	- This served as a good refresher of some of the concepts that I had read about in *Clean Code*.
+	- I think it would be worth coming back to this article every few months just to check in and make sure that I am following clean code principles.
+- I had a brief look at the recap tasks that we were set on Friday evening and feel confident that I can get them done tomorrow.
+- The last thing I did today was to read through the code I wrote in all of the tasks/workshops this week.
+	- After reading through my code, I feel confident in my knowledge of the basics of SQL, but a lot of what we covered on Friday is still quite hazy.
+
+I really enjoyed having a laid-back day today and making the most of the sunshine during the day. Tomorrow I will tackle the recap tasks we have been set for Monday.
