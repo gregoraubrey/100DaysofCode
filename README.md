@@ -2479,3 +2479,59 @@ I did not do much coding today, instead opting to have a restful day after a lon
 	- After reading through my code, I feel confident in my knowledge of the basics of SQL, but a lot of what we covered on Friday is still quite hazy.
 
 I really enjoyed having a laid-back day today and making the most of the sunshine during the day. Tomorrow I will tackle the recap tasks we have been set for Monday.
+
+
+## Day 63
+*20230521*
+
+Today I worked on the recap task ready for Monday.
+
+- I started off by doing a simple **8 kyuu** Code Wars kata to get myself warmed up:
+- [Calculate average](https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript)
+```js
+function findAverage(array) {
+  if (array.length === 0) {
+    return 0;
+  }
+  let sum = array.reduce((accum, b)=> {
+    return accum + b;
+  }, 0)
+  return sum/array.length;
+}
+```
+- I had to add the initial if statement after my original solution failed a test in which the argument was just `[]`.
+	- My function at the time was returning `NaN` instead of `0`.
+- When it came to the recap task, I did not have much work to do on my own branch since we had already made a start on adding appropriate HTTP status codes on Thursday.
+- I added expressive error messages and `404` status codes for some of the functions that did not yet have them:
+```js
+export async function searchAuthorsByName(req, res, next) {
+  if (req.query.search !== undefined) {
+    const authors = await authorModel.searchAuthorsByName(req.query.search);
+    if (authors.length === 0) {
+      return res
+        .status(404)
+        .json({ success: false, payload: "No author found by that name." });
+    }
+    return res.status(200).json({ success: true, payload: authors });
+  }
+  next();
+}
+```
+- In this case, if the length of the `authors` array is `0`, then that means that no author was found, so we return `404` and a helpful error message.
+```js
+export async function getBookById(req, res) {
+  const book = await bookModel.getBookById(req.params.id);
+  if (!book) {
+    return res
+      .status(404)
+      .json({ success: false, payload: "No book found by that id." });
+  }
+  res.status(200).json({ success: true, payload: book });
+}
+```
+- In this function, the if statement uses similar logic to return `404` if there is no book that corresponds to the ID that the user submitted.
+- My goal with these changes was to tick off two of the RESTful API principles:
+	- Use appropriate HTTP status codes.
+	- Give expressive error messages.
+
+Apparently next week we will be looking at TypeScript which should be exciting as, to my knowledge, it aims to make JS strongly-typed, which is something I have talked about with my mentor.
