@@ -2535,3 +2535,46 @@ export async function getBookById(req, res) {
 	- Give expressive error messages.
 
 Apparently next week we will be looking at TypeScript which should be exciting as, to my knowledge, it aims to make JS strongly-typed, which is something I have talked about with my mentor.
+
+
+## Day 64
+*20230522*
+
+Today we had a guest lecture from Talis on their software development process, and we made a start on learning about authentication and authorisation.
+
+- We began the day by giving feedback to our pair programming partners from last week.
+- We all had pretty similar things to say to each other, and since we did not do a hackathon on Friday there was not that much feedback to really give.
+- Next we had a guest lecture in which two Talis employees talked us step-by-step through their development process.
+	- They stressed the importance of **pscyhological safety** in a team which is something that Joseph talked about in one of his mindset sessions a few weeks as being the number one factor for a great team (according to a Google study).
+	- They also talked about their fully automated testing and the fact that they have no QAs.
+		- This prompted me to ask a question that referred back to Dileep's talk last week on the benefits of QAs.
+		- Nadeem responded with an interesting point on domain knowledge, saying that it is difficult for both the developers and the QAs to share the same domain knowledge, yet this is what is needed for them to be on the same wavelength and work harmoniously.
+- In the afternoon we had a lecture on authenticationa and authorisation before we were sent down to our breakout rooms to do our own research.
+- We started on a workshop that involved using [Supabase](https://supabase.com/).
+	- We followed their [quickstart guide on React](https://supabase.com/docs/guides/getting-started/quickstarts/reactjs) to spin up a login page but did not have time to get any further along in the workshop (although apparently we will be continuing with it tomorrow).
+- In the evening I did a few Code Wars kata on a whim, including:
+- [Total amount of points](https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript)
+```js
+function points(games) {
+  let score;
+  let points = [];
+  for (let i = 0; i < games.length; i++) {
+    score = games[i].split(":");
+    if (score[0] > score[1]) {
+      points.push(3);
+    }
+    else if (score [0] < score[1]) {
+      points.push(0);
+    }
+    else {
+      points.push(1);
+    }
+  }
+  return points.reduce((accum, b)=> accum + b, 0)
+}
+```
+- Solving this one felt great because my first solution immediately passed all the tests.
+	- Oftentimes when I am solving a kata I end up getting a bit of syntax wrong, even if my plan is solid, so it was a nice surprise to see that I used the `reduce()` method correctly at the first time of asking.
+	- Admittedly, my function is a little overkill for the exact requirements (e.g. storing each result in an array and accounting for draws) but it is at least a little futureproofed if, say, you need access to the result of a particular match.
+
+Today was good fun, even if it took a while to get to grips with Supabase. To be honest I feel like I am still not entirely there but I know we will be coming back to it tomorrow so I am not concerned.
