@@ -2578,3 +2578,38 @@ function points(games) {
 	- Admittedly, my function is a little overkill for the exact requirements (e.g. storing each result in an array and accounting for draws) but it is at least a little futureproofed if, say, you need access to the result of a particular match.
 
 Today was good fun, even if it took a while to get to grips with Supabase. To be honest I feel like I am still not entirely there but I know we will be coming back to it tomorrow so I am not concerned.
+
+
+## Day 65
+*20230523*
+
+Today we spent more time trying to get to grips with Supabase, and had an interesting guest lecture on DevOps.
+
+- We started the day with some Code Wars:
+- [Length and two values.](https://www.codewars.com/kata/62a611067274990047f431a8/train/javascript)
+```js
+function alternate(n, firstValue, secondValue){
+  const array = [];
+  for (let i = 0; i < n; i++) {
+    if (i % 2 === 0) {
+      array.push(firstValue);
+    }
+    else {
+      array.push(secondValue);
+    }
+  }
+  return array;
+}
+```
+- We decided to just try and get a quick win under our belts so that we could jump straight into looking at Supabase once more, hence we picked this fairly rudimentary kata to solve.
+- Having solved the kata and spent some time looking at the Supabase docs, we were brought back into the main room for a guest lecture on DevOps and quality engineering by Rik Marselis.
+- A lot of the concepts were things we had heard about before in the lectures on the Agile methodology.
+	- With that said, there was also a lot that was new to us, since we have not really talked about DevOps that much.
+	- Rik recommended a few books on DevOps and SRE during his lecture which I might add to my reading list.
+	- He said that the main issue he comes across is people not knowing how to do good testing, so once more that word comes up and plays a crucial role!
+- We then spent some more time on our React app using Supabase.
+	- We implemented a logout button that, when clicked, called a `handleLogout` function that simply executed `supabase.auth.signOut()`.
+	- We learned a bit more about JWTs and then managed to add a new role called "admin" that had read *and* write permissions.
+	- The next step would have been adding a form in the front-end that would allow a user to attempt to write data to our "leaderboard" table but we ran out of time.
+	
+Today was definitely still a bit confusing but I feel like I am slowly but surely getting to grips with Supabase. If we use it in our final project then I am sure I will have a chance to get to know its ins and outs!
