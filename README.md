@@ -2613,3 +2613,62 @@ function alternate(n, firstValue, secondValue){
 	- The next step would have been adding a form in the front-end that would allow a user to attempt to write data to our "leaderboard" table but we ran out of time.
 	
 Today was definitely still a bit confusing but I feel like I am slowly but surely getting to grips with Supabase. If we use it in our final project then I am sure I will have a chance to get to know its ins and outs!
+
+
+## Day 66
+*20230524*
+
+Today we learned about TypeScript and had a really enjoyable guest lecture from [Dr. Murray Hoggett](https://www.murrayhoggett.com/).
+
+- We started the day in standard Code Wars fare:
+- [Sum of a sequence](https://www.codewars.com/kata/586f6741c66d18c22800010a/train/javascript)
+```js
+const sequenceSum = (begin, end, step) => {
+  let total = 0;
+  for (let i = begin; i <= end; i += step) {
+    total += i;
+    console.log(total);
+  }
+  return total
+};
+```
+- I hit 300 "honour points" after completing this short **7 kyuu** kata, which apparently allows me to submit my own kata to the site now.
+	- I may well submit the screaming kebab case kata I composed for one of the end-of-week recap tasks a while ago.
+- Next up was a guest lecture from a former bootcamper (back when the bootcamps were still held in person!) called Murray Hoggett.
+- His candour was much appreciated as he tackled a wide variety of topics such as salaries, how long to spend at a company, and the pros and cons of working for start-ups.
+	- My favourite piece of advice was his recommendation that we plan out a daily schedule for learning new concepts, practicing our coding skills, and applying to jobs and stick to it as soon as the bootcamp ends.
+	- The temptation would be to take a break and relax after 16 weeks of hard work but the real hard work starts after the course has finished during the hunt for our first job in tech.
+- Following this guest lecture, we had a quiz on authentication and authorisation on which I scored 100% once more which was satisfying.
+- Next, we moved onto a lecture that introduced TypeScript before we [had a go ourselves](https://www.typescriptlang.org/play) at writing some very basic TS:
+```js
+type Account = {
+  amount: number;
+  uniqueId: string;
+  isValid: boolean;
+  addressLines: string[];
+};
+
+let billy: Account = {
+    amount: 300,
+    uniqueId: "abcdefg",
+    isValid: true,
+    addressLines: ["123", "Green Avenue", "New York"]
+}
+
+function printAmountAndId(account: Account) {
+  return `You have ${account.amount}, and your unique ID is ${account.uniqueId}`
+}
+
+console.log(printAmountAndId(billy))
+```
+- As I look at this code now, I feel like the `printAmountAndId` function should have what it returns declared as a string only: `function printAmountAndId(account: Account): string {...}`
+- We spent the rest of the day working on a handful of mini projects using TS:
+	- Converting an existing RPS game from JS to TS.
+	- Writing a simple web app that sends a fetch request to the [Dad Joke API](https://icanhazdadjoke.com/api) when a button is clicked, and then prints the joke that the API returns within a `<p>` element on the page.
+		- It felt a little bit alien to be using Vanilla JS syntax again such as ` getElementById()` after using React for what feels like an age.
+		- Perhaps I need to spend some more time using Vanilla JS, since React does tend to be overkill anyway unless the website is very big and is glad of reusable components.
+	- Writing a simple RESTful API that reads from a local `.json` file and writes to it.
+		- We only had time to implement a GET request for the whole list of items in the `.json` file, and then a GET request that searches by ID.
+- It felt great to be able to tackle exercises that would have taken a whole day mere weeks ago in about an hour each today, all whilst getting to grips with TS at the same time.
+
+Today was a real energiser after the torpor of going through the Supabase docs. Tomorrow we will be using TS together with React which should be even more exciting!
