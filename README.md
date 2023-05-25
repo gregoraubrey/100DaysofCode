@@ -2672,3 +2672,33 @@ console.log(printAmountAndId(billy))
 - It felt great to be able to tackle exercises that would have taken a whole day mere weeks ago in about an hour each today, all whilst getting to grips with TS at the same time.
 
 Today was a real energiser after the torpor of going through the Supabase docs. Tomorrow we will be using TS together with React which should be even more exciting!
+
+
+## Day 67
+*20230525*
+
+Today we learned some more TypeScript and implemented it in a simple React app.
+
+- We started the day with a guest lecture from a former bootcamper who offered various pieces of advice.
+	- She said we should prepare for both kata-style interview questions and those in which they show you buggy code and ask you to find the errors.
+	- She gave some sage advice for the final project, both in terms of planning and working together as a team.
+- We then had a quiz on the TypeScript we learned yesterday on which I scored 100% because the questions were fairly simplistic, likely owing to the fact that we have not actually learned much TypeScript yet.
+- After a lecture covering some more TypeScript and reinforcing what we learned yesterday, we moved on to an afternoon workshop in which we had to transform a React app todo list using JS files to one that used TS files and achieved the same functionality.
+- We struggled at one point where the solution involved defining multiple types, but other than that things went quite smoothly, and our app worked in the browser when all was said and done.
+- We attempted to work on a stretch goal of letting the user press the Enter key instead of clicking the 'Add' button but did not manage to get it working in time.
+- In the evening I did a Code Wars kata:
+- [Find Duplicates](https://www.codewars.com/kata/5558cc216a7a231ac9000022/train/javascript)
+```js
+function duplicates(arr) {
+  const duplicates = [];
+  arr.filter((item, index) => {
+    if (arr.indexOf(item) !== index && duplicates.indexOf(item) === -1) {
+      duplicates.push(item);
+    }
+  });
+  return duplicates
+}
+```
+- This was only a **7 kyuu** kata but it took me quite a while due to my lack of familiarity with the filter method.
+
+Today was fairly smooth sailing since we were just building on the TS we learned yesterday. Taking a step back, since we will likely have a hackathon tomorrow, that means that today marks the final day of teaching on the course which is a sobering thought. With that said, we have long had all the skills we need to teach ourselves so I am not too concerned. I hope tomorrow's hackathon goes well!
