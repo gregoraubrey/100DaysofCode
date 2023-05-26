@@ -2702,3 +2702,62 @@ function duplicates(arr) {
 - This was only a **7 kyuu** kata but it took me quite a while due to my lack of familiarity with the filter method.
 
 Today was fairly smooth sailing since we were just building on the TS we learned yesterday. Taking a step back, since we will likely have a hackathon tomorrow, that means that today marks the final day of teaching on the course which is a sobering thought. With that said, we have long had all the skills we need to teach ourselves so I am not too concerned. I hope tomorrow's hackathon goes well!
+
+
+## Day 68
+*20230526*
+
+We spent today doing a hackathon in which we had to make a weather app in React using TypeScript.
+- We started off by initialising a TS React project with `npx create-react-app weather-checker --template typescript`.
+- We then made a `.drawio` file and drew up a component tree diagram so that we were all on the same page and had a clear vision of what the final app would look like, along with the steps we needed to take to get it coded up.
+- We all signed up to the free tier of the [Open Weather Map API](https://openweathermap.org/api) and each got a unique API key.
+- Each of us made a `.env` file to store our personal key and we added `.env` to the `.gitignore` file so as not to accidentally publicise our key.
+- After reading the docs and understanding the syntax for a fetch request using a city name, we managed to code up the bare-bones of an app that printed the weather data to the console as an object after parsing the JSON response from the API.
+	- We reached this point just before 12:00 which felt great as it meant we had the whole afternoon to work on beautifying things and adding extra features.
+- One feature that I added and was quite proud of was a way of sanitising the user's input into a form the API would understand:
+```ts
+function handleClick(): void {
+    // Remove any extra spaces and make the city lowercase
+    // "     neW      yORk     "
+    // "new york"
+    const cleanCity = city.trim().replace(/\s+/g, " ").toLowerCase();
+    console.log(`The text being used in the fetch request is: ${cleanCity}`);
+    if (cleanCity) {
+      setSearched(false);
+      fetchRequest(cleanCity)
+        .then((data: Weather | null) => {
+          setWeatherData(data);
+          setSearched(true);
+          setCity("");
+        })
+        .catch((error) => {
+          console.error(error);
+          setCity("");
+        });
+    }
+  }
+```
+- In an ideal world the comments here would be superfluous, however, I do not feel comfortable enough with regex syntax to trust that I will be able to come back to this and immediately understand what our regex does here.
+- One issue we were having is that the app would crash whenever the API returned an error (because the user had inputted an invalid city name).
+	- This was happening because the `WeatherDisplay` component was expecting to receive an object with a certain structure, whereas the error objects sent by the API had a completely different structure to the normal responses.
+- I managed to fix this by adjusting our `Weather` type to include an optional `message`:
+```ts
+export type Weather = {
+  coord: Coord;
+  weather: WeatherElement[];
+  ...
+  message?: string; // This property is only present if the API returns an error so we need to make it optional
+};
+```
+- Since the `message` only appears in error responses, we could add an if statement at the top of the component:
+```ts
+ if (weatherData?.message) {
+    return <p>No city found by that name. Please try again.</p>;
+  }
+```
+- We cut things pretty close at the end of the day so did not have much time to prepare for our presentation.
+	- With that said, it still went relatively smoothly, with me introducing some of the code before handing over to my partners who showed off the app and did a retro of the day.
+- I had a really productive mentor meeting just after 17:00 that lasted a full 90 minutes!
+	- We covered topics ranging from [OpenID](https://openid.net/what-is-openid/) to the differences between an interface in TS and in OO languages.
+
+Today was a great day and I have really enjoyed working with my pair programming partners this week. I feel like I need to brush up on authentication and authorisation a bit, but feel quite confident on TS (at least the little TS we have covered). Next week we start our final project which is a crazy thought. It feels like only yesterday we were learning what a boolean was!
