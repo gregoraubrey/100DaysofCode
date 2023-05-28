@@ -2761,3 +2761,17 @@ export type Weather = {
 	- We covered topics ranging from [OpenID](https://openid.net/what-is-openid/) to the differences between an interface in TS and in OO languages.
 
 Today was a great day and I have really enjoyed working with my pair programming partners this week. I feel like I need to brush up on authentication and authorisation a bit, but feel quite confident on TS (at least the little TS we have covered). Next week we start our final project which is a crazy thought. It feels like only yesterday we were learning what a boolean was!
+
+
+## Day 69
+*20230527*
+
+Today I did very little in terms of coding since I wanted to take a break after another long week. I did my first Parkrun since I was about 12 or 13 years old which felt great!
+
+- I read over all the code we wrote during the hackathon yesterday to make sure that I still understood exactly how our app worked.
+	- This included some new styling that one of my partners had added in the evening on Friday to make the weather display look cleaner and more readable.
+- I read a little bit more of *The Object-Oriented Thought Process*.
+	- Progress has definitely been slow on this book since it does not relate to the programming we are doing on the course.
+	- Nonetheless, I really want to understand OOP so I will keep plugging away, even if it takes me a while to finish the book.
+
+I had a really enjoyable day today, doing Parkrun and then taking advantage of the sunshine in the afternoon. I did not get much coding done but I am fine with that considering that we have reached the end of a long week.
