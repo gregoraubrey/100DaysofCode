@@ -2775,3 +2775,17 @@ Today I did very little in terms of coding since I wanted to take a break after 
 	- Nonetheless, I really want to understand OOP so I will keep plugging away, even if it takes me a while to finish the book.
 
 I had a really enjoyable day today, doing Parkrun and then taking advantage of the sunshine in the afternoon. I did not get much coding done but I am fine with that considering that we have reached the end of a long week.
+
+
+## Day 70
+*20230528*
+
+Today I did not get much coding done either as it was the final day of the season in the Premier League.
+
+- I started the day off by reading a bit more of *The Object-Oriented Thought Process*.
+	- I used ChatGPT to elucidate a couple of the concepts that were coming up in the book and it proved to be quite effective.
+- I rewatched one of the lectures on Supabase since I was feeling a little bit shaky on authentication and authorisation.
+- After that I went round to a friend's house to watch the Prermier League matches and that marked the end of my coding for today.
+	- (Other than reviewing my programming Anki cards.)
+
+Another quiet day today in terms of coding, but I was never expecting to get much done what with it being the final day of the season.
