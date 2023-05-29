@@ -2789,3 +2789,23 @@ Today I did not get much coding done either as it was the final day of the seaso
 	- (Other than reviewing my programming Anki cards.)
 
 Another quiet day today in terms of coding, but I was never expecting to get much done what with it being the final day of the season.
+
+
+## Day 71
+*20230529*
+
+Today I read some programming articles and looked back at some SQL syntax.
+
+- I saw that Nadeem had made a post on LinkedIn with an article he recommended for us bootcampers since we are going to be starting on our final project tomorrow:
+	- [Planning Engineering Projects Effectively](https://betterprogramming.pub/planning-engineering-projects-effectively-eac5855d2e76)
+	- I hope I will be able to apply some of the lessons I learned from this article in the planning stages of the project this week.
+- I read a couple more aricles later on in the day:
+	- [Books that Junior Developers should read](https://www.freecodecamp.org/news/9-books-for-junior-developers-in-2019-e41fc7ecc586/)
+	- I have added a few of the books mentioned in this article to my to-be-read list.
+	- In fact, I have already read two of the books on this list which feels good!
+- [How You Can Use AI to Improve Your Code Quality](https://www.freecodecamp.org/news/how-to-use-ai-to-improve-code-quality/)
+	- I have already been applying some of the techniques in this article but I had never thought of using AI to come up with coding ideas.
+	- I liked the description the author gives of the programmer as the captain who guides the AI.
+- In the evening I had a brief look at some of the SQL syntax we have learned since I missed one day during which we covered it.
+
+I really enjoyed the articles I read today and feel like the one Nadeem recommended has set me up well for tomorrow when we start work on our final project.
