@@ -2809,3 +2809,26 @@ Today I read some programming articles and looked back at some SQL syntax.
 - In the evening I had a brief look at some of the SQL syntax we have learned since I missed one day during which we covered it.
 
 I really enjoyed the articles I read today and feel like the one Nadeem recommended has set me up well for tomorrow when we start work on our final project.
+
+
+## Day 72
+*20230530*
+
+Today marks the beginning of our final project! I got to know my team and we came up with a list of problems from which we will choose one and, eventually, build an app to solve it.
+
+- We began the day by giving feedback to our partners from last week.
+	- The three of us all agreed that we had made a really good team and were sad to see each other go.
+	- We also talked about the importance of teamwork and soft skills as they pertain to employability.
+- Next up the teams were announced (six per group).
+- We spent some time getting to know each other and discussing our hobbies and backgrounds.
+	- I have already worked with two of the people in my group which will hopefully mean that we can hit the ground running if and when we work together in a sub-team.
+- I showed my team the manifesto that we used in the Week 7 Project and, after taking some inspiration from it, we each wrote down some points that were important to us personally before reconvening and producing our manifesto.
+- Next up came a short talk from Chris Meah who told a story about a bootcamper who scored 100% on an Experian technical test (the first person to ever score full marks on that tech test) but did not end up receiving a job offer due to not being a team player and lacking the soft skills that the company was looking for.
+	- This hammers home the importance of working together effectively during this project.
+	- Working cohesively is far more important (and impressive) than producing a great app.
+- We spent the afternoon sharing problems that we are having right now, problems that we have in general, and problems that are having a global impact nowadays.
+- From these problems we started to brainstorm potential app ideas.
+- We ended the day by using dot voting to decide on the problem that we felt had the best combination of relevance to the team members and scope for a full-stack application.
+	- We are leaning towards choosing "sustainability/waste" although this is subject to change.
+
+All in all, I feel like today was a success and I am really excited to spend the next few days planning out our app!
