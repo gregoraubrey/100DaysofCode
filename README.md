@@ -2832,3 +2832,47 @@ Today marks the beginning of our final project! I got to know my team and we cam
 	- We are leaning towards choosing "sustainability/waste" although this is subject to change.
 
 All in all, I feel like today was a success and I am really excited to spend the next few days planning out our app!
+
+
+## Day 73
+*20230531*
+
+Today we decided on our problem statement and spent some time coming up with ideas for features that we would like to see in an app that solves that problem.
+
+- We kicked the day off with a stand-up during which we sorted out the Trello board for the day and reflected on yesterday's work.
+- I then went into a separate breakout room to have a "stand-up of stand-ups" with one of the coaches and a representative from various other teams.
+	- Each morning one team member will have to go and let the coaches know how we are getting on, so I will not be doing it again until next week.
+- After that we went on a short break at which point I started work on a kata just to get the gears turning:
+- [Product of Largest Pair](https://www.codewars.com/kata/5784c89be5553370e000061b/train/javascript)
+```js
+// function maxProduct(a) {
+//   a.sort((a, b)=> b - a);
+//   return a[0] * a[1];
+// }
+
+function maxProduct(a) {
+  let largest = 0;
+  let secondLargest = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > largest) {
+      secondLargest = largest;
+      largest = a[i];
+    }
+    else if (a[i] > secondLargest) {
+      secondLargest = a[i];
+    }
+  }
+  return largest * secondLargest;
+}
+```
+- I could not see why my original, commented-out solution was being considered to be "too slow" by the tests but ChatGPT suggested that using `sort()` could take a long time if the input array is very long.
+- My second solution used a for loop that goes through the array just once and, for that reason, it was faster and thus passed the tests!
+- We spent the rest of the morning deciding on a problem statement.
+	- Through a round of dot voting we decided on: "People have items they don't need and want to be able to swap them for items they do need."
+- We then did some [Disney Ideation](https://idea-sandbox.com/blog/disney-brainstorming-method-dreamer-realist-and-spoiler/) to come up with potential ideas for an app that addresses our problem statement.
+- After lunch, we split into two sub-teams.
+	- The team I was in focused on making user personas and user stories.
+	- The other team did some market research and looked into what competitors (such as [Swopped](https://www.swopped.co.uk/) and [Vinted](https://www.vinted.com/)) are doing and how we could try to improve on their work.
+- We reconvened a couple of times to present our work and get the other sub-team's input before ending the day with a retro.
+
+Today was a productive one and I can already feel our ideas coming together. It feels like we are all operating on the same wavelength which is certainly exciting!
