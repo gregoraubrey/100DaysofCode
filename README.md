@@ -2876,3 +2876,47 @@ function maxProduct(a) {
 - We reconvened a couple of times to present our work and get the other sub-team's input before ending the day with a retro.
 
 Today was a productive one and I can already feel our ideas coming together. It feels like we are all operating on the same wavelength which is certainly exciting!
+
+
+## Day 74
+*20230601*
+
+We had another productive day today, creating a Google Form survey to do some market research and building a lo-fi wireframe.
+
+- We started the day with our stand-up meeting during which we laid out our plan for the day.
+- Next up was a guest lecture delivered by Kim and Bryce from [Squibble](https://squibble.design/).
+	- They talked about work inside an agency which is not something that any of our previous guest lecturers have touched on so there were a lot of good learnings to take away.
+	- A key point that Kim hammered home is that you have to explain things in simple terms to the client, since they will likely have no idea about the technical side of things.
+- We then had a short lecture from Tom on **sprint demos** and how to run one.
+	- We have our first sprint demo tomorrow, and will have one each Friday for the remainder of the final project.
+- Afterwards, I worked on a Code Wars kata during a break to try and keep my skills sharp:
+- [Adding Arrays](https://www.codewars.com/kata/59778cb1b061e877c50000cc/train/javascript)
+```js
+function arrAdder(arr) {
+  const sentence = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    for (let j = 0; j < sentence.length; j++) {
+      sentence[j] = sentence[j] + arr[i][j];
+    };
+  };
+  return sentence.join(" ");
+};
+```
+- I came across an interesting issue since I had originally added the line `console.log(sentences);` at the end of the inner for loop to see exactly what was happening but this caused the test to time out.
+	- When I moved the console log outside of the inner for loop (so that it would only run at the end of each run-through of the outer for loop) it logged all the data correctly with no errors.
+	- It seems like there were too many console logs being printed when that line of code was being executed as part of the inner for loop which caused the program to time out, even though the logic of my code was sound.
+	- I sent my mentor a Slack message about this so hopefully we can dive into what is going on here tomorrow.
+- In my final solution I removed the console log altogether and the code passed without issue.
+- Looking back, I could have rewritten `sentence[j] = sentence[j] + arr[i][j];` as ` sentence[j] += arr[i][j];` which is a bit easier on the eye.
+- The next task we worked on as a group was making a Google Form survey to send out to fellow bootcampers and the wider School of Code community with some questions pertinent to our topic:
+	- We asked for the respondent's age, gender, motivations for using an app like ours (if they would use it at all), and features they would like to see.
+- After getting 20 or so responses, we looked at the data and used the responses to guide our final decision on what would be in the MVP and what would be in the stretch goals (and how important each stretch goal would be).
+- At one point in the afternoon, Nadeem popped into our breakout room to see how we were getting on and gave us some really good advice:
+	- He said that, being a group of six, we should split up into three pairs when coding (i.e. never work solo).
+	- We could swap one person out from a pair each day which would allow us all to get used to every part of the codebase and work with different team members, whilst also keeping one "domain expert" working on the same bit of code they were working on before and getting their new partner up to speed at the start of the day.
+		- We really are very lucky to have such an experienced developer set aside their time to help us throughout this course.
+	- He also suggested working on the front-end first, together, and then moving on to the back-end so that we know exactly what data the front-end wants by the time we start building the back-end and do not end up with any crossed wires where the back-end team makes features that the front-end does not even use whilst the front-end team assumes features that the back-end team is not implementing.
+- The last thing we worked on was our lo-fi wireframe on Figma.
+	- We each spent some time making our own version before coming together and using everyone's ideas to come up with a final lo-fi design that we were all happy with.
+
+Today went really well and it was nice to get some advice from Nadeem and hear him say that we are doing well (as far as he could tell!).
