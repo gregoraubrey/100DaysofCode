@@ -2920,3 +2920,22 @@ function arrAdder(arr) {
 	- We each spent some time making our own version before coming together and using everyone's ideas to come up with a final lo-fi design that we were all happy with.
 
 Today went really well and it was nice to get some advice from Nadeem and hear him say that we are doing well (as far as he could tell!).
+
+
+## Day 75
+*20230602*
+
+Today we planned and delivered a Google Slides presentation during our sprint demo then finalised our lo-fi wireframe and added details to it.
+
+- We started off with a stand-up during which we decided who would work on what for the presentation.
+- We spent the whole morning preparing the presentation before delivering it just after noon.
+	- It went really well, and the fact that we had practised really shone through since we kept it to exactly 9 minutes which was our target.
+	- The coaches said that they were really impressed which was lovely to hear.
+	- Their only constructive feedback was to spend a little more time explaining what features are a part of the MVP.
+- We spent the rest of the day finalising our lo-fi wireframe for mobile and desktop.
+	- We got some feedback on different mobile designs to help us decide which to stick with.
+- I used Midjourney to make a coin icon that we will use to display how many tokens a user has and we added the image to our lo-fi wireframe.
+- We ended the day with a retro in which we congratulated each other on a great first week and laid out what we aim to achieve next week, including a component tree and our rotation system for letting everyone get experience with all parts of the codebase.
+- I had another excellent mentor meeting just after 17:00 in which we discussed whether to start with the back-end or front-end, contract testing, and TDD.
+
+This week has flown by and I am delighted with our progress. I can't wait to keep up the good work on Monday!
