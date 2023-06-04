@@ -2979,3 +2979,17 @@ function toggleCompleted(key) {
 - The CSS file adds strike-through to any element with the "text-completed" class name, which elucidates the inclusion of the ternary operator in the JSX.
 
 I did not do much coding today but I feel happy enough to have gone through an old project and been able to understand most of it straight away.
+
+
+## Day 77
+*20230604*
+
+Today was similar to yesterday in that I mostly spent time looking over work from previous weeks to make sure I still understood it all.
+
+- I started things off by reading some more of *The Object-Oriented Thought Process*.
+	- I feel like I will make quicker progress after we have finished the final project but feel that right now this is not the most relevant book to be reading as we will not be making use of OOP in our app.
+- Next, I watched a couple of the videos the coaches had recorded on some of the Supabase workshops.
+	- I expect we will be using Supabase to make a login page for our website so hopefully I can save the team some time by brushing up on how to use it now.
+- In the afternoon, for similar reasons, I looked over our work on SQL and made some Anki cards on the syntax of basic SQL queries since I had not done so when we were initially learning it.
+
+Today was relaxed, much like yesterday, but as a consequence I feel full of energy for tomorrow!
