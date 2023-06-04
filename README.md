@@ -2939,3 +2939,43 @@ Today we planned and delivered a Google Slides presentation during our sprint de
 - I had another excellent mentor meeting just after 17:00 in which we discussed whether to start with the back-end or front-end, contract testing, and TDD.
 
 This week has flown by and I am delighted with our progress. I can't wait to keep up the good work on Monday!
+
+
+## Day 76
+*20230603*
+
+Today I looked over my [to-do-list-with-react](https://github.com/gregoraubrey/to-do-list-with-react) repo to see if I still understood all the code I had written.
+
+- I found most of the code to be self-explanatory, which was reassuring, although there were a couple of moments in which I had to focus to work out what was going on:
+```js
+function toggleCompleted(key) {
+    console.log(`toggleCompleted has been called onClick`);
+    setTodos(
+      todos.map((x) => {
+        if (x.id === key) {
+          return {
+            ...x,
+            completed: !x.completed,
+          };
+        }
+        return x;
+      })
+    );
+  }
+```
+- For this function in the `App` component, it took me a while to understand that the return statement is just returning the current value of the todo but with its `completed` property (which is a boolean) swapped to the opposite.
+```js
+<span className={x.completed ? "text-completed" : ""}>
+  {x.text}
+</span>
+```
+- Here, I used a ternary operator to give the `<span>` a class name of "text-completed" only if the `completed` property is truthy (i.e. it is set to `true` and not `false`).
+```css
+.text-completed {
+  text-decoration: line-through;
+  color: #999;
+}
+```
+- The CSS file adds strike-through to any element with the "text-completed" class name, which elucidates the inclusion of the ternary operator in the JSX.
+
+I did not do much coding today but I feel happy enough to have gone through an old project and been able to understand most of it straight away.
