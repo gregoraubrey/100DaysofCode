@@ -2993,3 +2993,26 @@ Today was similar to yesterday in that I mostly spent time looking over work fro
 - In the afternoon, for similar reasons, I looked over our work on SQL and made some Anki cards on the syntax of basic SQL queries since I had not done so when we were initially learning it.
 
 Today was relaxed, much like yesterday, but as a consequence I feel full of energy for tomorrow!
+
+
+## Day 78
+*20230605*
+
+Today we got a lot of work done on the hi-fi wireframe and decided on our tech stack.
+
+- In our morning stand-up we recapped last week's work and planned out today's tasks.
+- One of the main tasks was getting the hi-fi wireframe as close to done as possible.
+	- The reason we wanted to have it close to done is that the earlier we get it finished, the earlier we can send a Figma prototype to people to get their impressions.
+	- Their insights could help us spot mistakes we have made or opportunities for improvement that would have otherwise gone unnoticed.
+- The other two main tasks were building a component tree diagram and deciding on our tech stack.
+- We decided to split into two sub-teams of three, with one handling the Figma work and one handling the component tree and the tech stack.
+- I worked on the latter team and we managed to build a basic component tree, although it still needs some work.
+- We did, however, make great progress in terms of choosing a tech stack.
+	- We briefly considered MongoDB but decided that a relational database would be better for our purposes.
+	- Therefore, Supabase was a natural choice since we already have experience with it, and we also know that it can handle our authentication and authorisation which is great.
+	- After some deliberation with the other sub-team about the pros and cons of using TS, we ultimately decided that we would go with it over JS.
+		- I was particularly glad that we came to an agreement on this since I think coding our entire project in TS will be a manageable challenge that will leave us feeling confident in our TS skills by the end.
+		- It should hopefully make it a bit easier for me to learn a strongly-typed language in the future.
+- We wrapped the day up with a retro in which we agreed that we had done a good day's work and that we had a clear idea of what to do tomorrow, namely flesh out the component tree and finalise the Figma protoype so that we can send it out to people to get their thoughts.
+
+I think we have made a good start to the second week of the project and I look forward to tackling the component tree once more tomorrow.
