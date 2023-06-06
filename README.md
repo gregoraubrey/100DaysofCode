@@ -3016,3 +3016,24 @@ Today we got a lot of work done on the hi-fi wireframe and decided on our tech s
 - We wrapped the day up with a retro in which we agreed that we had done a good day's work and that we had a clear idea of what to do tomorrow, namely flesh out the component tree and finalise the Figma protoype so that we can send it out to people to get their thoughts.
 
 I think we have made a good start to the second week of the project and I look forward to tackling the component tree once more tomorrow.
+
+
+## Day 79
+*20230606*
+
+Today we finalised our hi-fi wireframe and made some more progress on building out our component tree.
+
+- In the morning stand-up we agreed that we would all work together to get the hi-fi wireframe done as quickly as possible.
+- We decided to replace the **log in** and **sign up** buttons on the landing page with a single call to action in the form of a large **get started** button.
+	- This button would lead to a page in which the user could click on either the **log in** or the **sign up** tab before inputting an email and password.
+- This helped our landing page look a little more streamlined and we all agreed that this was an improvement over yesterday's design.
+- We added a **home** button in the shape of a little house to each page and set up the Figma links so that clicking it would always take the user back to the homepage.
+- After finishing up all of the links and testing the prototype out ourselves, we sent some friends and family a link to let them test out our website as it would appear for a mobile user.
+	- We got some useful feedback suggesting that our **list item** page was not obvious in how it should be navigated.
+	- No doubt we will get some more feedback trickling through in the coming days that will change our plans.
+		- This feels like how an Agile team would operate so I am glad that we are working in this way.
+- After sending out our prototype, we devoted the rest of the day to talking through the component tree.
+	- This proved to be more challenging than we had anticipated.
+	- For this reason, we acknowledged during our retro that we would have to continue working on it tomorrow and make it a priority.
+
+Today felt like pretty slow going whilst we were using Figma, since none of us are comfortable with it to the point that we can navigate the site quickly and get our ideas out onto the screen just as we had envisioned them. Despite that, sending out our prototype is a big milestone and one we can be proud of.
