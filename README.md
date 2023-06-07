@@ -3037,3 +3037,28 @@ Today we finalised our hi-fi wireframe and made some more progress on building o
 	- For this reason, we acknowledged during our retro that we would have to continue working on it tomorrow and make it a priority.
 
 Today felt like pretty slow going whilst we were using Figma, since none of us are comfortable with it to the point that we can navigate the site quickly and get our ideas out onto the screen just as we had envisioned them. Despite that, sending out our prototype is a big milestone and one we can be proud of.
+
+
+## Day 80
+*20230607*
+
+Today we researched React Router and got a good chunk of work done on our component tree.
+
+- In our stand-up we decided that we would start the day with some React Router research.
+	- We thought that it would be pointless trying to take the component tree design any further without a strong understanding of how React Router works.
+- One of our team members had actually used React Router during the week 7 project so he was able to give us a breakdown of what it does and he talked us through the code they wrote for their project.
+- I also did some research of my own by doing some googling and then asking ChatGPT some questions.
+	- It turns out that React Router does not actually make a multi-page site but rather lets an SPA give the illusion of multiple pages by unmounting and mounting certain components when the path changes.
+- We had another guest lecture from Rik Marselis which was an AMA session.
+	- I asked a question about which DevOps books he would recommend and he gave me some book suggestions (one of which he co-authored!):
+		- [Quality for DevOps teams](https://www.goodreads.com/book/show/57524240-quality-for-devops-teams)
+		- [The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win](https://www.goodreads.com/book/show/17255186-the-phoenix-project?from_search=true&from_srp=true&qid=TbzyYR3GO7&rank=1)
+		- [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://www.goodreads.com/book/show/26083308-the-devops-handbook?from_search=true&from_srp=true&qid=zOTlIRYdY3&rank=1)
+- After lunch, we got stuck in on the component tree, armed with our new knowledge about React Router.
+- We spent the rest of the day working on this.
+	- It took a few iterations but we ended up with a tree that we were all happy with, and had just started adding markers for state and props before it was time for our retro.
+- In our retro we reflected on just how quickly a component tree can scale when you add features to an app.
+- We also agreed that tomorrow we would keep working on adding state and props markers to the tree, before making a repo on GitHub and adding all of the boilerplate to it.
+	- i.e. running `npx create-react-app swapping-app --template typescript` and creating all of the components.
+
+Today was certainly tiring, as we were working on the same task for pretty much the whole day. Nonetheless, it is important that we get this step right as it will really speed up our development process if we are all on the same page and our component tree is sensibly designed.
