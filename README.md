@@ -3062,3 +3062,26 @@ Today we researched React Router and got a good chunk of work done on our compon
 	- i.e. running `npx create-react-app swapping-app --template typescript` and creating all of the components.
 
 Today was certainly tiring, as we were working on the same task for pretty much the whole day. Nonetheless, it is important that we get this step right as it will really speed up our development process if we are all on the same page and our component tree is sensibly designed.
+
+
+## Day 81
+*20230608*
+
+Today we had a guest lecture from an employer partner, set up our repo before adding the React boilerplate, and set up Netlify ready for CI/CD.
+
+- In our stand-up we agreed that today we should set up the repo and make a decision on how to handle deployment.
+- The first task of the day was finishing off yesterday's work on the component tree by finalising the props and state markers on our diagram.
+- By the time we had finished with that, it was time for an introduction to one of the employer partners.
+- The talk was really useful and the speakers were very candid, even saying straight-up that the starting salary is 34,000 GBP.
+	- I have to say I am always surprised by just how open people seem to be in the tech community.
+- After lunch we made our mono-repo (which is what we had decided on earlier this week) and ran `npx create-react-app swapping-app --template typescript`.
+- We then made a `components` directory within `src` and added the 14 components that comprised our tree.
+	- We ran into an issue in which git was not tracking the 14 newly-created empty directories but this was solved easily enough by adding a dummy `.tsx` file to each one.
+	- After consulting with ChatGPT I learned that git does this by design since it is supposed to track the contents of files and not directory structure.
+		- I also learned that if you *do* want to track an empty directory, you can just create a `.gitkeep` file inside the directory in question.
+	- After sorting out the empty directory issue, we used a VS Code extension called [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) to flesh out the `.tsx` files by typing `tsrfc` and letting the extension generate a TS React functional component.
+- Next up we looked into a few options for deployment, such as Netlify, Supabase, Heroku, Vercel, and Firebase.
+	- We concluded that Netlify would be the most appropriate for our situation thanks to its having a free tier and a good reputation for being quick to set up and use, even for beginners.
+- In our retro we reflected on a good day's work and were happy to have ticked off everything that we were supposed to have finished today according to our Trello board.
+
+Tomorrow we have the second sprint demo which means that we will have to devote the morning to preparing a presentation. After that, we will have the afternoon to get stuck into the code!
