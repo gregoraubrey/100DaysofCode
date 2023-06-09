@@ -3085,3 +3085,24 @@ Today we had a guest lecture from an employer partner, set up our repo before ad
 - In our retro we reflected on a good day's work and were happy to have ticked off everything that we were supposed to have finished today according to our Trello board.
 
 Tomorrow we have the second sprint demo which means that we will have to devote the morning to preparing a presentation. After that, we will have the afternoon to get stuck into the code!
+
+
+## Day 82
+*20230609*
+
+Today we prepared and delivered a sprint demo on this week's work, then spent the afternoon trying to get GitHub Actions to work so we could automate our unit tests.
+
+- In the stand-up we laid out who would work on what for the spring demo.
+	- My section was the decisions we made this week, such as TS vs JS, mono-repo vs multi-repo, and the tech stack we settled on.
+- We spent about 30 minutes practicing and timing our presentation.
+- When it came time to deliver the presentation, we finished it right on time, so our prep was definitely worth it.
+- We got some useful feedback from the coaches, such as making sure we have a very clear git strategy since we will be working in a mono-repo.
+- After lunch, we researched GitHub Actions and how we could use it to automate our tests each time we push to `main` or do a pull request.
+- We learned about `.yml` files and made one in `.github/workflows` but the "Actions" page on GitHub kept saying that the commands listed in the file had failed to execute.
+- We got very stuck at this point and ended up not making any more progress for the rest of the afternoon.
+- Just after 17:00, I had the idea to add `pwd` to the `.yml` before and after we `cd` into the directory containing our components and our `package.json`.
+	- I discovered, by looking at the output on the GitHub website, that the same path was being printed for both of the times that we ran `pwd`, meaning that something was going wrong with the `cd` command.
+	- After consulting with ChatGPT, I learned that each command is run in a brand new shell session, so the solution was to run all the commands one after the other in one shell session by adding a `|` at the start.
+	- It felt incredibly satisfying to see the first green tick on the "Actions" page after implementing these changes, and made the painful couple of hours we spent trying to understand what was going wrong feel worth it.
+
+This week has absolutely flown by! I cannot wait to sink my teeth into the coding next week and see how much of the MVP we can get done, drawing on our extensive planning to guide us.
