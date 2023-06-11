@@ -3106,3 +3106,17 @@ Today we prepared and delivered a sprint demo on this week's work, then spent th
 	- It felt incredibly satisfying to see the first green tick on the "Actions" page after implementing these changes, and made the painful couple of hours we spent trying to understand what was going wrong feel worth it.
 
 This week has absolutely flown by! I cannot wait to sink my teeth into the coding next week and see how much of the MVP we can get done, drawing on our extensive planning to guide us.
+
+
+## Day 83
+*20230610*
+
+Today I did very little coding and instead took advantage of the warm weather outside.
+
+- In the morning I read a couple of very short articles on React and SQL.
+	- I feel like it is important to have a strong grounding in the basics before we sink our teeth into the coding next week.
+	- If we are getting stumped by basic React syntax in the front-end and SQL syntax in the back-end (on Supabase) that we have already covered and used in hackathons then I dread to think what will happen when we encounter issues that we do not have experience with.
+- In the afternoon I looked over the sprint demo we gave on Friday to remember what we have done this week (Monday feels like so long ago already!).
+- I also looked over our Trello board to remind myself of our plans for next week.
+
+Today was a quiet one on the coding front but I have worked hard for the last five days so I am not too fussed about not doing a lot today, especially when the weather was so nice.
