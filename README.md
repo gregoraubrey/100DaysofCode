@@ -3120,3 +3120,15 @@ Today I did very little coding and instead took advantage of the warm weather ou
 - I also looked over our Trello board to remind myself of our plans for next week.
 
 Today was a quiet one on the coding front but I have worked hard for the last five days so I am not too fussed about not doing a lot today, especially when the weather was so nice.
+
+
+## Day 84
+*20230611*
+
+Today I once again did very little on the coding front and instead made the most of the lovely weather.
+
+- I began the day by reading an article I had saved titled [What is YAML? The YML File Format](https://www.freecodecamp.org/news/what-is-yaml-the-yml-file-format/).
+	- I decided to read this since we had such issues with the `.yml` file for our automated testing via GitHub Actions on Friday.
+- In the afternoon I revised `useState`, `useEffect`, and `useReducer` just to make sure that I am ready for next week when we begin coding up the front-end of our application.
+
+That was all for today, as I spent the rest of the day outside enjoying the weather. I can't wait for tomorrow when we will begin work on writing the code for our React components.
