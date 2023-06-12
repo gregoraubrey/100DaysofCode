@@ -3132,3 +3132,26 @@ Today I once again did very little on the coding front and instead made the most
 - In the afternoon I revised `useState`, `useEffect`, and `useReducer` just to make sure that I am ready for next week when we begin coding up the front-end of our application.
 
 That was all for today, as I spent the rest of the day outside enjoying the weather. I can't wait for tomorrow when we will begin work on writing the code for our React components.
+
+
+## Day 85
+*20230612*
+
+Today we made a start on coding up our components and worked in three pairs for the first time.
+
+- In the morning I bought a Udemy course that was on offer titled [Introduction to Testing in Go (Golang)](https://www.udemy.com/course/introduction-to-testing-in-go-golang/).
+	- I am very interested in learning how best to follow TDD, ideally as early as possible in my software development career.
+	- I feel like this course makes perfect sense for me based on my desire to both learn more about implementing testing and learn a new language for the back-end.
+	- With all that said, I do not plan on making a start on the course until we have finished our final project since I do not want to get distracted with Go when we already have enough on our plate as is with JS.
+- We kicked off the day with our stand-up in which we reflected on the previous two weeks and discussed what had gone well and what could have gone better.
+	- We agreed that we were not adhering closely enough to the 15/15/15 rule from our manifesto and instead being a bit too stubborn when we could have saved ourselves a lot of time by asking for help at an earlier stage.
+- On the coaches' recommendation, we picked out one feature from our MVP to deliver (as a minimum) in Friday's sprint demo.
+	- We went with the search functionality on the home page of our app.
+- My pair programming partner and I worked on the `ListDisplay` and `DisplayCard` components whilst the other two pairs worked on the `SearchBar` and `PopUp` components.
+- We finished our work fairly quickly which gave us ample time to write unit tests.
+	- Although we had a few issues with our final unit test (which checked that the correct props were being handed down to `DisplayCard`) we eventually got all the tests to pass which was very satisfying and reassuring.
+- We all reconvened and talked through our work, which served as our code review time.
+- After this, we got to work merging the changes into `main`, since each pair had spent the day working on their own branch.
+	- We had a couple of merge conflicts since another pair had made a couple of edits to `DisplayCard` but it did not take too long to sort things out and combine the necessary bits from both teams.
+
+Today really flew by with all of that coding. I am not sure whether that is a good or a bad thing but I know I feel full of energy for more of the same tomorrow!
