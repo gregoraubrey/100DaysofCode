@@ -3155,3 +3155,21 @@ Today we made a start on coding up our components and worked in three pairs for 
 	- We had a couple of merge conflicts since another pair had made a couple of edits to `DisplayCard` but it did not take too long to sort things out and combine the necessary bits from both teams.
 
 Today really flew by with all of that coding. I am not sure whether that is a good or a bad thing but I know I feel full of energy for more of the same tomorrow!
+
+
+## Day 86
+*20230613*
+
+Today we continued coding up our app and got the homepage behaving as we wanted.
+
+- In our stand-up we agreed on the work that each sub-team would focus on today.
+	- My partner and I would continue with `ListDisplay` and `DisplayCard` so that they implemented the search results created by the `SearchBar` component.
+	- One team researched Material UI.
+	- The last team worked on the `PopUp` component.
+- After finishing our morning work, we all got together just after lunch to merge one by one.
+	- We had a couple of merge conflicts due to multiple groups adding new props to `ListDisplay` but these were easily sorted.
+- We had all incorporated unit tests for our components as well which was reassuring, although these did occasionally break due to a merge in which, say, a new prop was now being handed into a component which was not yet reflected in that component's tests.
+- We incorporated the `data.json` dummy data file into `ListDisplay` such that the initial list of items printed on the page is taken straight from that JSON file
+	- This will allow us to demo our app on Friday with a dataset whilst also setting us up for coding our back-end since we know exactly the data structure that our front-end components are expecting to receive
+
+Today, much like yesterday, went really quickly thanks to all the time spent coding. I feel like as a team we are really getting into a good rhythm so I hope we can keep it up for the rest of the week.
