@@ -3173,3 +3173,24 @@ Today we continued coding up our app and got the homepage behaving as we wanted.
 	- This will allow us to demo our app on Friday with a dataset whilst also setting us up for coding our back-end since we know exactly the data structure that our front-end components are expecting to receive
 
 Today, much like yesterday, went really quickly thanks to all the time spent coding. I feel like as a team we are really getting into a good rhythm so I hope we can keep it up for the rest of the week.
+
+
+## Day 87
+*20230614*
+
+Today we split into two teams in order to work on the `NavBar` component and general styling for some of the components we have already finished using Material UI.
+
+- In the stand-up we agreed that we would need some time to get to grips with MUI since it was not quite as simple as we had anticipated.
+- Whilst we were working, one of the hiring partners popped into our room to get to know us and see how we were getting on with the project.
+	- We all gave a 10-second intro before talking through our problem statement, our MVP, and some of the code we have written thus far.
+	- The hiring partner was keen to hear about how we had planned out the project and the division of labour, and seemed impressed by our approach which is certainly encouraging.
+	- I feel we all gave a good account of ourselves and it gave us some extra motivation to do a good rest of the day's work.
+- I was part of the group that worked on the `NavBar`.
+	- We managed to get it looking very close to our hi-fi wireframe, with a home button on the left and an account button on the right that brings up a drop-down menu when clicked.
+	- We had issues importing a `.png` of our app's logo that is supposed to sit in the middle of the `NavBar` so we will have to sort that out tomorrow.
+- In the retro we congratulated each other on a good day's work, and on making a good impression with the hiring partner we spoke to today.
+- We also noted that quite a few of our unit tests had been broken when we switched over to using MUI code in the JSX for our components and we spent a lot of time fixing the unit tests so that they passed again.
+	- I am not sure if this is normal or if this is a sign that our unit tests were written poorly in the first place.
+	- Either way, I am glad that we are sticking to our manifesto and implementing testing, as I want all the practice I can get with it so that it gets ingrained as a habit early in my software development journey.
+
+Today was tiring thanks to the constant issues with unit tests. On the other hand, we got some great work done on the `NavBar` and we added some great styling to our display cards which now look very similar to the versions on our hi-fi wireframe. It was also a pleasure to chat to a hiring partner today and I can't wait to talk to more!
