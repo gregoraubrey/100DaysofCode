@@ -3194,3 +3194,28 @@ Today we split into two teams in order to work on the `NavBar` component and gen
 	- Either way, I am glad that we are sticking to our manifesto and implementing testing, as I want all the practice I can get with it so that it gets ingrained as a habit early in my software development journey.
 
 Today was tiring thanks to the constant issues with unit tests. On the other hand, we got some great work done on the `NavBar` and we added some great styling to our display cards which now look very similar to the versions on our hi-fi wireframe. It was also a pleasure to chat to a hiring partner today and I can't wait to talk to more!
+
+
+## Day 88
+*20230615*
+
+Today we focused on adding responsiveness to our homepage so that it would look good on both mobile and desktop, as well as adding React Router to our app.
+
+- In the stand-up we agreed that we needed to get the `NavBar` sorted and looking good for tomorrow's sprint demo.
+- I was part of the team working on the `NavBar` and we started things off by importing a `.png` of our app logo and adding it to the centre of the `NavBar`.
+	- We had an issue later in the day after merging where the border of the image was blocking part of the search bar so it could not be selected with the cursor.
+	- Luckily, the fix was as simple as cropping down the `.png`.
+- Nadeem popped into our breakout room at one point and asked how we had been getting on.
+	- He seemed impressed that we had followed his advice and got continuous deployment working with Netlify.
+	- He even tried to break the responsiveness (that the other sub-team had worked on) when we sent him the URL but he couldn't manage it!
+- In the afternoon one of our team members talked us through React Router since she had used it in a previous hackathon.
+	- It was surprisingly simple and I think I picked it up quite quickly.
+	- The only issue we had was that when we first merged our work into `main`, the Netlify site would crash when we tried to add `/home` to the end of the URL (so that we could see the homepage, which is the only page we have worked on thus far).
+	- It turned out that changing the path like this causes Netlify to not reference the `index.html` file anymore, so the solution was to make a file called `_redirects` and put it in the `public` folder.
+	- We added a single line to said file which tells Netlify to always route to `index.html` (and give an HTTP status code of 200), irrespective of the path, and then React Router can take over from there:
+```
+/*    /index.html   200
+```
+- In our retro we reflected on the importance of only keeping a couple of tasks open at any one time so that we avoid having a whole load of half-finished tickets.
+
+Today was hugely productive, and I was especially glad at how quickly we managed to get to grips with React Router. Tomorrow we have our sprint demo and I feel very confident considering we set out to deliver a working homepage as our feature for the week, and it already looks very similar to the hi-fi wireframe, whilst also being responsive.
