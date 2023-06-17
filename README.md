@@ -3246,3 +3246,20 @@ const handleCloseModal = () => {
 	- This is all with a view to doing a TDD exercise in C# over the next few weeks in our meetings which I hope will really help me get used to incorporating TDD into my own projects.
 
 Today was tiring and our preparation for the presentation was hectic to say the least. With that said, we have achieved so much this week and I can only see things getting even better from here, especially since we have made our reusable components now, so building the other pages for our site should not take too much time.
+
+
+## Day 90
+*20230617*
+
+Today I read a couple of articles and then went through the codebase for our final project to make sure I understood how each file worked.
+
+- I read an article titled [How Promises Work in JavaScript – A Comprehensive Beginner's Guide](https://www.freecodecamp.org/news/guide-to-javascript-promises/) in the morning.
+	- It served as a good refresher on the `async`/`await` syntax that we have yet to use in our final project.
+- I read another article from freeCodeCamp, this time on [different ways to style a React app](https://www.freecodecamp.org/news/how-to-style-a-react-app/).
+	- There was a short section on Material UI that was relevant to our final project but some of the other sections, such as the one on Tailwind CSS, were new to me.
+	- It would be worth trying these different styling options out in some practice projects just to get used to them.
+- In the afternoon I went through all of the components that we have made so far in our final project just to make sure that I understand them fully in preparation for next week.
+	- I found that I understood everything in terms of the logic of the code (functions, props, states, etc.) but did not immediately grasp what all of the Material UI styling meant.
+	- Overall I was impressed at how much of it did just make sense straight away, which served as a testament to our communication between sub-teams before merges.
+
+Today was fairly relaxed but that was exactly what was needed after a tiring week of coding. I expect that tomorrow I will spend some time editing my CV ready for job applications.
