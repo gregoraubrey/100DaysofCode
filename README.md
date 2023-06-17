@@ -3219,3 +3219,30 @@ Today we focused on adding responsiveness to our homepage so that it would look 
 - In our retro we reflected on the importance of only keeping a couple of tasks open at any one time so that we avoid having a whole load of half-finished tickets.
 
 Today was hugely productive, and I was especially glad at how quickly we managed to get to grips with React Router. Tomorrow we have our sprint demo and I feel very confident considering we set out to deliver a working homepage as our feature for the week, and it already looks very similar to the hi-fi wireframe, whilst also being responsive.
+
+
+## Day 89
+*20230616*
+
+Today we sorted out the `PopUp` component and then delivered our third sprint demo of the final project.
+
+- In our stand-up we agreed that sorting out the `<Modal>` in the `PopUp` component was the top priority since that was the only part of the `HomePage` that did not yet look close to our hi-fi wireframe.
+	- Having a working homepage that looks very close to our hi-fi wireframe was the feature that we set out to deliver at the start of the week so we wanted it to be the centrepiece of our sprint demo.
+- We researched how to set up the MUI modal and got it looking very similar to our hi-fi wireframe in the morning.
+- When we checked the Netlify site, we noticed a bug where clicking on the background (to quit the pop-up) made all of the "GET IT NOW" buttons unclickable.
+- We solved the issue by adding a line to the function that is called `onClose` when the user clicks the background in order to quit the pop-up:
+```tsx
+const handleCloseModal = () => {
+  setOpen(false);
+  setGetItNowClicked(false);
+};
+```
+- By setting `getItNowClicked` to `false`, the "GET IT NOW" buttons become clickable once more.
+- In the afternoon, we did not leave enough time to practise our presentation so by the time the coaches came into our breakout room we did not feel very prepared.
+	- Luckily, the presentation still went well, and we sent the Netlify URL in the chat to let the coaches test out our app and try to break its responsiveness which was definitely a good decision as it added some interactivity to our sprint demo.
+- In our retro we talked about how impressed we all were with the code we wrote this week.
+- We also noted that we were starting to take liberties in terms of how much time we dedicated to our stand-ups and retros so we looked back at our manifesto and agreed that we would try and nip things in the bud now so that our productivity does not worsen next week.
+- Just after 17:00 I had a mentor meeting in which we talked about some of the work I did this week and had a look at some basic C# code so that I could get comfortable with getters, setters, constructors, etc.
+	- This is all with a view to doing a TDD exercise in C# over the next few weeks in our meetings which I hope will really help me get used to incorporating TDD into my own projects.
+
+Today was tiring and our preparation for the presentation was hectic to say the least. With that said, we have achieved so much this week and I can only see things getting even better from here, especially since we have made our reusable components now, so building the other pages for our site should not take too much time.
