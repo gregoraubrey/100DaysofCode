@@ -3263,3 +3263,18 @@ Today I read a couple of articles and then went through the codebase for our fin
 	- Overall I was impressed at how much of it did just make sense straight away, which served as a testament to our communication between sub-teams before merges.
 
 Today was fairly relaxed but that was exactly what was needed after a tiring week of coding. I expect that tomorrow I will spend some time editing my CV ready for job applications.
+
+
+## Day 91
+*20230618*
+
+Today I made some edits to my CV and began reading *The Pragmatic Programmer*.
+
+- In the morning I made a start on editing my CV by using [FlowCV](https://app.flowcv.com/).
+	- I did not make any edits to the content but rather tried to make my CV a little more visually interesting.
+	- I have heard conflicting advice in terms of whether to make your CV plain or playful, so I think it would be worth having two versions that I can choose between depending on the type of company I am applying to.
+	- Down the line I will have to make a few changes such as adding a section on SoC but I will wait until we have actually finished our final project before I write it up.
+- In the afternoon I began reading a book that I have seen recommended in a few different places as being great for new software developers, namely [The Pragmatic Programmer - 20th Anniversary Edition](https://www.goodreads.com/book/show/52715562-the-pragmatic-programmer).
+- I am going to put my reading of *The Object-Oriented Thought Process* on hold for now as I feel that this new read will be more relevant for me as a junior, and I can always come back to *The Object-Oriented Thought Process* after the bootcamp has finished and I try to implement some OO principles into some of my own projects.
+
+Today felt great as I finished a couple of books so I am well on my way to meeting my target of reading 52 books this year. I feel refreshed and ready to jump back into coding tomorrow, hopefully with an even better structure after our productive retro on Friday.
