@@ -3278,3 +3278,20 @@ Today I made some edits to my CV and began reading *The Pragmatic Programmer*.
 - I am going to put my reading of *The Object-Oriented Thought Process* on hold for now as I feel that this new read will be more relevant for me as a junior, and I can always come back to *The Object-Oriented Thought Process* after the bootcamp has finished and I try to implement some OO principles into some of my own projects.
 
 Today felt great as I finished a couple of books so I am well on my way to meeting my target of reading 52 books this year. I feel refreshed and ready to jump back into coding tomorrow, hopefully with an even better structure after our productive retro on Friday.
+
+
+## Day 92
+*20230619*
+
+Today we integrated the `LandingPage` into our app, drew up our ERD, and made our Supabase project.
+
+- In our stand-up one of the team members showed us the work she had done over the weekend on the `LandingPage` component (which she had started for us because she will be away for some of this week).
+- After she had talked us through all of the code, we noticed one issue in which the `SearchBar` that was being rendered within `LandingPage` was smaller than the one on the homepage.
+	- We discovered that this was due to the centring that had been applied to the search bar, "Get Started" button, and the Gif at the top of the page.
+	- The solution was as simple as wrapping `<SearchBar />` inside a `<div>` and then applying in-line styling of `style={{width: "100%"}}` to said `<div>`.
+- We then had a really engaging guest talk by SoC mentor Ira Rainey who talked about his journey into tech and how he went from leaving school with just one O-level to now being a senior engineer at Microsoft.
+	- I asked a question about whether he has ever applied for a job without already knowing the language that he would be using were he to get the job and he said that he has done this countless times, and that as long as you can get across your passion and show your capacity to learn quickly, then it will not be a barrier for you.
+- in the afternoon we built our ERD together before creating a Supabase project and creating a couple of tables (`users` and `items`) to test out some SQL commands and jog our memories when it comes to writing the different types of `JOIN` in PostgreSQL.
+- That was all we had time for before our retro, in which we all agreed that our use of Trello had been much better today than it had been throughout the whole of the previous week, and that we all feel prepared for tomorrow and know what we need to work on.
+
+Today was really reassuring as I was nervous about how long it would take us to set up the Supabase project. It turns out it was so much easier than I could have imagined and it has made me confident that we will make great progress this week.
