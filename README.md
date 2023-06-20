@@ -3295,3 +3295,34 @@ Today we integrated the `LandingPage` into our app, drew up our ERD, and made ou
 - That was all we had time for before our retro, in which we all agreed that our use of Trello had been much better today than it had been throughout the whole of the previous week, and that we all feel prepared for tomorrow and know what we need to work on.
 
 Today was really reassuring as I was nervous about how long it would take us to set up the Supabase project. It turns out it was so much easier than I could have imagined and it has made me confident that we will make great progress this week.
+
+
+## Day 93
+*20230620*
+
+Today we created the rest of our tables and then worked on writing a fetch request in our front-end to our Supabase project.
+
+- In our stand-up we agreed that one team would handle the `AuthPage` component and the relevant Supabase set-up, whilst the other would work on creating a fetch request.
+- Before we separated, we set up the integration of our back-end by creating a `.env.local` file and populating it with our `REACT_APP_SUPABASE_URL` and our `REACT_APP_SUPABASE_ANON_KEY`.
+	- By having `.env.local` written in our `.gitignore` file, we could happily paste in the URL and ANON KEY without worrying about them being tracked by git (and as such visible on GitHub).
+- We then had to create a file called `supabaseClient.tsx` and add the following code that referenced our environment variables:
+```tsx
+import {createClient} from '@supabase/supabase-js';
+const supabaseUrl:string =  process.env.REACT_APP_SUPABASE_URL as string
+const supabaseAnonKey:string = process.env.REACT_APP_SUPABASE_ANON_KEY as string
+export default createClient(supabaseUrl,supabaseAnonKey)
+```
+- I was in the fetch request team, and we started our work off by writing an async function called `getItems()` which would be called by a `useEffect` which only runs on mount, because its dependency array is empty:
+```tsx
+useEffect(() => {
+    getItems();
+  }, []);
+```
+- We kept having issues with the Supabase syntax for writing a `JOIN` (as part of the data we wanted to pull was not available in the `items` table, but rather the `users` table).
+	- It turned out that we had not yet set up reading permissions for the `users` table on our Supabase project which was a laughably simple solution to about an hour's confused frustration.
+	- Even with this fix, the `JOIN` syntax was still not working for us so we settled on running two fetch requests (one for `items`, and one for `users`) and then combining the data we get from each by matching up the `user_id` value in each case (where `user_id` is the Primary Key of `users` and a Foreign Key of `items`).
+	- We can always refactor our code later to try and get the `JOIN` to work.
+- After logging the data to the console and confirming that we were getting what we expected, we passed it down as a prop through both `LandingPage` and `HomePage` to `ListDisplay` and got our site to display the actual database data instead of data from our local dummy `data.json` file which felt like a massive win after a hard day of coding!
+- In our retro we talked about the roadblocks we had today in terms of getting to grips with Supabase but reflected that we had reached some crucial milestones, with the other team successfully getting a basic login page set up.
+
+Today was definitely frustrating in terms of coding but rewarding at the same time. It has set us up well to continue on the back-end integration and I am cautiously optimistic about how much work we can get done this week.
