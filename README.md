@@ -3326,3 +3326,33 @@ useEffect(() => {
 - In our retro we talked about the roadblocks we had today in terms of getting to grips with Supabase but reflected that we had reached some crucial milestones, with the other team successfully getting a basic login page set up.
 
 Today was definitely frustrating in terms of coding but rewarding at the same time. It has set us up well to continue on the back-end integration and I am cautiously optimistic about how much work we can get done this week.
+
+
+## Day 94
+*20230621*
+
+Today we fixed our search functionality to work with the data fetched from our back-end and fleshed out the login and sign up functionality.
+
+- In our stand-up we noted that the `SearchBar` component was not set up to interact with the new data fetched from the back-end and was instead still filtering the dummy data from our `data.json` file.
+- We fixed this initially by having the search query used to filter down the `items` array.
+- Unfortunately, this involved changing the state of `items`, which only fetches from the back-end one time (on mount), so as soon as `items` has been filtered once, all of the items no longer in the list are lost.
+- We fixed this by creating a new state variable in `App.tsx`:
+```tsx
+const [filteredItems, setFilteredItems] = useState<ItemsTableResults[]>(items);
+```
+- This was combined with a `useEffect` in the same file to make sure that whenever `items` changes (i.e. whenever we fetch data), `filteredItems` copies the new state of `items`:
+ ```tsx
+ useEffect(() => {
+    setFilteredItems(items);
+  }, [items]);
+ ```
+ - We then passed the state variable down as a prop to `SearchBar` and rewrote the component so that it filtered down the `filteredItems` array without ever editing the original `items` array.
+ - We rewrote `ListDisplay` to display the contents of the `filteredData` array and this fixed our issue, allowing the user to search, delete characters, and then search again for something else.
+	- Our code for sanitising the user input still applied so there was no change to be made there.
+- We merged our work on the search functionality into `main` before a couple of developers from one of the hiring partners popped into our room.
+	- We talked about how our project was going so far and they seemed impressed, especially by our decision to go for a mobile-first design approach.
+ 	- They gave us some useful tips for the final presentation such as starting out in mobile mode before moving over to desktop and doing a full sign up in our demo to prove that the whole process works.
+- In our retro we reflected that setting up new props can be a pain in TS since you know exactly what needs to change but still have to spend a while going through all the files and adding the new prop and changing the type definition.
+	- Perhaps this shows one way in which we are misusing TS?
+
+ We made some good progress today, especially the other sub-team in terms of the `AuthPage` which was great to see. I feel like if we keep this up we will be almost done by the end of the week.
