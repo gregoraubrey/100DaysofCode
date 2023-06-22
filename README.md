@@ -3355,4 +3355,30 @@ const [filteredItems, setFilteredItems] = useState<ItemsTableResults[]>(items);
 - In our retro we reflected that setting up new props can be a pain in TS since you know exactly what needs to change but still have to spend a while going through all the files and adding the new prop and changing the type definition.
 	- Perhaps this shows one way in which we are misusing TS?
 
- We made some good progress today, especially the other sub-team in terms of the `AuthPage` which was great to see. I feel like if we keep this up we will be almost done by the end of the week.
+We made some good progress today, especially the other sub-team in terms of the `AuthPage` which was great to see. I feel like if we keep this up we will be almost done by the end of the week.
+
+
+## Day 95
+*20230622*
+
+Today we set up an `images` bucket on Supabase and wrote the code that allows users to upload images to the database.
+
+- In our stand-up we agreed that one team would work on bugs and fixes whilst another worked on the `MyAccountPage` component.
+- I was on the `MyAccountPage` team which meant that we had to set up a bucket on Supabase that would store the images that users upload from the account page.
+- We watched a video on [building an image gallery in Supabase](https://www.youtube.com/watch?v=8tfdY0Sf2rA&list=PPSV) before setting up our `images` bucket and adding policies to allow users to insert, select, update, and delete the images that are inside their folder, meaning that they have no access to other users' images.
+- After making the bucket, we began writing the code to allow users to upload an image to our database.
+- We got bogged down a few times but eventually got it working just before the end of the day with a `useEffect` that contains an async function:
+```tsx
+useEffect(() => {
+    async function fetchUser() {
+      const { data: { user } } = await supabase.auth.getUser();
+      setUser(user);
+      setIsUserLoaded(true);
+    }
+    fetchUser();
+  }, []);
+```
+- In our retro we agreed that we need to get better at consulting the docs when we get stuck, since they so often contain exactly the answer we are looking for.
+	- We also commented on how much smoother this week went in terms of sticking to our manifesto and following an Agile methodology.
+
+Today was frustrating at times but overall very satisfying after we got the image upload working. We are very close to finishing up our MVP now and for that reason I cannot wait for our sprint demo tomorrow.
