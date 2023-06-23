@@ -3382,3 +3382,27 @@ useEffect(() => {
 	- We also commented on how much smoother this week went in terms of sticking to our manifesto and following an Agile methodology.
 
 Today was frustrating at times but overall very satisfying after we got the image upload working. We are very close to finishing up our MVP now and for that reason I cannot wait for our sprint demo tomorrow.
+
+
+## Day 96
+*20230623*
+
+Today we did a code review to make sure that everyone understands the whole codebase going into the final week of the project, and we also delivered our fourth sprint demo.
+
+- In the stand-up we agreed that we would do a code review together after finalising our presentation.
+- We spent some time working out who would say what in the presentation before breaking off to write our individual slides.
+- After we were all happy with what we were going to say, we came together for a big code review.
+- Just before starting the code review, we tried to merge in the work that we had done on the `AccountPage` component in our separate branch.
+	- Unfortunately, it turned out that for some reason this branch was behind `main`, which meant that we were going to have to solve a lot of merge conflicts (so many that GitHub said it could not display them all on the website).
+	- Since we had only worked in the one file, we decided that, in the interest of time, we would just copy and paste our work on `AcountPage.tsx` into `main` and do a push.
+	- In the future, it would be nice to try and learn a more robust way of dealing with such git issues.
+- We spent the rest of the morning practising our presentation and getting the timings right.
+- After, lunch it was time for our presentation.
+	- It went well, thanks in no small part to our good preparation.
+	- We got some helpful feedback, such as adding some functionality to the `Footer` component so that we actually get some practical use out of the space it occupies.
+- We began writing the code for implementing the `token_count` column in our `users` table so that we can display the user's token count in the `NavBar` when they are logged in.
+	- This proved more difficult than we had anticipated and we noticed ourselves getting bogged down and frustrated, so we decided to pivot and come back to it with fresh eyes on Monday.
+- We spent the rest of the day fixing bugs and little issues we had noticed.
+- In our retro we commented on how much we had achieved this week, especially considering the ambitious goals we had set for ourselves.
+
+This week has been really enjoyable and I feel like we have worked more smoothly than ever as a team. I am nervous and excited in equal measure for the culmination of all our work next week!l our work next week!
