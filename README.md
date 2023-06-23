@@ -3405,4 +3405,4 @@ Today we did a code review to make sure that everyone understands the whole code
 - We spent the rest of the day fixing bugs and little issues we had noticed.
 - In our retro we commented on how much we had achieved this week, especially considering the ambitious goals we had set for ourselves.
 
-This week has been really enjoyable and I feel like we have worked more smoothly than ever as a team. I am nervous and excited in equal measure for the culmination of all our work next week!l our work next week!
+This week has been really enjoyable and I feel like we have worked more smoothly than ever as a team. I am nervous and excited in equal measure for the culmination of all our work next week!
