@@ -3420,3 +3420,23 @@ Today I was not at home for most of the day so I only had a small window of time
 	- I have not used this hook before but it seems simple enough, and we may well need it for some of the functionality in our project so it is definitely worth getting familiar with it now.
 
 That was all I had time for today but I am happy enough with that after a long week working on our final project.
+
+
+## Day 98
+*20230625*
+
+Today I went through the whole codebase for our final project to make sure I understand it all going into the final week.
+
+- In the morning I stumbled across a book called  [Test-Driven Development in Go](https://www.goodreads.com/book/show/121382396-test-driven-development-in-go) by Adelina Simion.
+	- This seems like a great book for me to read after the bootcamp as I both attempt to learn Go and also improve my understanding of TDD.
+- In the afternoon I looked through our entire codebase for the final project to see if there were any gaps in my knowledge.
+- Having done a code review at the end of last week, I was hopeful that it would all make sense to me and I was pleasantly surprised to discover that for the most part everything was either fairly self-explanatory or something that I remembered working on or being explained to me.
+- A good example of some self-explanatory code is the way in which one of the sub-teams made a different gif appear on screen depending on the width of the user's screen:
+```tsx
+const isDesktop = useMediaQuery('(min-width: 768px)');
+
+const landingPageGif = isDesktop ? landingpagegifdesktop : landingpagegif;
+```
+- The only parts of the codebase that I still found slightly confusing were the authentication sections, so hopefully the freeCodeCamp Supabase course I started going through yesterday can help with that.
+
+Today was reassuring as I proved to myself that I do indeed understand our codebase and now I feel like I am in a great position to contribute to the team next week and add the finishing touches to our app!
