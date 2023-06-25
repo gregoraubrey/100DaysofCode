@@ -3406,3 +3406,17 @@ Today we did a code review to make sure that everyone understands the whole code
 - In our retro we commented on how much we had achieved this week, especially considering the ambitious goals we had set for ourselves.
 
 This week has been really enjoyable and I feel like we have worked more smoothly than ever as a team. I am nervous and excited in equal measure for the culmination of all our work next week!
+
+
+## Day 97
+*20230624*
+
+Today I was not at home for most of the day so I only had a small window of time for programming.
+
+- I watched the start of a new freeCodeCamp tutorial titled [Learn Supabase, an Open-Source Firebase Alternative](https://www.freecodecamp.org/news/learn-supabase-open-source-firebase-alternative/).
+	- Hopefully this will help solidify my understanding of the platform and build on what I have done with Supabase thus far in our final project.
+	- The tutorial itself is almost three hours long so I do not expect that I will be able to finish it by the end of our project but it will hopefully be useful for any of my own projects I work on after the bootcamp has ended.
+- I then read an article that one of the coaches recommended on `useContext` titled [A Guide to React Context and useContext() Hook](https://dmitripavlutin.com/react-context-and-usecontext/).
+	- I have not used this hook before but it seems simple enough, and we may well need it for some of the functionality in our project so it is definitely worth getting familiar with it now.
+
+That was all I had time for today but I am happy enough with that after a long week working on our final project.
