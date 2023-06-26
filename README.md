@@ -3440,3 +3440,47 @@ const landingPageGif = isDesktop ? landingpagegifdesktop : landingpagegif;
 - The only parts of the codebase that I still found slightly confusing were the authentication sections, so hopefully the freeCodeCamp Supabase course I started going through yesterday can help with that.
 
 Today was reassuring as I proved to myself that I do indeed understand our codebase and now I feel like I am in a great position to contribute to the team next week and add the finishing touches to our app!
+
+
+## Day 99
+*20230626*
+
+Today we split our work for today and tomorrow and made good progress on the `MyAccountPage` component.
+
+- In our stand-up, we decided that we would split into three teams:
+	- One for planning our final presentation.
+	- One for editing the Supabase tables such that when a user signs up, the UUID that gets created for them is added to the `users` table.
+	- One for working on `MyAccountPage.tsx`.
+- I was working on `MyAccountPage` which involved adding a `ListDisplay` to it that was slightly different to the ones that appear on the home page and the landing page.
+	- In this case, the only items we want to show up are ones that have been listed by the currently logged in user, so we wrote some code to have the array of items filtered down by checking for a match between the `user_id` of each item and the UUID of the current user session:
+```tsx
+useEffect( () => {
+    async function getUser() {
+      const { data: { user } } = await supabase.auth.getUser()
+      setCurrentUser(user);
+    if(user) {
+      setFilteredItems(items.filter(x => x.user_id === user?.id));
+      setLoading(false);
+    } else {
+      console.error("User does not have a value.");
+    };
+    };
+    getUser();
+  }, [items, setFilteredItems] );
+```
+- After lunch, we wrote the code that allows the user to upload an item.
+	- i.e. add a new row to the `items` table:
+```tsx
+if (user && title && uploadedFilePath) {
+        const { data: insertData, error: insertError } = await supabase
+          .from("items")
+          .insert([{ title: title, user_id: user?.id, image: `https://xxxxxxxxxxxx.supabase.co/storage/v1/object/public/images/${uploadedFilePath}` }]);
+          console.log("insertData variable from handleFormSubmit:", insertData);
+```
+- We found that the items were being uploaded to our bucket just fine, but this code that actually inserts a new row into the `items` table was not working.
+- We solved this by adding console logs at various places, eventually discovering that the `title` variable was not updating as it should have done when the user typed into the input box.
+	- For that reason, the value of `title` was always stuck at its initial `""` meaning `(user && title && uploadedFilePath)` was always evaluating to `false`, and our insert code was never even running.
+	- After fixing the function that handled user input in the text box, the insert code worked straight away!
+- In our retro we commented on a few bugs that we had noticed in our code and added them to Trello.
+
+Today has been an excellent start to the week. We made great progress on the  `MyAccountPage` component and reached the milestone of finally having the user be able to upload an item to the database from our deployed front-end on Netlify.
