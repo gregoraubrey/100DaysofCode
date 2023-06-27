@@ -3484,3 +3484,70 @@ if (user && title && uploadedFilePath) {
 - In our retro we commented on a few bugs that we had noticed in our code and added them to Trello.
 
 Today has been an excellent start to the week. We made great progress on the  `MyAccountPage` component and reached the milestone of finally having the user be able to upload an item to the database from our deployed front-end on Netlify.
+
+
+## Day 100
+*20230627*
+
+Today marks 100 days of journaling my coding! We spent the day fixing bugs and adding a couple of features from our MVP specification that were still missing from our app.
+
+- In our stand-up we agreed that we would be working in three teams of two today:
+	- One for presentation prep and fixing small bugs.
+	- One for back-end fixes and adding `claimed` functionality.
+	- One for working on the  `MyAccountPage` component.
+- I was part of the `MyAccountPage` team and we kicked things off by fixing a bug to do with going from the account page to the home page (by clicking the home icon).
+	- The issue was that the items that would display on `/home` were the same ones being displayed on `/myaccount` (i.e. the ones listed by the currently logged in user) until you typed something into the search bar, which caused the value of `filteredItems` to be updated.
+		- `filteredItems` was also being used on `/myaccount` which is why its effects persisted after the user moved to `/home`.
+- We fixed the bug by resetting `filteredItems` to the value of `items` (i.e. what we fetched from Supabase when `App` first mounted) every time the home icon is clicked:
+```tsx
+
+<IconButton component = {Link} to = "/home" onClick={() => setFilteredItems(items)}>
+    <HomeIcon sx={{ fontSize: isMobile ? "40px" : "50px", color: 'white'}}/>
+</IconButton>)
+```
+- We also added an "unlist" button to each `DisplayCard` that only renders when the path is `/myaccount`, and we created a function called `handleUnlistButtonClick` which deletes the relevant item from our `items` table on Supabase:
+```tsx
+const handleUnlistButtonClick = async () => {
+    if (tokenCount && tokenCount >= 1) {
+      const { data: userData, error: userError } = await supabase.auth.getUser();
+      const currentUserID = userData?.user?.id;
+      if(userError) {
+        console.error(userError);
+      };
+      if (currentUserID) {
+        const { data: itemData, error: itemError } = await supabase
+          .from("items")
+          .select("user_id")
+          .eq("item_id", id)
+          .single();
+        if (itemError) {
+          console.error(itemError);
+        }
+        const itemUserID = itemData?.user_id;
+        if (currentUserID === itemUserID) {
+          await supabase.from("items").delete().eq("item_id", id);
+          setFilteredItems(filteredItems.filter(x => x.item_id !== id));
+          if (setTokenCount) {
+            setTokenCount(tokenCount - 1);
+          }
+          const { error: updateError } = await supabase
+          .from('users')
+          .update({ token_count: tokenCount - 1 })
+          .eq('user_id', currentUserID);
+          if (updateError) {
+            console.error('Error updating user token count:', updateError);
+          }
+        }   else {
+          console.log("Permission denied. The current user is not the owner of the item.");
+        }
+      }
+    }
+    else {
+      alert("You don't have enough tokens to unlist this item. You need at least 1 token to unlist an item. Please list an item to earn a token.")
+    }
+  };
+```
+- (I removed some console logs and comments to shorten the above code.)
+- In our retro we talked about a few more bugs we had noticed and sorted out our Trello board ready for tomorrow.
+
+I cannot quite believe that I have already written 100 entries of this coding journal. I threw my ramblings (excluding day 100) into LibreOffice Writer and it said that I had written 39,389 words (229,940 characters)! That's a small book! I guess it goes to show that a little can go a long way if you do it consistently. I feel like summarising what I have got up to each day has been rewarding and has helped clarify my thoughts on various coding (and non-coding) issues over these last few months, so I actually plan to continue. If anyone is reading this, I hope you might try journaling your coding activities too (and if you do, drop me an email at gregoraubrey@protonmail.com). I can say wholeheartedly that it has been worth the 5 to 10 minutes it has taken me each day, and if these entries serve as nothing more than a memento to look back on then it will have been worth my while. Until tomorrow!
