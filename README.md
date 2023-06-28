@@ -3551,3 +3551,19 @@ const handleUnlistButtonClick = async () => {
 - In our retro we talked about a few more bugs we had noticed and sorted out our Trello board ready for tomorrow.
 
 I cannot quite believe that I have already written 100 entries of this coding journal. I threw my ramblings (excluding day 100) into LibreOffice Writer and it said that I had written 39,389 words (229,940 characters)! That's a small book! I guess it goes to show that a little can go a long way if you do it consistently. I feel like summarising what I have got up to each day has been rewarding and has helped clarify my thoughts on various coding (and non-coding) issues over these last few months, so I actually plan to continue. If anyone is reading this, I hope you might try journaling your coding activities too (and if you do, drop me an email at gregoraubrey@protonmail.com). I can say wholeheartedly that it has been worth the 5 to 10 minutes it has taken me each day, and if these entries serve as nothing more than a memento to look back on then it will have been worth my while. Until tomorrow!
+
+
+## Day 101
+*20230628*
+
+Today we added the finishing touches to `MyAccountPage` and worked on our presentation.
+
+- In our stand-up we agreed that we would all work together to add the final feature to our app that would complete the MVP.
+- This involved making the "VIEW" button on the `/myaccount` page show the claimant's email address, username, and home address, or show an alert saying that the item had not yet been claimed if there was no claimant.
+- This did not take too long although we did have an issue with our use of `useLocation()` in the `PopUp` component.
+	- This was causing issues when our GitHub Actions attempted to build before we could merge to `main`.
+	- It said that we could not have `useLocation()` inside a non-router component, so we solved the issue by passing down a prop that was either a string of `"homepage"` or a string of `"myaccount"` and then using that to determine what fields the `PopUp` should display.
+- After merging our last piece of work into `main`, we spent the rest of the day working on our presentation and brainstorming our demo video.
+- In our retro we agreed that we had done another good day's work and reflected on how strange it felt to actually have the code finished at last!
+
+Today went really well, although I feel like we will have to move quickly tomorrow in order to get the video finished on time.
