@@ -3567,3 +3567,20 @@ Today we added the finishing touches to `MyAccountPage` and worked on our presen
 - In our retro we agreed that we had done another good day's work and reflected on how strange it felt to actually have the code finished at last!
 
 Today went really well, although I feel like we will have to move quickly tomorrow in order to get the video finished on time.
+
+
+## Day 102
+*20230629*
+
+Today we finished off our presentation and recorded it before moving on to planning our demo video which we will make tomorrow.
+
+- In the stand-up we agreed that we would each spend some time individually finalising our slides for the presentation and writing out a script.
+- After we were all happy with what we were going to say, we did a couple of run-throughs and timed ourselves to see how we were doing.
+- After a couple of run-throughs we were happy with what we wanted to say, and had managed to get the total time down to around 12 minutes which was perfect.
+- We moved into a separate Zoom meeting so we could record our presentation and managed to get a good recording done at the first time of asking which was satisfying.
+- We spent the afternoon planning out our 3-minute demo video which will introduce our app and its features.
+- We recorded a few lines of voiceover and then it was time for our retro.
+- In our retro we reflected on how happy we were to get the presentation recording done, and in good time too.
+- All that we have left tomorrow is to add the finishing touches to our demo video, and then we will be done!
+
+It feels very strange to be going into the final day of the course tomorrow (excluding demo day on the 5th of July). At the same time, I could not be prouder of how my teammates and I have worked together over these last five weeks and I really feel like we have not just produced a well-made app but learned so much about product engineering and the Agile workflow too.
