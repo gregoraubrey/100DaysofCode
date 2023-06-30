@@ -3584,3 +3584,19 @@ Today we finished off our presentation and recorded it before moving on to plann
 - All that we have left tomorrow is to add the finishing touches to our demo video, and then we will be done!
 
 It feels very strange to be going into the final day of the course tomorrow (excluding demo day on the 5th of July). At the same time, I could not be prouder of how my teammates and I have worked together over these last five weeks and I really feel like we have not just produced a well-made app but learned so much about product engineering and the Agile workflow too.
+
+
+## Day 103
+*20230630*
+
+Today was the last official day of the School of Code bootcamp Cohort 14 (excluding demo day next week)!
+
+- In our stand-up I mentioned that I had noticed that our `README.md` was looking a bit barren so we updated it so that it served as a good introduction to our project.
+- We knew exactly what we had to work on today and consequently spent the morning and most of the afternoon scripting and then recording our 3-minute video that will serve as a sort of advertisement for our app.
+	- We recorded it using Canva which caused a couple of issues due to our inexperience with the software but we managed to get the recording exported in time and uploaded as an unlisted video on YouTube.
+- At 15:30 we all came together in the main room and spent the remainder of the afternoon celebrating and playing some games like Kahoot which was a good laugh.
+- I had my final mentor meeting just after 17:00 and expressed just how lucky I felt to have been paired up with someone so helpful and so experienced in the industry.
+	- To my delight, my mentor expressed a similar sentiment and said he was glad to have had me as his mentee which was wonderful to hear.
+	- He hammered home one last time the idea that in this industry you can progress as fast or as slow as you like, and that if you apply yourself and are constantly hungry to learn, there is no reason why you cannot soon be at the same level as colleagues 10 years your senior.
+
+It feels strange to know that this was the last day of School of Code. I have the rehearsals and then demo day itself to look forward to so it has not really sunk in yet. For now, it is time to have a well-earned rest and then look over the codebase and prepare for our presentation next week.
