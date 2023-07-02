@@ -3600,3 +3600,17 @@ Today was the last official day of the School of Code bootcamp Cohort 14 (exclud
 	- He hammered home one last time the idea that in this industry you can progress as fast or as slow as you like, and that if you apply yourself and are constantly hungry to learn, there is no reason why you cannot soon be at the same level as colleagues 10 years your senior.
 
 It feels strange to know that this was the last day of School of Code. I have the rehearsals and then demo day itself to look forward to so it has not really sunk in yet. For now, it is time to have a well-earned rest and then look over the codebase and prepare for our presentation next week.
+
+
+## Day 104
+*20230701*
+
+Today I spent some time reading through our codebase to prepare for demo day next week.
+
+- I started off by going through our component tree just to get an idea of how we had planned out the structure of our components.
+	- It was interesting to see just how simple the tree makes everything look, when in reality by the end we had some components taking in six or seven props.
+	- I guess it goes to show just how quickly complexity can creep into a project if you are not careful.
+- Having gone through the tree, I made a start on `App.tsx` before moving on to the four different pages of our web app.
+- Whenever there was a line of code that did not click straight away, pasting it into ChatGPT and asking for a breakdown was enough to jog my memory and get me back up to speed.
+
+That was all I worked on today but I think a rest was well-deserved after five long weeks working on our final project! Tomorrow I will keep going through the codebase until I have checked through every file at least once.
