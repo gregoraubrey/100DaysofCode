@@ -3614,3 +3614,18 @@ Today I spent some time reading through our codebase to prepare for demo day nex
 - Whenever there was a line of code that did not click straight away, pasting it into ChatGPT and asking for a breakdown was enough to jog my memory and get me back up to speed.
 
 That was all I worked on today but I think a rest was well-deserved after five long weeks working on our final project! Tomorrow I will keep going through the codebase until I have checked through every file at least once.
+
+
+## Day 105
+*20230702*
+
+Today I edited my CV and sent off my first few job applications.
+
+- I started the day by editing my CV and adding sections both on School of Code and our 5-week final project.
+	- There was something very fulfilling about committing all my hard work over these last 16 weeks to writing (even though I have been doing that every day here!).
+- After getting my CV to a point where I was happy with it, I applied to some jobs that interested me that I had found through various platforms such as LinkedIn and Indeed.
+- In the afternoon I spent some time reading *The Pragmatic Programmer*, which I had not picked up in a while.
+	- I hope that since the bootcamp has now finished, I should be able to spend a lot more of my time reading programming books.
+	- I have kept up my [personal reading habit](https://www.goodreads.com/user/show/109060712-gregor-aubrey) so I do not expect that it will be too much of a challenge to ramp up the time I spend reading technical books.
+
+Today marks the start of my journey trying to find a job in tech! It felt great to finally send out some applications - I just hope I get some responses! Unfortunately I did not get the time to read through the rest of the codebase so I will have to spend some time on that tomorrow.
