@@ -3629,3 +3629,19 @@ Today I edited my CV and sent off my first few job applications.
 	- I have kept up my [personal reading habit](https://www.goodreads.com/user/show/109060712-gregor-aubrey) so I do not expect that it will be too much of a challenge to ramp up the time I spend reading technical books.
 
 Today marks the start of my journey trying to find a job in tech! It felt great to finally send out some applications - I just hope I get some responses! Unfortunately I did not get the time to read through the rest of the codebase so I will have to spend some time on that tomorrow.
+
+
+## Day 106
+*20230703*
+
+Today we had our rehearsals for demo day and I sent off some more job applications in the afternoon.
+
+- We started the day by logging into [Kumospace](https://www.kumospace.com/) and finding our team's booth.
+- After sorting out a few technical difficulties and getting everyone set up, we did a couple of run-throughs of our presentation.
+	- These went well, with the only issues being that we could have been more explicit with our description of some of the app's features during the demo section of the presentation.
+- After a while, the coaches visited our booth and we did our proper presentation rehearsal.
+	- It went smoothly, thanks in no small part to our practice runs earlier in the day.
+	- We got some useful feedback, such as demoing the app as if we were a user rather than just drily explaining each one of the features.
+- In the afternoon I sent off some more job applications based on roles I had come across on LinkedIn and Indeed.
+
+As a team we were all in agreement that today's rehearsal went well and we are all excited for Wednesday so we can finally show off our hard work to the hiring partners.
