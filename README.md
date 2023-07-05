@@ -3663,3 +3663,21 @@ Today I took part in a hackathon for one of the School of Code hiring partners.
 - At the end of the day we gave a short presentation to some of the judges who seemed impressed with what we had achieved in the time.
 
 All in all, I was surprised that there was no coding involved today but I expect they are more interested in our teamwork than our coding ability right now. It was certainly good practice and should set me in good stead for any future hackathons. Tomorrow is demo day, the culmination of all our hard work, and I cannot wait!
+
+
+## Day 108
+*20230705*
+
+Today was demo day and our opportunity to showcase what we have learned in these last 16 weeks!
+
+- We kicked things off with a brief pep talk from Chris who congratulated us all and said how well we had done to get to this point.
+	- He gave some good advice for our presentations by saying that there was nobody in the world better equipped to present our work on our final project than us, and he recommended that we always think about making sure the audience enjoys themselves.
+- We headed to Kumospace just before 10:00 to get ready for the hiring partners to come round and see us.
+- We were a bit nervous before our first presentation but it went really well, which helped to settle the nerves.
+- Throughout the whole day, the only issue we had was occasionally trying to claim an item that we had already claimed in a previous demo.
+	- I alleviated this issue by listing a whole load of new items from my account on our site.
+- All of the hiring partners were positive in their feedback and many of them reflected that it was seriously impressive to have produced a working MVP for a full-stack application in just 5 weeks.
+- When all was said and done we had presented eight times, and were absolutely knackered!
+- I spent some time mingling with fellow bootcampers from other groups to see how things had gone for them and to reflect on the last 16 weeks and how quickly they have gone by.
+
+With demo day done and dusted, that marks the end of the bootcamp, and now all we have left are the employability sessions that start from next week. I had a whale of a time today and it felt wonderful to be acknowledged by industry professionals for our hard work and the progress we have made. I cannot thank my final project teammates and everyone at School of Code enough!
