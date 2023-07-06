@@ -3681,3 +3681,19 @@ Today was demo day and our opportunity to showcase what we have learned in these
 - I spent some time mingling with fellow bootcampers from other groups to see how things had gone for them and to reflect on the last 16 weeks and how quickly they have gone by.
 
 With demo day done and dusted, that marks the end of the bootcamp, and now all we have left are the employability sessions that start from next week. I had a whale of a time today and it felt wonderful to be acknowledged by industry professionals for our hard work and the progress we have made. I cannot thank my final project teammates and everyone at School of Code enough!
+
+
+## Day 109
+*20230706*
+
+Today I reread a couple of articles that I had gone through in the last few weeks and sent off some more job applications.
+
+- I began the day by reading some more of *The Pragmatic Programmer* which I am really enjoying.
+	- I like the way the authors have structured the book into a series of short topics as it makes for easy reading and it feels like every paragraph contains a nugget of self-contained wisdom without having to contribute overly to an over-arching narrative flow.
+- In the afternoon I read through some articles that I had saved to Reader but felt that I no longer really remembered.
+	- One of these was an article on [promises in JavaScript](https://www.freecodecamp.org/news/guide-to-javascript-promises/) that I only read recently.
+	- I am confident when it comes to `async/await` but the older promise syntax still confuses me somewhat, likely because I have not yet seen examples of it in use in an actual project.
+- I sent off a few more job applications today, so hopefully I hear back soon.
+	- I have already had a couple of rejections but I am unfazed as these were all for companies that were not explicitly looking for a first-role junior developer.
+
+I got some good reading done today and I hope I can continue in the same vein tomorrow.
