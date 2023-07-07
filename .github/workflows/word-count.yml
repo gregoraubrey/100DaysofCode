@@ -8,7 +8,10 @@ jobs:
   update-readme-with-word-count:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
       - name: Count Words
         run: |
           WORD_COUNT=$(grep -o '\w*' README.md | wc -w)
@@ -21,7 +24,4 @@ jobs:
           git commit -m "Bot updated word count" && echo "commit=true" >> $GITHUB_ENV || echo "commit=false" >> $GITHUB_ENV
       - name: Push Changes
         if: ${{ env.commit == 'true' }}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+        run: git push
