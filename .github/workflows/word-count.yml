@@ -18,9 +18,9 @@ jobs:
           git config --local user.email "wordcount@bot.com"
           git config --local user.name "Word Count Bot"
           git add README.md
-          git commit -m "Bot updated word count" && echo ::set-output name=commit::true || echo ::set-output name=commit::false
+          git commit -m "Bot updated word count" && echo "commit=true" >> $GITHUB_ENV || echo "commit=false" >> $GITHUB_ENV
       - name: Push Changes
-        if: steps.commit.outputs.commit == 'true'
+        if: ${{ env.commit == 'true' }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
