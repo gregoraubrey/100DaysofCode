@@ -13,7 +13,8 @@ jobs:
       - name: Count Words
         run: |
           WORD_COUNT=$(grep -o '\w*' README.md | wc -w)
-          sed -i "3s/.*/## Word Count: $WORD_COUNT/" README.md
+          FORMATTED_WORD_COUNT=$(printf "%'d" $WORD_COUNT)
+          sed -i "3s/.*/## Word Count: $FORMATTED_WORD_COUNT/" README.md
       - name: Commit Changes
         run: |
           git config --local user.email "wordcount@bot.com"
