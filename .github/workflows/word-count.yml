@@ -2,8 +2,6 @@ name: Word Count
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 jobs:
   update-readme-with-word-count:
     runs-on: ubuntu-latest
@@ -15,13 +13,13 @@ jobs:
       - name: Count Words
         run: |
           WORD_COUNT=$(grep -o '\w*' README.md | wc -w)
-          sed -i "3s/.*/Word Count: $WORD_COUNT/" README.md
+          sed -i "3s/.*/## Word Count: $WORD_COUNT/" README.md
       - name: Commit Changes
         run: |
           git config --local user.email "wordcount@bot.com"
           git config --local user.name "Word Count Bot"
           git add README.md
-          git commit -m "Bot updated word count" && echo "commit=true" >> $GITHUB_ENV || echo "commit=false" >> $GITHUB_ENV
+          git commit -m "Bot updated word count at $(date -u)" && echo "commit=true" >> $GITHUB_ENV || echo "commit=false" >> $GITHUB_ENV
       - name: Push Changes
         if: ${{ env.commit == 'true' }}
         run: git push
