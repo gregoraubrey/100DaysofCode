@@ -3699,3 +3699,25 @@ Today I reread a couple of articles that I had gone through in the last few week
 	- I have already had a couple of rejections but I am unfazed as these were all for companies that were not explicitly looking for a first-role junior developer.
 
 I got some good reading done today and I hope I can continue in the same vein tomorrow.
+
+
+## Day 110
+*20230707*
+
+Today I attended an info session and Q and A run by one of the employer partners, and then set up a GitHub Actions workflow to update the word count of this file each time I push changes.
+
+- The info session started off with an introduction from the company's head of engineering.
+	- He introduced two former bootcampers who have been working with him for a year now, which is a good sign.
+- I was impressed by the career development structure that was laid out in the presentation.
+	- Knowing that the company has good opportunities for its employees' growth is a huge thing for me, so it was great to see it highlighted today.
+- After the presentation, there was some time set aside for questions and answers.
+	- I asked a question about why the company had chosen to go for JavaScript in both the front-end and the back-end and the head of engineering gave an informative answer about the practicality of trying to hire juniors who know other back-end languages versus simply JavaScript.
+- When the info session was over, I spent some time writing a `.yml` file that would use `grep` to read the word count of this file, and `sed` to edit the word count figure on line 3 each time there was a push to `main`.
+	- It took a while but eventually I got it working, and it should really motivate me to keep writing these journal entries.
+```bash
+WORD_COUNT=$(grep -o '\w*' README.md | wc -w)
+FORMATTED_WORD_COUNT=$(printf "%'d" $WORD_COUNT)
+sed -i "3s/.*/## Word Count: $FORMATTED_WORD_COUNT/" README.md
+```
+
+I really enjoyed the info session today, and was especially happy to get the `.yml` file working after a bit of trial and error. It feels great to have the confidence now to think of a coding idea and actually believe that I could execute on it.
