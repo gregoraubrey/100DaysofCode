@@ -3721,3 +3721,18 @@ sed -i "3s/.*/## Word Count: $FORMATTED_WORD_COUNT/" README.md
 ```
 
 I really enjoyed the info session today, and was especially happy to get the `.yml` file working after a bit of trial and error. It feels great to have the confidence now to think of a coding idea and actually believe that I could execute on it.
+
+
+## Day 111
+*20230708*
+
+Today I read some more of *The Pragmatic Programmer* and read over the codebase for our final project.
+
+- I started the day by reading some of *The Pragmatic Programmer*.
+	- My thoughts on the book from a few days ago still stand, and I feel like I am learning two or three really valuable nuggets of information each time I open up the book.
+	- I hope to have the book finished within the next week or so.
+- In the afternoon I was feeling quite tired so I decided that I would limit myself to simply looking through our codebase for the final project once more.
+	- I had already brushed up on it recently in order to prepare for demo day but I decided that it would not hurt to check back in on it and see how much I remembered.
+	- Luckily, everything made sense to me which is certainly a good sign.
+
+Rereading the codebase for our final project felt a little like an exercise in futility after finding that I really did remember everything, but I suppose it cannot hurt. I am really enjoying *The Pragmatic Programmer* and am glad to have picked it out.
