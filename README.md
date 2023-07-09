@@ -3736,3 +3736,18 @@ Today I read some more of *The Pragmatic Programmer* and read over the codebase 
 	- Luckily, everything made sense to me which is certainly a good sign.
 
 Rereading the codebase for our final project felt a little like an exercise in futility after finding that I really did remember everything, but I suppose it cannot hurt. I am really enjoying *The Pragmatic Programmer* and am glad to have picked it out.
+
+
+## Day 112
+*20230709*
+
+Today I got through some more of *The Pragmatic Programmer* and sent off some job applications.
+
+- I read through a bit more of *The Pragmatic Programmer* and took some notes on the paragraphs that stood out to me.
+	- I hope that coming back to these highlights and notes periodically will help keep me focused on writing clean code and maintaining best practices both at work and in my personal projects.
+- I sent off quite a few job applications today for junior roles that I had come across on LinkedIn and Indeed.
+	- Hopefully I will hear back soon from some of these companies and, if I am lucky, get an interview or two.
+- I also did some research into pulling data from the [RAE](https://www.rae.es/) Spanish dictionary website so that I could easily look up Spanish vocabulary.
+	- Perhaps I could build out a simple app to help me save some time each time I want to look up a word.
+
+I did not do too much coding today but I got some good reading done which is always nice.
