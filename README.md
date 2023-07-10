@@ -3751,3 +3751,20 @@ Today I got through some more of *The Pragmatic Programmer* and sent off some jo
 	- Perhaps I could build out a simple app to help me save some time each time I want to look up a word.
 
 I did not do too much coding today but I got some good reading done which is always nice.
+
+
+## Day 113
+*20230710*
+
+Today we had our first post-course employability session where we had a guest talk and worked on our CVs.
+
+- We started the day by splitting up into groups and just having a chat about how we felt demo day had gone.
+	- I mentioned how I was very happy with how our group had presented and the other people in the breakout room held a similar sentiment.
+- Next up we had a guest talk by someone who was on cohort 13 of the bootcamp.
+	- She talked about how anxious she had been during the bootcamp about her own coding abilities, considering herself one of the weakest coders out of her cohort.
+	- Despite this, she ended up being the first one hired, so she talked about the soft skills that came across in the one interview she did and also about how she tackled the tech test she was set.
+	- I asked a question about testing and she said that she wrote a few unit tests in Jest for her tech test but that these were written after the code they were designed to be testing, so it was not strictly TDD.
+- For the rest of the session today we split off into our breakout rooms again and worked on our CVs together.
+	- To be honest my group just spent most of the time chatting about the upcoming job hunt and what kinds of personal projects we might like to build.
+
+It was really nice to see everyone's faces again today, even though it has only been a few days since last I saw them! I look forward to the next of these employability sessions on Wednesday and am really appreciative of the great support that the team at School of Code is lending us.
