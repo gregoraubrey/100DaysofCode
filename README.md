@@ -1,6 +1,6 @@
 # 100DaysofCode
 
-## Word Count: 43450
+## Word Count: 43594
 
 ## Day 1
 *20230320*
