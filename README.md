@@ -3780,3 +3780,21 @@ Today I made a start on a tech test and did some more research into TDD.
 - Later on in the day I spent some brushing up on test-driven development so that I will be ready to follow TDD principles as I tackle the tech test on Wednesday.
 
 I did not have much spare time today so I was glad to have got at least a little done, and confirmed that the tech test is all set up ready for me to work on it tomorrow.
+
+
+## Day 115
+*20230712*
+
+Today we had an employability session featuring a guest talk, and I spent the afternoon working on the tech test I was given yesterday.
+
+- For our employability session today we had a guest talk from Greg Morley.
+	- He talked about "turning left" as it pertains to an unexpected change from the previous path you were on.
+ 	- My decision to leave my job and embark on the 16-week bootcamp is an example of this.
+  	- He also spoke about the benefits of keeping a journal, which was music to my ears!
+- In the afternoon I got to work on the tech test that I had been set yesterday.
+	- I decided to go for a fully TDD approach, so I wrote my tests before writing the code that would make them pass.
+	- The start of the test was easy enough but the second half really stumped me, and try as I might to break the problem down, I just could not make headway and the function I was being asked to write just seemed impossible due to the potential ambiguity of its parameter.
+	- Nonetheless, I planned as best I could and wrote down all of my steps and my thoughts in a `plan.md` file.
+	- I also set up a GitHub Actions workflow (using a `.yml` file) for automated building and running of the tests on each push or pull request to `main`.
+
+The tech test today was tough but I feel like I approached it in the right way and followed good software development principles which I was very pleased with.
