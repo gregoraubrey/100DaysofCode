@@ -3768,3 +3768,15 @@ Today we had our first post-course employability session where we had a guest ta
 	- To be honest my group just spent most of the time chatting about the upcoming job hunt and what kinds of personal projects we might like to build.
 
 It was really nice to see everyone's faces again today, even though it has only been a few days since last I saw them! I look forward to the next of these employability sessions on Wednesday and am really appreciative of the great support that the team at School of Code is lending us.
+
+
+## Day 114
+*20230711*
+
+Today I made a start on a tech test and did some more research into TDD.
+
+- In the morning I was sent a tech test for one of the hiring partners via GitHub Classrooms.
+- I did not have much free time today so I just had a brief look over the test, tested out a quick `git push`, and then left it for tomorrow when I can focus on it 100%.
+- Later on in the day I spent some brushing up on test-driven development so that I will be ready to follow TDD principles as I tackle the tech test on Wednesday.
+
+I did not have much spare time today so I was glad to have got at least a little done, and confirmed that the tech test is all set up ready for me to work on it tomorrow.
