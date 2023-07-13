@@ -3798,3 +3798,20 @@ Today we had an employability session featuring a guest talk, and I spent the af
 	- I also set up a GitHub Actions workflow (using a `.yml` file) for automated building and running of the tests on each push or pull request to `main`.
 
 The tech test today was tough but I feel like I approached it in the right way and followed good software development principles which I was very pleased with.
+
+
+## Day 116
+*20230713*
+
+Today I submitted the tech test and looked into some APIs for dictionary websites.
+
+- I began the day by coming back to the tech test and seeing if I could make some headway on the function that had stumped me yesterday.
+	- I only had until 10:00 so I was not expecting to solve the whole thing, only to come up with some plausible ideas for how to tackle the problem.
+- I commented out the failing test suite and did a push to `main` to verify that the rest of the tests would pass my GitHub Actions workflow, which they did.
+	- I should really have been working on feature branches the whole time in order to make sure `main` was always functional, but it is better late than never I suppose.
+ 	- I made and checked out to a new branch, uncommented the failing test suite, and planned out how to tackle the issue in my `plan.md` file.
+	- I ended up getting somewhere after implementing some console logs to help me visualise what my code was doing, but it was not enough to push me all the way to a solution.
+- Despite not managing to solve the problem that I was stuck on yesterday, I was glad to have implemented a branching strategy (as I should have done from the start) and verified that my GitHub Actions workflow does indeed work as intended.
+- In the afternoon I spent some time looking into APIs for dictionary websites, and I hope to build a simple tool that will facilitate look-ups so that I do not have to navigate to a website each time I want to get the definition or translation of a word.
+
+Today was surprisingly enjoyable despite the fact that I technically did not finish the entirety of the tech test. I followed best practices (to my knowledge!) in terms of planning out and writing my code, and did not let myself get stressed out by not knowing how to solve the problem.
