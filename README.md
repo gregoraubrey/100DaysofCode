@@ -3815,3 +3815,16 @@ Today I submitted the tech test and looked into some APIs for dictionary website
 - In the afternoon I spent some time looking into APIs for dictionary websites, and I hope to build a simple tool that will facilitate look-ups so that I do not have to navigate to a website each time I want to get the definition or translation of a word.
 
 Today was surprisingly enjoyable despite the fact that I technically did not finish the entirety of the tech test. I followed best practices (to my knowledge!) in terms of planning out and writing my code, and did not let myself get stressed out by not knowing how to solve the problem.
+
+
+## Day 117
+*20230714*
+
+Today I spent some time getting to grips with Docker.
+
+- In the morning the SoC team opened up a Kumospace lobby for us all to join.
+- The idea was that we could collaborate with other people on coding projects, or just work on our own ideas.
+- I took the time to work on the [RAE API](https://github.com/squat/drae) which mentioned Docker in the `README.md`.
+- I installed Docker and had a quick look at some introductory articles but that was all I had time for today.
+
+It was good to learn a bit about Docker and get it installed. Hopefully I will soon be able to get to work using it for my dictionary project.
