@@ -3828,3 +3828,21 @@ Today I spent some time getting to grips with Docker.
 - I installed Docker and had a quick look at some introductory articles but that was all I had time for today.
 
 It was good to learn a bit about Docker and get it installed. Hopefully I will soon be able to get to work using it for my dictionary project.
+
+
+## Day 118
+*20230715*
+
+Today I had some friends round to play poker so I had very little time for coding. With that said, I did manage to work a little on my dictionary app.
+
+- I wrote some code to try and scrape [the RAE website](https://dle.rae.es/) and print the HTML to the console.
+	- I wrote it using [Axios](https://www.npmjs.com/package/axios) for the fetch request and [Cheerio](https://www.npmjs.com/package/cheerio) for the scraping.
+ 	- I deliberately used CommonJS syntax instead of ESM since I have only used ESM in all my other projects so I thought it would be worth getting used to the `require` syntax, even though it is older.
+```ts
+const axios = require("axios");
+const cheerio = require("cheerio");
+```
+- I had issues with attempting to scrape from the RAE so I tried scraping from [SpanishDict](https://www.spanishdict.com/) instead.
+- I managed to log some HTML in the console but parsing it proved an issue, and that was all I had time for today.
+
+It is a shame that I could not get data from the RAE website. However, I do have a JSON file based off of the RAE's definitions, so perhaps I could incorporate that into an API.
