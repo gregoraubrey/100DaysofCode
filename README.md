@@ -3846,3 +3846,19 @@ const cheerio = require("cheerio");
 - I managed to log some HTML in the console but parsing it proved an issue, and that was all I had time for today.
 
 It is a shame that I could not get data from the RAE website. However, I do have a JSON file based off of the RAE's definitions, so perhaps I could incorporate that into an API.
+
+
+## Day 119
+*20230716*
+
+Today I read some more of *The Pragmatic Programmer* and read a couple of articles on APIs.
+
+- I started off by reading an article titled [From SOAP to REST: Tracing The History of APIs](https://blog.treblle.com/from-soap-to-rest-tracing-the-history-of-apis/).
+	- I learned about SOAP APIs, which I have heard mentioned in passing but have never really looked into.
+	- I guess it makes sense that I know very little about them given that REST APIs seem to be favoured for an Agile workflow nowadays.
+	- I do remember my mentor mentioning how he has worked with them in the past, so I guess there must be times when they are more appropriate than a REST API.
+ 		- This reminds me a bit of the monolith versus microservices argument, when there are good and bad times to use each one.
+- I then read a freeCodeCamp article called [The REST API Handbook – How to Build, Test, Consume, and Document REST APIs](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/).
+- I also read a bit more of *The Pragmatic Programmer* today which was enjoyable and informative as usual.
+
+I enjoyed learning more about APIs today, and I definitely feel like having a stronger grasp of the fundamentals will help me build on my current knowledge at a faster pace.
