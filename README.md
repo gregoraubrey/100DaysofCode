@@ -3862,3 +3862,22 @@ Today I read some more of *The Pragmatic Programmer* and read a couple of articl
 - I also read a bit more of *The Pragmatic Programmer* today which was enjoyable and informative as usual.
 
 I enjoyed learning more about APIs today, and I definitely feel like having a stronger grasp of the fundamentals will help me build on my current knowledge at a faster pace.
+
+
+## Day 120
+*20230717*
+
+Today we had a guest lecture from a former bootcamper and we spent some time looking into how best to lay out our GitHub profiles.
+
+- We started the day on Zoom with a lecture on resilience when applying for jobs.
+	- It boiled down to keeping going in the face of rejection and not letting the rejections feel like a personal attack.
+- Next up we had a guest lecture from Faseeh Ahmed.
+- Faseeh was on cohort 14 of the bootcamp and he talked about his reasons for wanting to get into tech before diving into some practical advice for improving your skills and finding a job.
+	- I particularly liked the Notion template he had designed for tracking his progress and for setting out in advance what he was going to try and learn each week.
+	- He also talked about the importance of showing up each day and always moving in the right direction, even if progress is slow and you only get one thing done that day.
+- He shared some of his thoughts on laying out a CV, such as avoiding multiple columns in order to make it as obvious as possible where the reader should start and what order they should follow.
+	- I have styled my CV in this way (more out of convenience than any particular planning!).
+- Lastly, Faseeh highlighed a poll that Chris Meah had put out on LinkedIn a while ago asking employers what they look for most when hiring a junior, and the answer was overwhelmingly **attitude/motivation**, easily beating out **passion for the role/company** and **technical skill**.
+	- I hope that by sticking to this coding journal, amongst other things, I can demonstrate my attitude!
+
+Today's guest lecture was really useful and I am very grateful that former bootcampers are so generous with their time.
