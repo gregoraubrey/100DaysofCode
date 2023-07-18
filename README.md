@@ -3877,7 +3877,7 @@ Today we had a guest lecture from a former bootcamper and we spent some time loo
 	- He also talked about the importance of showing up each day and always moving in the right direction, even if progress is slow and you only get one thing done that day.
 - He shared some of his thoughts on laying out a CV, such as avoiding multiple columns in order to make it as obvious as possible where the reader should start and what order they should follow.
 	- I have styled my CV in this way (more out of convenience than any particular planning!).
-- Lastly, Faseeh highlighed a poll that Chris Meah had put out on LinkedIn a while ago asking employers what they look for most when hiring a junior, and the answer was overwhelmingly **attitude/motivation**, easily beating out **passion for the role/company** and **technical skill**.
+- Lastly, Faseeh highlighted a poll that Chris Meah had put out on LinkedIn a while ago asking employers what they look for most when hiring a junior, and the answer was overwhelmingly **attitude/motivation**, easily beating out **passion for the role/company** and **technical skill**.
 	- I hope that by sticking to this coding journal, amongst other things, I can demonstrate my attitude!
 
 Today's guest lecture was really useful and I am very grateful that former bootcampers are so generous with their time.
