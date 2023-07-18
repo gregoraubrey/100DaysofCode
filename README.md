@@ -3881,3 +3881,21 @@ Today we had a guest lecture from a former bootcamper and we spent some time loo
 	- I hope that by sticking to this coding journal, amongst other things, I can demonstrate my attitude!
 
 Today's guest lecture was really useful and I am very grateful that former bootcampers are so generous with their time.
+
+
+## Day 121
+*20230718*
+
+Today I had an interview with an online publishing start-up and created a private repo on GitHub for managing my Obsidian notes.
+
+- I started the day with an interview which was apparently going to be a 30-minute "informal chat".
+- It ended up being exactly that, and I learned a lot about the company and why they are looking to hire a developer.
+- If I want to try for the next stage, which involves an online tech test, then I will have to learn at least the basics of PHP, as that is the language that has been used to build their codebase thus far.
+- In the interview we talked about the possibility of introducing other languages down the line which certainly sounds interesting.
+- I have a decision to make now as to whether I want to continue with the application process, as I would be the first developer joining a nascent company.
+	- There are pros and cons, namely the potential for quick progression versus the risk of not having a mentor to help guide me.
+- In the afternoon I came across the [Obisidan Git](https://github.com/denolehov/obsidian-git) community plugin for Obsidian.
+	- I made a private repo on GitHub, initialised a repository within my Obsidian vault directory on my PC, and had my notes committed and pushed up in minutes.
+	- It did not seem like much as I was doing it but afterwards I realised that I would have struggled with something as simple as this a couple of months ago, so it really puts things in perspective!
+
+Today was a really enjoyable day and I was very happy with how the interview went. I have to think now about whether I want to pursue this opportunity and move on to the next stage of the application process.
