@@ -3899,3 +3899,50 @@ Today I had an interview with an online publishing start-up and created a privat
 	- It did not seem like much as I was doing it but afterwards I realised that I would have struggled with something as simple as this a couple of months ago, so it really puts things in perspective!
 
 Today was a really enjoyable day and I was very happy with how the interview went. I have to think now about whether I want to pursue this opportunity and move on to the next stage of the application process.
+
+
+## Day 122
+*20230719*
+
+Today we had a guest lecture from a former bootcamper on Zoom and in the afternoon I made a start on learning Go.
+
+- During the guest lecture this morning [Julio](https://www.linkedin.com/in/juliovelezmoro/) talked about some of the things he could have done better at the end of the course.
+	- He mentioned the importance of brushing up on basic JS methods and not getting bogged down by React, citing an interview he failed in which he forgot how to make use of a basic JS method and got stuck on a question.
+	- He gave some useful tips for preparing for an interview which will no doubt prove valuable to me over the coming weeks and months as I look for my first role in tech.
+	- He also recommended [Otta](https://app.otta.com/) for finding jobs.
+		- I had not heard of this site before but I gave it a look and made an account.
+- In the afternoon I made a start with Go by going through the first part of a [Udemy course](https://www.udemy.com/course/introduction-to-testing-in-go-golang/) that I had bought.
+- I ended up with the barebones of a working app for checking whether a number is prime:
+```go
+package main
+
+import "fmt"
+
+func main() {
+	num := 99
+
+	_, msg := isPrime(num)
+	fmt.Println(msg)
+}
+
+func isPrime(num int) (bool, string) {
+	if num == 0 || num == 1 {
+		return false, fmt.Sprintf("%d is not prime.", num)
+	}
+
+	if num < 0 {
+		return false, fmt.Sprintf("%d is not a positive number, so it cannot be prime.", num)
+	}
+
+	for i := 2; i <= num/2; i++ {
+		if num%i == 0 {
+			return false, fmt.Sprintf("%d is not prime because it is divisible by %d.", num, i)
+		}
+	}
+
+	return true, fmt.Sprintf("%d is prime!", num)
+}
+```
+- Now I need to write tests for it, and in so doing hopefully progress to the point where I can do actual TDD in Go (instead of writing the tests after the code).
+
+Today was quite a productive day and it felt good to make a start on Go. It does not seem that scary for now, but then again I have only scratched the surface.
