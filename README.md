@@ -3946,3 +3946,51 @@ func isPrime(num int) (bool, string) {
 - Now I need to write tests for it, and in so doing hopefully progress to the point where I can do actual TDD in Go (instead of writing the tests after the code).
 
 Today was quite a productive day and it felt good to make a start on Go. It does not seem that scary for now, but then again I have only scratched the surface.
+
+
+## Day 123
+*20230720*
+
+Today I had an initial call for a software engineering role and spent some more time learning Go.
+
+- I took a phone call in the morning in which I talked through some of my reasons for applying for the company in question.
+- I feel like the conversation went well and now I just need to wait and see whether the hiring manager likes the look of my application and would like to progress me to the next stage of the application process.
+- In the afternoon I spent some more time learning Go and wrote my first basic test in the language:
+```go
+package main
+
+import "testing"
+
+func Test_isPrime(t *testing.T) {
+	result, msg := isPrime(0)
+	if result {
+		t.Errorf("with %d as test parameter, expected false but got true.", 0)
+	}
+
+	if msg != "0 is not prime." {
+		t.Errorf("with %d as test parameter, expected msg of '0 is not prime.' but got msg of '%s'.", 0, msg)
+	}
+
+	result, msg = isPrime(97)
+	if !result {
+		t.Errorf("with %d as test parameter, expected true but got false.", 97)
+	}
+
+	if msg != "97 is prime!" {
+		t.Errorf("with %d as test parameter, expected msg of '97 is prime!' but got msg of '%s'.", 97, msg)
+	}
+
+	result, msg = isPrime(100)
+	if result {
+		t.Errorf("with %d as test parameter, expected false but got true.", 100)
+	}
+
+	if msg != "100 is not prime because it is divisible by 2." {
+		t.Errorf("with %d as test parameter, expected msg of '100 is not prime because it is divisible by 2.' but got msg of '%s'.", 100, msg)
+	}
+}
+
+```
+- This test pairs up with the `main.go` I wrote yesterday containing the `isPrime()` function.
+
+Today felt very productive and I feel like the over-the-phone interview went well, but I will have to wait and see.
