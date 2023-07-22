@@ -3994,3 +3994,16 @@ func Test_isPrime(t *testing.T) {
 - This test pairs up with the `main.go` I wrote yesterday containing the `isPrime()` function.
 
 Today felt very productive and I feel like the over-the-phone interview went well, but I will have to wait and see.
+
+
+## Day 124
+*20230721*
+
+Today I did not have much free time for coding but I still got a little bit done.
+
+- I read a short section of *The Pragmatic Programmer* and am very close to finishing it now.
+- I spent some time learning the basics of Go.
+	- I found that the [tutorial I was following](https://www.udemy.com/course/introduction-to-testing-in-go-golang/) for learning testing in Go was making use of concepts and syntax that I was not yet familiar with.
+ 	- Whilst I could sort of guess at what the code meant, I feel like it would definitely be worth getting a strong grounding in the basics of the language before continuing on with the testing tutorial.
+
+That was all I had time for today but at least I managed to get something done, and that is a whole lot better than nothing!
