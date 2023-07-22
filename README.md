@@ -4007,3 +4007,18 @@ Today I did not have much free time for coding but I still got a little bit done
  	- Whilst I could sort of guess at what the code meant, I feel like it would definitely be worth getting a strong grounding in the basics of the language before continuing on with the testing tutorial.
 
 That was all I had time for today but at least I managed to get something done, and that is a whole lot better than nothing!
+
+
+## Day 125
+*20230722*
+
+Today I spent some more time learning the fundamentals of Go.
+
+- In the morning I spent some time sending out job applications.
+	- I used [Otta](https://otta.com/) to find a few jobs that stood out and then wrote cover letters for each one.
+- In the afternoon I spent some more time learning the basic syntax of Go.
+- I also spent some time reading *The Object-Oriented Thought Process* which I had picked up a while ago but stopped reading because it was not yet relevant for me.
+	- Since Go supports object-oriented programming, it makes sense for me to dive back into the book now.
+
+I feel like I am starting to get comfortable with Go, so hopefully I will soon be able to jump back into the course I was going through on testing in Go and be able to understand all of the code.
+ 
