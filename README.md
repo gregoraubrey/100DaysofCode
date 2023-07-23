@@ -4021,4 +4021,19 @@ Today I spent some more time learning the fundamentals of Go.
 	- Since Go supports object-oriented programming, it makes sense for me to dive back into the book now.
 
 I feel like I am starting to get comfortable with Go, so hopefully I will soon be able to jump back into the course I was going through on testing in Go and be able to understand all of the code.
- 
+
+
+## Day 126
+*20230723*
+
+Today I sent off some more applications and kept learning Go.
+
+- In the morning I spent some time going through emails I had received from [Otta](https://otta.com/) and [Indeed](https://uk.indeed.com/?r=us).
+	- I get a lot of emails from Indeed in particular and, whilst most of them are irrelevant, occasionally it shows me a job that both piques my interest and seems to fit in with my level of experience.
+- After writing up all the cover letters and sending off each application, I made a final decision on whether I wanted to proceed with the online critical reasonsing and tech test for a job I interviewed for earlier this week.
+	- Ultimately, I decided that the job, whilst looking very interesting, would not be the right move for me at this moment.
+	- I would be the first developer coming into a nascent company, and I place a lot of importance upon having experienced seniors around me who can act as mentors and are happy to answer my questions, such that I might soon be doing the same thing for some new juniors.
+- I wrote the the interviewer an email thanking them for their time and for giving me the opportunity, and expressed how I would love to stay in touch in case a role opens up down the road that might be more appropriate for me.
+- In the afternoon I spent some more time learning Go, which I am thoroughly enjoying.
+
+Today was a productive Sunday which I am pleased with. The School of Code graduation day is only two days away now and I cannot wait!
