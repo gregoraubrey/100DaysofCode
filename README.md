@@ -4037,3 +4037,57 @@ Today I sent off some more applications and kept learning Go.
 - In the afternoon I spent some more time learning Go, which I am thoroughly enjoying.
 
 Today was a productive Sunday which I am pleased with. The School of Code graduation day is only two days away now and I cannot wait!
+
+
+## Day 127
+*20230724*
+
+Today we spent some time going through typical tech test questions on Zoom.
+
+- In the morning we split into breakout rooms and worked on a set of Code Wars kata in order to get in some practice for tech tests.
+- I had already done a couple of these kata before but no longer remembered my exact solution, so I got a lot out of doing these exercises.
+- [Sum of two lowest positive integers](https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/javascript)
+```js
+function sumTwoSmallestNumbers(numbers) {  
+  const sortedNumbers = numbers.sort((a,b)=> a - b)
+  return sortedNumbers[0] + sortedNumbers[1]
+}
+```
+- [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript)
+```js
+function disemvowel(str) {
+  const vowels = ["a","e","i","o","u","A","E","I","O","U"]
+  const array = str.split("");
+  for (let i = array.length; i >= 0; i--) {
+    if (vowels.includes(array[i])) {
+      array.splice(i, 1);
+    }
+  }
+  return array.join("");
+}
+```
+- [Highest Scoring Word](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/javascript)
+```js
+function high(x){
+  let sum = 0;
+  const totalsPerWord = [];
+  const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  const array = x.split(" ");
+  for (let i = 0; i < array.length; i++) {
+    sum = 0;
+    for (let j = 0; j < array[i].length; j++) {
+      let letter = array[i].charAt(j)
+      let indexOfAlphabet = alphabet.indexOf(letter)
+      sum += (indexOfAlphabet + 1)
+    }
+    totalsPerWord.push(sum);
+  }
+  const highestNumber = Math.max(...totalsPerWord);
+  const highestScoringIndex = totalsPerWord.indexOf(highestNumber);
+  return array[highestScoringIndex];
+}
+```
+- This last one was a **6 kyuu** kata so it took a bit longer, but was very satisfying to work on.
+- In the afternoon I spent some more time learning Go.
+
+Tomorrow we are all meeting up for Graduation Day which will be lovely!
