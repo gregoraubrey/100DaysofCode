@@ -4115,3 +4115,18 @@ Today we had our graduation day at the Microsoft Campus in Reading!
 	- A few Microsoft employees joined us and I had the chance to ask a few more questions about Windows and their work.
 
 It was so lovely to meet everyone in person, and get to thank all of the School of Code team in person. I am so grateful to everyone at Microsoft for taking the time out of their day and putting on such a wonderful event for us all!
+
+
+## Day 129
+*20230726*
+
+Today we had a guest lecture on Zoom, and then I had an interview for a junior software engineer role.
+
+- In the morning, we were lucky enough to have a software engineering team lead from the BBC come and talk to us about what the BBC's software engineering graduate scheme is like.
+- She was joined by some of the graduates currently working at the BBC who shared some of their experiences.
+	- I asked one of the graduates about his approach to learning new languages or frameworks and he said that he starts off by building a small project, following an online course, and then tries to get into a routine of solving LeetCode problems each day.
+- After the session on Zoom, I had an interview for a start-up where we discussed my interest in the role and went through a couple of technical questions.
+	- I learned about **parity checks** and **error correction codes** during our discussion, which were completely new to me.
+- In the afternoon I spent some time reading a few articles I had saved over the last week or so.
+
+Today was an enjoyable day and I feel like the interview went well. I did not have all the answers but I was able to come up with some decent ideas in the moment and intuit an answer to each question that I did not already know how to answer.
