@@ -4091,3 +4091,27 @@ function high(x){
 - In the afternoon I spent some more time learning Go.
 
 Tomorrow we are all meeting up for Graduation Day which will be lovely!
+
+
+## Day 128
+*20230725*
+
+Today we had our graduation day at the Microsoft Campus in Reading!
+
+- We started the day off with some introductory talks by all of the Microsoft employees who were there.
+- We got a whole bunch of free swag (mugs, pens, etc.)!
+	- Throughout the day I was so humbled by how welcoming everyone was at Microsoft and how they had set aside their time for us.
+- We moved on to a Lego challenge in groups of five where one person had to be the "architect" who sees the design plans, and then has to relay instructions to the four builders.
+	- I volunteered to be the architect, and it was a lot harder than I was expecting.
+	- Eventually we got into a good rhythm of different builders coming to see me and letting me know how the structure was currently looking before I gave them more instructions.
+	- When I saw the final build at the end of the session I was really impressed by what the team had produced, given my shaky instructions!
+- After lunch, we moved on to some more in-depth talks from the Microsoft employees.
+	- These covered a wide range of topics, from the growth mindset to working on Windows 11.
+	- It is always a pleasure to hear from people who are passionate about their work, especially when they are more experienced than myself.
+- We then had the graduation itself!
+	- It took a long time to get through everybody, and it really put into perspective just how many different kinds of people we have all worked with over the 16 weeks.
+- After a final Q and A session, we headed to [Milk Bar](https://www.milkreading.com/) in Reading for a few drinks before I caught the train home.
+	- It was great to celebrate with all the people I have worked with, and in many cases meet them for the first time in-person.
+	- A few Microsoft employees joined us and I had the chance to ask a few more questions about Windows and their work.
+
+It was so lovely to meet everyone in person, and get to thank all of the School of Code team in person. I am so grateful to everyone at Microsoft for taking the time out of their day and putting on such a wonderful event for us all!
