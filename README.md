@@ -4130,3 +4130,17 @@ Today we had a guest lecture on Zoom, and then I had an interview for a junior s
 - In the afternoon I spent some time reading a few articles I had saved over the last week or so.
 
 Today was an enjoyable day and I feel like the interview went well. I did not have all the answers but I was able to come up with some decent ideas in the moment and intuit an answer to each question that I did not already know how to answer.
+
+
+## Day 130
+*20230727*
+
+Today I began porting over the hackathons from the 16 weeks of the bootcamp to my own GitHub profile.
+
+- It felt strange to look back over some of the code I had written not that long ago and think just how basic it seems now.
+	- During the graduation day, one of the Microsoft employees talked about the value in looking back at old code, especially as it pertains to impostor syndrome.
+	- I have to admit that I quite enjoyed seeing some of my old code, remembering the situation in which I wrote it, and then thinking about how far I have come since then, despite all of this code being written in the last few months.
+ 		- I wonder what it will be like to look back at the code I am producing nowadays in two or three years' time.
+- I spent some more time looking over the basic syntax of Go, and that was all I had time for today.
+
+Today was an interesting day, as I got to relive a lot of my time on the bootcamp by looking back at code I had written and remembering the tasks we were working on and the different things we were struggling with. One of the benefits of saving all of my work to a remote repository is that I will always be able to come back and look at some of my old code whenever I need a bit of motivation (or perhaps just a good laugh at my own expense!).
