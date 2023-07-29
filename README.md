@@ -4144,3 +4144,18 @@ Today I began porting over the hackathons from the 16 weeks of the bootcamp to m
 - I spent some more time looking over the basic syntax of Go, and that was all I had time for today.
 
 Today was an interesting day, as I got to relive a lot of my time on the bootcamp by looking back at code I had written and remembering the tasks we were working on and the different things we were struggling with. One of the benefits of saving all of my work to a remote repository is that I will always be able to come back and look at some of my old code whenever I need a bit of motivation (or perhaps just a good laugh at my own expense!).
+
+
+## Day 131
+*20230728*
+
+Today I sent off some more job applications and finished porting over my School of Code Hackathon repositories to my own GitHub profile.
+
+- I sent out a few more job applications in the morning.
+	- I had found all of these through [Otta](https://otta.com/).
+ 	- It seems to me like I get better recommendations from Otta than I do from LinkedIn or Indeed, perhaps because Otta is tracking the companies that I apply to along with the ones that I skip over so that it can learn my preferences over time.
+- I heard back from a company that I had an initial call with earlier in the week and they want to invite me back for another interview which is a good sign!
+- I also copied over my remaining Hackathon repositories to my own GitHub profile today.
+	- It was interesting to see how my code improved over the hackathons, and by the end I was looking at code that I would be happy to have written today, which I certainly could not say about some of the code I wrote at the start of the bootcamp!
+
+It was really encouraging to be invited back for a second interview as I felt the first call went well and, despite a few nerves, I really enjoyed it. I hope this second one goes well too!
