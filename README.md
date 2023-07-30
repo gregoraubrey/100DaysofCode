@@ -4189,3 +4189,62 @@ String.prototype.camelCase=function(){
 - This was a **6 kyuu** kata but I found it farily straightforward after getting to grips with the idea of using `this`.
 
 I definitely need to brush up on the sytnax for JS methods. I am not concerned in terms of using them in my personal projects, since I already understand the logic and can always look up the syntax, but during a tech test I probably will not have that luxury and will have to know the syntax off by heart.
+
+
+## Day 133
+*20230730*
+
+Today I sent off some more job applications, revised JS methods again, and spent some time on Code Wars.
+
+- I spent some time in the morning going through some of the job listings that [Otta](https://otta.com/) had sent me by email.
+	- I applied to about half of the jobs that Otta sent me, and it really does seem like its algorithm is sending me jobs that will interest me.
+- In the afternoon I went over JS methods again, and I could already feel a difference compared to yesterday.
+	- If I keep this up, then I will be well-prepared for any tech tests that I have to do.
+- In the evening I spent some time on Code Wars and solved a kata titled [ATM](https://www.codewars.com/kata/5635e7cb49adc7b54500001c/train/javascript):
+```js
+function solve(n) {
+  let notes = 0;
+  while (n / 500 >= 1) {
+    n = n - 500;
+    notes ++;
+  }
+  while (n / 200  >= 1) {
+    n = n - 200 ;
+    notes ++;
+  }
+  while (n / 100 >= 1) {
+    n = n - 100;
+    notes ++;
+  }
+  while (n / 50 >= 1) {
+    n = n - 50;
+    notes ++;
+  }
+  while (n / 20 >= 1) {
+    n = n - 20;
+    notes ++;
+  }
+  while (n / 10 >= 1) {
+    n = n - 10;
+    notes ++;
+  }
+  if (n !== 0) {
+    return -1;
+  }
+  return notes;
+}
+```
+- I solved this one fairly quickly and submitted it before streamlining my solution, but of course the multiple `while` loops are ripe for refactoring.
+- I particularly liked this solution that used the `reduce()` method with an array of note values and also included a clever `if` statement to check whether the function should return `-1`:
+```js
+function solve(n) {
+  if (n % 10) return -1
+  return [500, 200, 100, 50, 20, 10].reduce((s, v) => {
+    let ans = n / v | 0
+    n %= v
+    return s + ans
+  }, 0)
+}
+```
+
+Today went well and I already feel like I am getting more comfortable with the syntax of all the JS methods that I know about.
