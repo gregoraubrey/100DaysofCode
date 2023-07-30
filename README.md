@@ -4159,3 +4159,33 @@ Today I sent off some more job applications and finished porting over my School 
 	- It was interesting to see how my code improved over the hackathons, and by the end I was looking at code that I would be happy to have written today, which I certainly could not say about some of the code I wrote at the start of the bootcamp!
 
 It was really encouraging to be invited back for a second interview as I felt the first call went well and, despite a few nerves, I really enjoyed it. I hope this second one goes well too!
+
+
+## Day 132
+*20230729*
+
+Today I revised some JS methods and did a Code Wars kata.
+
+- I spent some time in the morning revising some of the JS methods I have learned.
+	- I need to make sure that I do not forget the basics of JS so that when it comes to planning out a solution in a tech test, I will have as many tools at my disposal as possible.
+	- As I was revising the methods, I found that I understood the logic in each case but I was often forgetting the actual syntax that was needed.
+	- Hopefully by practicing these methods more regularly I will be able to engrain the syntax.
+- [CamelCase Method](https://www.codewars.com/kata/587731fda577b3d1b0001196/train/javascript)
+```js
+String.prototype.camelCase=function(){
+  if (!this) {
+    return "";
+  }
+  const arr = this.split(" ");
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) {
+      arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+    }
+  }
+  return arr.join("");
+}
+```
+- This is the first time I have seen the syntax for defining a new method in JS, in this case a new method on the `String` prototype.
+- This was a **6 kyuu** kata but I found it farily straightforward after getting to grips with the idea of using `this`.
+
+I definitely need to brush up on the sytnax for JS methods. I am not concerned in terms of using them in my personal projects, since I already understand the logic and can always look up the syntax, but during a tech test I probably will not have that luxury and will have to know the syntax off by heart.
