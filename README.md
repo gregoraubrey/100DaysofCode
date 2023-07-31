@@ -4248,3 +4248,42 @@ function solve(n) {
 ```
 
 Today went well and I already feel like I am getting more comfortable with the syntax of all the JS methods that I know about.
+
+
+## Day 134
+*20230731*
+
+Today we had a guest talk on Zoom by a former bootcamper and I did a couple of Code Wars kata.
+
+- In the morning we had a guest lecture by a former bootcamper who was on cohort 7, which ended about 18 months ago.
+- She talked about her career thus far working for two different start-ups and discussed the ways in which working at a start-up is different from working at a big company.
+	- A lot of what she said resonated with me based on my six months working for a start-up in London, albeit as a performance executive rather than as a software developer.
+ - I asked a question about negotiating your salary and she gave a very sincere answer which I greatly appreciated.
+- In the afternoon I spent some time on Code Wars solving some kata:
+- [Find the capitals](https://www.codewars.com/kata/539ee3b6757843632d00026b/train/javascript)
+```js
+var capitals = function (word) {
+  const capitalIndices = [];
+  const arr = word.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i].toUpperCase()) {
+      capitalIndices.push(i);
+    }
+  }
+  return capitalIndices;
+};
+```
+- I found this **7 kyuu** kata fairly easy after realising the logic needed to check whether a character was already a capital letter: `if (arr[i] === arr[i].toUpperCase()) {...}`.
+- [Sort Numbers](https://www.codewars.com/kata/5174a4c0f2769dd8b1000003/train/javascript)
+```js
+function solution(nums){
+  if (!Array.isArray(nums)) {
+    return [];
+  }
+  return nums.sort((a, b) => a - b);
+}
+```
+- This sorting kata taught me how to check whether a variable is an array in JS.
+	- This kata was also a **7 kyuu** despite being much easier than the "Find the capitals" one, and this is something I have experienced a few times when doing kata, although for the most part the kata seem to be graded appropriately.
+
+Today was fairly relaxed and I really enjoyed the guest talk we had in the morning. Tomorrow I have a first-stage interview so I hope that goes well.
