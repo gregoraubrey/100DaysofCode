@@ -4287,3 +4287,42 @@ function solution(nums){
 	- This kata was also a **7 kyuu** despite being much easier than the "Find the capitals" one, and this is something I have experienced a few times when doing kata, although for the most part the kata seem to be graded appropriately.
 
 Today was fairly relaxed and I really enjoyed the guest talk we had in the morning. Tomorrow I have a first-stage interview so I hope that goes well.
+
+
+## Day 135
+*20230801*
+
+Today I had a first-stage interview and I did a Code Wars kata based around triangular numbers.
+
+- I spent some time in the morning reading through the company's website just to refresh my memory and come up with some pertinent questions to ask in the interview.
+- In the afternoon I had the interview itself.
+	- I feel like it went well, and I really got along with the two interviewers.
+	- A lot of the questions were fairly general and competency-based but there were a couple of technical questions too, which I feel I answered well.
+	- I was honest when I did not know the answer to a question which I think they appreciated too.
+- After the interview I did a quick Code Wars kata which ended up taking me longer than I thought it would.
+- [Triangular Treasure](https://www.codewars.com/kata/525e5a1cb735154b320002c8/train/javascript)
+```js
+function triangular( n ) {
+  if (n < 0 || typeof(n) !== "number") {
+    return 0;
+  }
+  return n / 2 * (n + 1)
+}
+```
+- My original solution looked like this:
+```js
+function triangular( n ) {
+  if (n < 0 || typeof(n) !== "number") {
+    return 0;
+  }
+  let total = 0;
+  for (let i = 0; i < n; i++) {
+    total += (n - i);
+  }
+  return total
+}
+```
+- This took me very little time to write up and it did work, but it was too slow for some of the later tests and it timed out, so I had to refactor and come up with a more efficient algorithm.
+- Eventually I managed to come up with the formula for calculating triangular numbers but it took me a while - clearly my maths is a bit out of practice!
+
+I am really happy with how today's interview went and I hope I get called back for the next stage, which would be a take-home tech test.
