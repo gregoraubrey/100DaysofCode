@@ -4326,3 +4326,36 @@ function triangular( n ) {
 - Eventually I managed to come up with the formula for calculating triangular numbers but it took me a while - clearly my maths is a bit out of practice!
 
 I am really happy with how today's interview went and I hope I get called back for the next stage, which would be a take-home tech test.
+
+
+## Day 136
+*20230802*
+
+Today I flew to Cologne on holiday but still managed to get a Code Wars kata done on my phone.
+
+- I do not have a laptop with me in Cologne so I have to use my phone if I want to solve any kata.
+- [Find Multiples of a Number](https://www.codewars.com/kata/58ca658cc0d6401f2700045f/train/javascript)
+```js
+function findMultiples(integer, limit) {
+  const arr = [];
+  let count = 1;
+  while (count * integer <= limit) {
+    arr.push(count * integer);
+    count++;
+  }
+  return arr;
+}
+```
+- I like this solution that avoids the trap of just defaulting to `i++` when writing a for loop (which is how I had initially attempted to solve this kata):
+```js
+function findMultiples(int,limit){
+  let result = []
+  
+  for (let i = int; i<=limit ; i+=int)
+    result.push(i)
+    
+  return result
+}
+```
+
+I had a really fun day today and was glad to get a little bit of coding done.
