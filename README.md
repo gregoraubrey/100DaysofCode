@@ -4359,3 +4359,15 @@ function findMultiples(int,limit){
 ```
 
 I had a really fun day today and was glad to get a little bit of coding done.
+
+
+## Day 137
+*20230803*
+
+Today I spent the day out and about so only had time to read an article.
+
+- I read an article that had arrived in my Reader feed that covered an average day for a senior manager at Amazon.
+- The article gave a good insight into just how busy a manager's day can be, with hundreds of unread emails piling up whilst they are stuck in meetings.
+- There was also an interesting comparison between the kinds of employees that managers have issues with and those that are a great asset.
+
+The article was really eye-opening and I hope to learn more about the role of the manager in software development, and especially how to be an employee that they value and trust.
