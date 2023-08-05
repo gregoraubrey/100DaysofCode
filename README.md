@@ -4371,3 +4371,14 @@ Today I spent the day out and about so only had time to read an article.
 - There was also an interesting comparison between the kinds of employees that managers have issues with and those that are a great asset.
 
 The article was really eye-opening and I hope to learn more about the role of the manager in software development, and especially how to be an employee that they value and trust.
+
+
+## Day 138
+*20230804*
+
+Today I only had time to read up some more on JS methods.
+
+- I read a couple of articles that included a lot of examples of various JS methods being used in realistic code which was helpful to see.
+- I turned a couple of the code snippets from these articles into Anki cards on my phone so that I (hopefully!) do not forget them down the line.
+
+Today was really fun, and I am glad that I got a little bit of learning done.
