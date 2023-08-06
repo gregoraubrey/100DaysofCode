@@ -4382,3 +4382,14 @@ Today I only had time to read up some more on JS methods.
 - I turned a couple of the code snippets from these articles into Anki cards on my phone so that I (hopefully!) do not forget them down the line.
 
 Today was really fun, and I am glad that I got a little bit of learning done.
+
+
+## Day 139
+*20230805*
+
+Today I only had time to do a bit of reading.
+
+- I made a start on rereading the opening chapter of *The Object-Oriented Thought Process*.
+- I decided it would be worth picking up this book again now that I am starting to learn Go (despite Go technically not being an OO language).
+
+It was good to go back over some of th principles of OOP, although I definitely feel like thr concepts are not coming as naturally as some of the others I have come across in programming so far.
