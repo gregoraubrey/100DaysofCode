@@ -4406,3 +4406,15 @@ Today I once again had very little free time so I just read a JS newsletter and 
 - I really enjoy this podcast because the episodes are so short that they always stick to the topic in question without digressing and wasting time like a lot of other podcasts.
 
 I am glad to have got a little bit done today despite having very little time. It is not about doing a lot every single day, but rather doing *something* every day, no matter how small it is.
+
+
+## Day 141
+*20230807*
+
+Today I went over JS methods again and read some more of *The Pragmatic Programmer*.
+
+- I reread a couple of very short articles on commonly used JS methods.
+- I remembered the implementations which is a good sign, but then again I only read the articles for the first time a short while ago.
+- I read a little bit of *The Pragmatic Programmer* and, as always, highlighted a lot of what I was reading.
+
+I feel pretty confident with JS methods now and I need to do some more Code Wars kata to put my knowledge to use.
