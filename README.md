@@ -4393,3 +4393,16 @@ Today I only had time to do a bit of reading.
 - I decided it would be worth picking up this book again now that I am starting to learn Go (despite Go technically not being an OO language).
 
 It was good to go back over some of th principles of OOP, although I definitely feel like thr concepts are not coming as naturally as some of the others I have come across in programming so far.
+
+
+## Day 140
+*20230806*
+
+Today I once again had very little free time so I just read a JS newsletter and listened to a short podcast.
+
+- I read the latest edition of [JavaScript Weekly](https://javascriptweekly.com/) which is a JS newsletter that I have been reading for last couple of months.
+- I feel like it is worth keeping up to date with the latest changes to JS and the most popular frameworks (especially React in my case).
+- In the afternoon I listened to an episode of [Developer Tea](https://developertea.com/).
+- I really enjoy this podcast because the episodes are so short that they always stick to the topic in question without digressing and wasting time like a lot of other podcasts.
+
+I am glad to have got a little bit done today despite having very little time. It is not about doing a lot every single day, but rather doing *something* every day, no matter how small it is.
