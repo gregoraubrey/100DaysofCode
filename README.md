@@ -4418,3 +4418,16 @@ Today I went over JS methods again and read some more of *The Pragmatic Programm
 - I read a little bit of *The Pragmatic Programmer* and, as always, highlighted a lot of what I was reading.
 
 I feel pretty confident with JS methods now and I need to do some more Code Wars kata to put my knowledge to use.
+
+
+## Day 142
+*20230808*
+
+Today I travelled home from holiday so I only had time to do a little bit of reading.
+
+- I read an article I had saved a while ago titled [The Best Tech Podcasts for Software Developers in 2021](https://www.freecodecamp.org/news/best-tech-podcasts-for-software-developers/) by Quincy Larson from freeCodeCamp.
+	- One of the featured podcasts was [Developer Tea](https://developertea.com/), which I have already been listening to and enjoying.
+	- Another recommendation was [SyntaxFM](https://syntax.fm/), which I had come across about a week ago when I was doing an internet search on Rust, because one of their recent episodes covers [Rust for JS devs](https://syntax.fm/show/647/rust-for-javascript-developers-node-vs-rust-concepts).
+- I subscribed to a few of Quincy's recommendations on [Snipd](https://www.snipd.com/), which is my new podcast player of choice due to the way it leverages AI to enhance my listening.
+
+That was all I managed today but I should have some more time tomorrow now that I am back in England.
