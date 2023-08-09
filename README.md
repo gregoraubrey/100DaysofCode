@@ -4431,3 +4431,16 @@ Today I travelled home from holiday so I only had time to do a little bit of rea
 - I subscribed to a few of Quincy's recommendations on [Snipd](https://www.snipd.com/), which is my new podcast player of choice due to the way it leverages AI to enhance my listening.
 
 That was all I managed today but I should have some more time tomorrow now that I am back in England.
+
+
+## Day 143
+*20230809*
+
+Today I read an article on Go and listened to a podcast about Rust for JS developers.
+
+- I started the day by listening to an episode of the SyntaxFM podcast titled [Rust for JavaScript Developers](https://syntax.fm/show/647/rust-for-javascript-developers-node-vs-rust-concepts).
+	- I saved various sections using Snipd, learning about Rust's static typing and its memory safety with the borrow checker.
+- In the afternoon I read an article titled [Quick Start Guide: Golang for Beginners](https://www.codewars.com/post/quick-start-guide-golang-for-beginners).
+	- It served as a useful refresher of some of the concepts I have been learning in Go, whilst introducing me to some of the history of the language.
+
+I really enjoyed the SyntaxFM podcast I listened to today and hope that the other episodes are equally informative.
