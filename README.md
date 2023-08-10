@@ -4444,3 +4444,16 @@ Today I read an article on Go and listened to a podcast about Rust for JS develo
 	- It served as a useful refresher of some of the concepts I have been learning in Go, whilst introducing me to some of the history of the language.
 
 I really enjoyed the SyntaxFM podcast I listened to today and hope that the other episodes are equally informative.
+
+
+## Day 144
+*20230810*
+
+Today I had a technical interview and went through some of my old code from a back-end hackathon.
+
+- I was definitely nervous going into the tech test as it was my first time doing a technical interview.
+	- I have done a take-home tech test but the pressure is obviously nowhere near as intense when compared to a live coding test.
+- At various points I needed some input from my interviewers but overall I was very happy with how I did.
+	- I even learned a bit about Python, which is a language I have never used before, as one section of the interview had me analysing some back-end code written in Python (that deals with a user logging in) and then trying to explain what each line of code was doing and why.
+
+Overall, I feel like today went really well, and I am thankful to my interviewers who were welcoming throughout, which definitely helped with some of my initial nerves and allowed me to settle into the interview.
