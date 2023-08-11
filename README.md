@@ -4457,3 +4457,29 @@ Today I had a technical interview and went through some of my old code from a ba
 	- I even learned a bit about Python, which is a language I have never used before, as one section of the interview had me analysing some back-end code written in Python (that deals with a user logging in) and then trying to explain what each line of code was doing and why.
 
 Overall, I feel like today went really well, and I am thankful to my interviewers who were welcoming throughout, which definitely helped with some of my initial nerves and allowed me to settle into the interview.
+
+
+## Day 145
+*20230811*
+
+Today I spent some time looking over APIs from my previous projects, and did some Code Wars kata.
+
+- I spent some time in the morning looking through some of my old hackathons that involved APIs.
+	- I understood almost everything which I was pleased about.
+	- For the odd bit of syntax that I had forgotten, I quickly remembered it after sticking the line in question into ChatGPT and asking for a breakdown.
+- In the afternoon I spent some time on Code Wars:
+- [Remove duplicates from list](https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118/train/javascript)
+```js
+function distinct(a) {
+  const noDups = [];
+  for (let i = 0; i < a.length; i++) {
+    if (noDups.indexOf(a[i]) === -1) {
+      noDups.push(a[i]);
+    }
+  }
+  return noDups;
+}
+```
+- This code works because `indexOf()` always returns `-1` when it fails to find an index whose value matches the argument it has received, so if there are no indices where `a[i]` is the value, then that means that the value does not match any values already in `noDups` and has not yet been added to the array, so it gets pushed on.
+
+I did not do as much coding as I would have liked today, but hopefully I can do some more tomorrow.
