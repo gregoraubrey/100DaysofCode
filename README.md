@@ -4483,3 +4483,18 @@ function distinct(a) {
 - This code works because `indexOf()` always returns `-1` when it fails to find an index whose value matches the argument it has received, so if there are no indices where `a[i]` is the value, then that means that the value does not match any values already in `noDups` and has not yet been added to the array, so it gets pushed on.
 
 I did not do as much coding as I would have liked today, but hopefully I can do some more tomorrow.
+
+
+## Day 146
+*20230812*
+
+Today I listened to some interesting tech podcasts.
+
+- I listened to an episode of JS Party titled [An intimate conversation about careers](https://changelog.com/jsparty/286).
+	- The hosts talked about the dangers of being pushed down a management path too early in your career, before you have had the chance to become a truly experienced software engineer.
+	- They also talked about the importance of giving juniors well-specified tasks and removing ambiguity as a way to expedite their growth.
+- In the afternoon I listened to an episode of Developer Tea titled [Schedule Carving](https://developertea.com/episodes/392ca901-39c4-44eb-aef5-bcd38b53ce93).
+	- The host explained schedule carving as being about considering what _not_ to do in order to make better choices.
+	- The idea of carving out blocks of "office hours" is especially useful for seniors as it allows juniors to ask them questions in this period, which boths helps the juniors to develop their skills, and helps the senior to practise their mentoring.
+
+I have really been enjoying tech podcasts recently and hope to find some more to add to my rotation.
