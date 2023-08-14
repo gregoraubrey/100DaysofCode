@@ -4513,3 +4513,16 @@ Today I listened to a podcast and did a take-home tech test.
 	- The second question concerned classes and inheritance, which I do not know much about in JS, but I was able to complete it.
 
 It felt great to get the tech test done, and now I just have to wait and see how I did.
+
+
+## Day 148
+*20230814*
+
+Today I looked back over the tech test I did yesterday and read some more of *The Pragmatic Programmer*.
+
+- I went back over the code I wrote for yesterday's take-home tech test in order to see if I could spot any mistakes now that I have a slightly different perspective.
+	- I saw a couple of typos in my planning section but nothing major, and I was still able to read through my plan and understand how I came to the solution I went with, so hopefully it will make sense to others too!
+	- The only outright mistake I could spot was in one of my error-checking return statements, in which I wrote that the object itself should be of type number, rather than a property of the object.
+- In the afternoon I read some more of *The Pragmatic Programmer*.
+
+Having looked back through my tech test again, I am very happy with what I got done and feel like I have represented my current skills well.
