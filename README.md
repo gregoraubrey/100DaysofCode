@@ -4498,3 +4498,18 @@ Today I listened to some interesting tech podcasts.
 	- The idea of carving out blocks of "office hours" is especially useful for seniors as it allows juniors to ask them questions in this period, which boths helps the juniors to develop their skills, and helps the senior to practise their mentoring.
 
 I have really been enjoying tech podcasts recently and hope to find some more to add to my rotation.
+
+
+## Day 147
+*20230813*
+
+Today I listened to a podcast and did a take-home tech test.
+
+- I started the day by listening to an episode of SYntaxFM titled [Why is Facebook’s HTML + CSS Such a Mess?](https://syntax.fm/show/650/why-is-facebook-s-html-css-such-a-mess).
+	- I learned a bit about how Facebook attempts to get around ad blockers by avoiding having divs with "ad" in them.
+	- The hosts theorised that Facebook's HTML is full of divs in order to let them track every little thing you do on the site, e.g. hovering over a button, without making it obvious that they are doing so.
+- In the afternoon I did a take-home tech test for a company that I had initially interviewed with before I went on holiday.
+	- I feel like it went well, especially the first question which involved creating an array of numbers before mapping through it and cubing each value.
+	- The second question concerned classes and inheritance, which I do not know much about in JS, but I was able to complete it.
+
+It felt great to get the tech test done, and now I just have to wait and see how I did.
