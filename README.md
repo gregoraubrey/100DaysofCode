@@ -4526,3 +4526,18 @@ Today I looked back over the tech test I did yesterday and read some more of *Th
 - In the afternoon I read some more of *The Pragmatic Programmer*.
 
 Having looked back through my tech test again, I am very happy with what I got done and feel like I have represented my current skills well.
+
+
+## Day 149
+*20230815*
+
+Today I had an interview in London and listened to a podcast on Go.
+
+- For the interview I had to first solve a logic/maths puzzle which was good fun.
+- The second part of the interview involved a pair programming exercise in which I had to write a couple of functions to verify that an input string was valid based on a check digit contained within the string.
+	- I got stuck at a couple of points but was able to use my pair programming partner's hints to unblock myself and finish the task, which was actually a lot of fun.
+- In the afternoon I listened to an episode of the Go Time podcast titled [A deep dive into Go's stack
+](https://changelog.com/gotime/288).
+	- I found this really useful, if a little hard to understand at times, since I know next to nothing about the stack.
+
+Today was really enjoyable, and it was nice to walk around a bit in central London, which I rarely do.
