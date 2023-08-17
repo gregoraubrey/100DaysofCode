@@ -4541,3 +4541,44 @@ Today I had an interview in London and listened to a podcast on Go.
 	- I found this really useful, if a little hard to understand at times, since I know next to nothing about the stack.
 
 Today was really enjoyable, and it was nice to walk around a bit in central London, which I rarely do.
+
+
+## Day 150
+*20230816*
+
+Today I listened to a JS podcast and spent some time on Code Wars.
+
+- I listened to an episode of SyntaxFM's podcast titled [6 or so New Approved and Proposed JavaScript APIs](https://syntax.fm/show/654/6-or-so-new-approved-and-proposed-javascript-apis).
+	- I learned about the steps that go into a proposal before it gets adopted by web browsers, which is something I had never thought about before.
+- I spent some time in the afternoon working on a Code Wars kata:
+- [Last man standing](https://www.codewars.com/kata/567c26df18e9b1083a000049/train/javascript)
+```js
+function lastManStanding(n) {
+  let set = [];
+  for (let i = 1; i <= n; i++) {
+    set.push(i);
+  }
+  let round = 0;
+  while (set.length > 1) {
+    const length = set.length;
+    let i = 0;
+    if (round % 2 === 0) {
+      while (i < length) {
+        set.splice(i, 1);
+        i++;
+      }
+    } else {
+      while (i < length) {
+        set.splice(length - i - 1, 1);
+        i += 2;
+      }
+    }
+    round++;
+  }
+  return set[0];
+}
+```
+- The above code works in principle, but it fails one of the test cases with a very large input since the algorithm is too inefficient.
+	- I will need to come up with a way to refactor the code so that it can achieve the same result in much less time.
+
+I learned a lot from the SyntaxFM podcast, and am keen to get my solution refactored and working for the Code Wars kata.
