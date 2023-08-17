@@ -4582,3 +4582,19 @@ function lastManStanding(n) {
 	- I will need to come up with a way to refactor the code so that it can achieve the same result in much less time.
 
 I learned a lot from the SyntaxFM podcast, and am keen to get my solution refactored and working for the Code Wars kata.
+
+
+## Day 151
+*20230817*
+
+Today I listened to a few podcast episodes and read some more of *The Pragmatic Programmer*.
+
+- I listened to an episode of Go Time titled [Building world-class developer experiences](https://changelog.com/gotime/287).
+	- The episode focused on the importance of a good developer experience, which does not get talked about nearly as much as the development of a good UX within the apps that the developers themselves are working on.
+	- The hosts talked about their use of [The Go Playground](https://go.dev/play/) as a way to quickly draft up ideas, perhaps to share with a colleague, as if they were using a scratchpad.
+		- I have never tried The Go Playground myself, so perhaps I ought to give it a look.
+- I also listened to Changelog News for the first time, namely [HashiCorp means business (source), why Tailwind won, WarpStream, managing difficult devs & an update on Go 2](https://changelog.com/news/57).
+	- This is a short, weekly podcast covering tech news that will be helpful in keeping myself up-to-date and informed on the ever-changing tech landscape.
+- I read a little bit more of *The Pragmatic Programmer* in the evening and took some useful pointers away as usual.
+
+Today went well, and I am glad to have discovered Changelog News. Hopefully it will prove a reliable way of keeping me informed about the tech world.
