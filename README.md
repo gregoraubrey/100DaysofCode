@@ -4598,3 +4598,16 @@ Today I listened to a few podcast episodes and read some more of *The Pragmatic 
 - I read a little bit more of *The Pragmatic Programmer* in the evening and took some useful pointers away as usual.
 
 Today went well, and I am glad to have discovered Changelog News. Hopefully it will prove a reliable way of keeping me informed about the tech world.
+
+
+## Day 152
+*20230818*
+
+Today I had an interview in London and I reread some of the code from my final project on the bootcamp.
+
+- The interview went really well and I learned a lot about the company and the role, and I feel like I would be a good fit within the software team.
+- When I got home in the afternoon I looked back at some of the code that I had written for the [final project](https://github.com/latifahassan/final-project-swapping-app).
+	- I feel like it is important to look back at my old code just to make sure that it all makes sense still and that I am not forgetting what I have learned about TypeScript.
+	- Luckily, it all made sense to me!
+
+I really enjoyed today's interview and it felt good to be able to read through my old code and have no issues understanding any of it.
