@@ -4624,3 +4624,16 @@ Today I listened to an episode of the JS Party podcast and read some more of *Th
 	- Hopefully I will get it finished tomorrow, and then I will make a start on another technical book.
 
 I really enjoyed today as I met up with some family that I have not seen for a long time, whilst still getting some learning done.
+
+
+## Day 154
+*20230820*
+
+Today I listened to an episode of the Developer Tea podcast and finished *The Pragmatic Programmer*.
+
+- I listened to the latest episode of Developer Tea, titled [Interrogate Your Decision Making Rules](https://developertea.com/episodes/c8a09077-9ed1-4592-9884-ee85ab396428).
+	- The host talked about the importance of taking time to think on the rules you have imposed for youself and whether your behaviours would actually suffer if you took the rule in question away.
+- In the afternoon I finished *The Pragmatic Programmer*.
+	- I have learned so much from reading this book, and I can already tell that I will be coming back to it a lot.
+
+It feels great to have got through another programming book, especially one as jam-packed with useful insights as *The Pragmatic Programmer*. I think it is safe to say that I will be revisiting the highlights I have made for a long time to come.
