@@ -4611,3 +4611,16 @@ Today I had an interview in London and I reread some of the code from my final p
 	- Luckily, it all made sense to me!
 
 I really enjoyed today's interview and it felt good to be able to read through my old code and have no issues understanding any of it.
+
+
+## Day 153
+*20230819*
+
+Today I listened to an episode of the JS Party podcast and read some more of *The Pragmatic Programmer*.
+
+- I listened to an episode of JS Party titled [Refined thinking](https://changelog.com/jsparty/288).
+	- This episode did not have much of a JS-specific focus but was nonetheless interesting, with the hosts touching on topics such as the platform-independence of podcasts, and the different ways of quitting an endeavour and how said endeavour will be viewed as a result.
+- In the afternoon I read through one of the last topics from *The Pragmatic Programmer*.
+	- Hopefully I will get it finished tomorrow, and then I will make a start on another technical book.
+
+I really enjoyed today as I met up with some family that I have not seen for a long time, whilst still getting some learning done.
