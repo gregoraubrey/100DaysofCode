@@ -4637,3 +4637,17 @@ Today I listened to an episode of the Developer Tea podcast and finished *The Pr
 	- I have learned so much from reading this book, and I can already tell that I will be coming back to it a lot.
 
 It feels great to have got through another programming book, especially one as jam-packed with useful insights as *The Pragmatic Programmer*. I think it is safe to say that I will be revisiting the highlights I have made for a long time to come.
+
+
+## Day 155
+*20230821*
+
+Today I read through my notes that I had made on *The Pragmatic Programmer* and the two books by Robert C. Martin that I have read.
+
+- Looking through the copious highlights I took of *The Pragmatic Programmer* really showcases just how much great information the authors managed to pack into the book.
+	- All in all I ended up highlighting around a hundred passages, so I should have lots of material to look back on!
+- I ended up doing the same exercise of looking back through my notes for *Clean Code* and *The Clean Coder* too.
+	- Within these two books I ended up highlighting almost five hundred passages!
+ 	- I am not sure whether I need to slow down with the highlighting or whether the books are just truly that good.
+ 
+It was really nice to look through my old highlights and, in many cases, remember exactly why I made them. I am sure that I will be coming back to the notes I have made on these books for years to come.
