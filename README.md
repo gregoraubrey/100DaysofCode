@@ -4651,3 +4651,18 @@ Today I read through my notes that I had made on *The Pragmatic Programmer* and 
  	- I am not sure whether I need to slow down with the highlighting or whether the books are just truly that good.
  
 It was really nice to look through my old highlights and, in many cases, remember exactly why I made them. I am sure that I will be coming back to the notes I have made on these books for years to come.
+
+
+## Day 156
+*20230822*
+
+Today I listened to a couple of software development podcasts.
+
+- I listened to an episode of SyntaxFM titled [8 Tricks When Using the Fetch() API](https://syntax.fm/show/656/8-tricks-when-using-the-fetch-api).
+	- They talked about some of the issues with fetching mp3 data in JS which is something I have yet to come across in my own code.
+		- I guess I have that to look forward to!
+- In the afternoon I listened to the latest episode of Changelog News, titled [All your CAPTCHAs are belong to bots](https://changelog.com/news/58).
+	- The main talking point was the fact that recent research has shown that computers can now solve captchas quicker and more reliably than humans.
+ 		- I suppose this will mean that companies will have to come up with new ways of preventing bots from signing up to their websites.
+
+I really enjoyed catching up on this week's tech news, and I wonder how companies will deal with the impending threat to captchas.
