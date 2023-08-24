@@ -4666,3 +4666,17 @@ Today I listened to a couple of software development podcasts.
  		- I suppose this will mean that companies will have to come up with new ways of preventing bots from signing up to their websites.
 
 I really enjoyed catching up on this week's tech news, and I wonder how companies will deal with the impending threat to captchas.
+
+
+## Day 157
+*20230823*
+
+Today I spent read over some of my old code and made another start on *The Object-Oriented Thought Process*.
+
+- I read through some of the code I had written during School of Code hackathons and found that everything made sense still.
+	- The more times I read over this code, the better it sticks in my memory, and the longer I can go before needing to look at it again.
+- In the afternoon I started reading *The Object-Oriented Thought Process* again.
+	- I have not touched this book since I read the first chapter during the bootcamp.
+ 	- I feel that it makes sense to read it now since I am bound to come across code writting using object-oriented principles when I get a job.
+
+ It felt good to make a fresh start on *The Object-Oriented Thought Process*. Hopefully the concepts will make more sense now that I am not trying to learn it alongside the basics of programming.
