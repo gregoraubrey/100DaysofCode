@@ -4680,3 +4680,17 @@ Today I spent read over some of my old code and made another start on *The Objec
  	- I feel that it makes sense to read it now since I am bound to come across code writting using object-oriented principles when I get a job.
 
  It felt good to make a fresh start on *The Object-Oriented Thought Process*. Hopefully the concepts will make more sense now that I am not trying to learn it alongside the basics of programming.
+
+
+## Day 158
+*20230824*
+
+Today I read an article on Agile and listened to some interesting podcast episodes.
+
+- I read an article titled [Less is more agile](https://beny23.github.io/posts/my_take_on_engineering_room_9/).
+	- The author highlighted the issues with modern implementations of Agile and recommends looking back at the manifesto and simply picking and choosing what sounds like a good fit for your company, since each case is different.
+- In the afternoon I listened to a couple of podcast episodes.
+	- I listened to [Supper Club × How Descript Built A Next Gen Video Editor In The Browser With Andrew Lisowski](https://syntax.fm/show/655/supper-club-how-descript-built-a-next-gen-video-editor-in-the-browser-with-andrew-lisowski) by SyntaxFM.
+ 	- I listened to [DON'T HESITATE, ENCULTURATE!](https://twit.tv/shows/floss-weekly/episodes/746?autostart=false) by FLOSS Weekly.
+
+I really enjoyed the article on Agile, although I hope I will not experience some of the horror stories I have heard of Agile going wrong and developers spending half of their working hours in meetings.
