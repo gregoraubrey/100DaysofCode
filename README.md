@@ -4694,3 +4694,15 @@ Today I read an article on Agile and listened to some interesting podcast episod
  	- I listened to [DON'T HESITATE, ENCULTURATE!](https://twit.tv/shows/floss-weekly/episodes/746?autostart=false) by FLOSS Weekly.
 
 I really enjoyed the article on Agile, although I hope I will not experience some of the horror stories I have heard of Agile going wrong and developers spending half of their working hours in meetings.
+
+
+## Day 159
+*20230825*
+
+Today I was quite busy so I only managed to get a little bit of learning done.
+
+- I read some more of *The Object-Oriented Thought Process* in the little time I had.
+	- I already feel like it is making more sense to me than it did the first time round.
+ 	- This is probably because I have learned a little bit about classes in JS and have got some hands-on experience since I first began reading the book.
+
+I did not have much time today but was glad to get a little bit of reading done.
