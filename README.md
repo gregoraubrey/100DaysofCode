@@ -4706,3 +4706,17 @@ Today I was quite busy so I only managed to get a little bit of learning done.
  	- This is probably because I have learned a little bit about classes in JS and have got some hands-on experience since I first began reading the book.
 
 I did not have much time today but was glad to get a little bit of reading done.
+
+
+## Day 160
+*20230826*
+
+Today I spent more time reading *The Object-Oriented Thought Process* and brushed up on REST APIs.
+
+- I read some of *The Object-Oriented Thought Process* in the morning.
+	- I found today's reading slightly harder than yesterday's but still manageable, and certainly easier than when I first attempted the book.
+- In the afternoon I spent some time going back and refreshing my knowledge of REST APIs.
+	- I watched a couple of YouTube videos before rereading an article that I had copiously highlighted.
+ 	- By the end I felt very comfortable which is a good sign.
+
+I am really starting to enjoy the robustness of REST APIs and their stateless nature. I am sure that my respect for the system will only improve once I inevitably encounter some outmoded APIs in my development.
