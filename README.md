@@ -4720,3 +4720,17 @@ Today I spent more time reading *The Object-Oriented Thought Process* and brushe
  	- By the end I felt very comfortable which is a good sign.
 
 I am really starting to enjoy the robustness of REST APIs and their stateless nature. I am sure that my respect for the system will only improve once I inevitably encounter some outmoded APIs in my development.
+
+
+## Day 161
+*20230827*
+
+Today I listened to the latest episode of the Developer Tea podcast and started working through *Python Crash Course* by Eric Matthes.
+
+- I listened to [One Big Step Versus A Small Random Step](https://developertea.com/episodes/28cad3c5-1702-4926-a774-efd9a37c32f0).
+	- The host talked about the cost of learning before and after taking action (in a software development context).
+ 	- He concluded that in most cases, it actually makes more sense to try and learn after the fact, by observing and doing, rather than trying to predict what will be needed beforehand.
+- In the afternoon I made a start on *Python Crash Course* by Eric Matthes (3rd edition).
+	- I only worked through the first couple of chapters but everything was nice and easy and I had no issues setting Python up on my PC.
+
+I really enjoyed listening to Developer Tea because I had never considered the pros and cons of trying to learn something new in the world of software development after the fact.
