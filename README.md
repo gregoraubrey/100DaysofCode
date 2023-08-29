@@ -4734,3 +4734,17 @@ Today I listened to the latest episode of the Developer Tea podcast and started 
 	- I only worked through the first couple of chapters but everything was nice and easy and I had no issues setting Python up on my PC.
 
 I really enjoyed listening to Developer Tea because I had never considered the pros and cons of trying to learn something new in the world of software development after the fact.
+
+
+## Day 162
+*20230828*
+
+Today I spent some more time on Python and read some more of *The Object-Oriented Thought Process*.
+
+- I kept working through *Python Crash Course* in the morning.
+	- I was able to go through it at a fast pace since everything that has been covered so far is familiar to me thanks to my knowledge of JS, and the syntax is very simple (so far at least).
+ 	- I am sure that sooner or later I will have to slow down as I learn about Python-specific features or quirks.
+- I spent some time in the afternoon reading more of *The Object-Oriented Thought Process*.
+	- I am finding it slightly harder now but I am still understanding the concepts and enjoying what I am learning.
+
+I am enjoying learning Python, although so far I have not learned any new programming concepts.
