@@ -4748,3 +4748,17 @@ Today I spent some more time on Python and read some more of *The Object-Oriente
 	- I am finding it slightly harder now but I am still understanding the concepts and enjoying what I am learning.
 
 I am enjoying learning Python, although so far I have not learned any new programming concepts.
+
+
+## Day 163
+*20230829*
+
+Today I learned some more Python and made a start on a Node.js and Express project just to keep my skills sharp.
+
+- I read some more of *Python Crash Course* in the morning.
+	- I once again found that everything was well explained and easy to pick up despite the syntactic differences (when compared to JS).
+- In the afternoon I made a start on a YouTube video titled [Learn Node.js & Express with Project in 2 Hours](https://www.youtube.com/watch?v=H9M02of22z4).
+	- I coded along and everything made sense and was working well.
+ 	- The youtuber chose to use the `require` syntax for exporting functions so I got a bit more exposure to that, since I am more used to using the newer `import` and `export` keywords.
+
+Today went well and it felt good to be able to jump back into Node.js and still remember how things worked without any trouble.
