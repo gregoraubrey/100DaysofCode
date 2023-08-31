@@ -4777,3 +4777,20 @@ console.log(`The body of the request is: ${JSON.stringify(req.body)}`);
 - In the afternoon I read some more of *The Object-Oriented Thought Process*.
 
 I did not have much time today but I still managed to get some coding done which I am happy with.
+
+
+## Day 165
+*20230831*
+
+Today I listened to a couple of podcast episodes and did some more work on the Node.js and Express project.
+
+- I listened to [What's new in Go 1.21](https://changelog.com/gotime/289), the latest episode of the Go Time podcast.
+	- I learned that the setting the Go version within the `go.mod` file now has a built-in optimisation which can automatically fetch the expected Go version.
+- I then listened to [NEW, HOT, BIG, AND DOOMED](https://twit.tv/shows/floss-weekly/episodes/747?autostart=false) from FLOSS Weekly.
+	- The hosts talked about Red Hat's decision to make their source code only viewable for enterprise customers and not distributable.
+ 	- They argued that this was in violation of the GPL.
+- In the afternoon I spent some more time working on the Node.js and Express project.
+	- I made an `errorHandler` function to be used as middleware.
+ 	- It was working fine apart from defaulting to an HTTP status code of `200` each time it was called, but this was easily fixed by adding `res.status(statusCode)` before the `.json({...})`, where `statusCode` is a variable declared at the top of the function.
+
+I really enjoyed the FLOSS podcast today, especially the discussion about Red Hat's recent actions.
