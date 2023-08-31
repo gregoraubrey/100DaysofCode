@@ -4762,3 +4762,18 @@ Today I learned some more Python and made a start on a Node.js and Express proje
  	- The youtuber chose to use the `require` syntax for exporting functions so I got a bit more exposure to that, since I am more used to using the newer `import` and `export` keywords.
 
 Today went well and it felt good to be able to jump back into Node.js and still remember how things worked without any trouble.
+
+
+## Day 164
+*20230830*
+
+Today I did not have much free time but I still managed to get some reading in.
+
+- I read a bit more of *Python Crash Course* in the morning.
+- I made one small edit to the Node.js and Express project I have been working on in order to make a console log show the actual body of the POST request instead of just `[object Object]`:
+```
+console.log(`The body of the request is: ${JSON.stringify(req.body)}`);
+```
+- In the afternoon I read some more of *The Object-Oriented Thought Process*.
+
+I did not have much time today but I still managed to get some coding done which I am happy with.
