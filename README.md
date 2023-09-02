@@ -4794,3 +4794,16 @@ Today I listened to a couple of podcast episodes and did some more work on the N
  	- It was working fine apart from defaulting to an HTTP status code of `200` each time it was called, but this was easily fixed by adding `res.status(statusCode)` before the `.json({...})`, where `statusCode` is a variable declared at the top of the function.
 
 I really enjoyed the FLOSS podcast today, especially the discussion about Red Hat's recent actions.
+
+
+## Day 166
+*20230901*
+
+Today I read some more of *The Object-Oriented Thought Process* and looked back over some of my old code.
+
+- In the morning I spent some time reading *The Object-Oriented Thought Process*.
+- In the afternoon I went back over some of the hackathons I did during the bootcamp and tested myself to see if I still understood what each line of code was doing.
+	- In all but a couple of cases I understood everything straight away.
+ 	- Even when I did not immediately understand what was going on, I was able to work out what the code meant after asking ChatGPT for some help.
+
+ I did not do much coding today but I was still satisfied, and it is nice to know that I am not forgetting the concepts that I used in my old hackathon projects.
