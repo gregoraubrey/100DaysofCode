@@ -4807,3 +4807,16 @@ Today I read some more of *The Object-Oriented Thought Process* and looked back 
  	- Even when I did not immediately understand what was going on, I was able to work out what the code meant after asking ChatGPT for some help.
 
  I did not do much coding today but I was still satisfied, and it is nice to know that I am not forgetting the concepts that I used in my old hackathon projects.
+
+
+## Day 167
+*20230902*
+
+Today I listened to a podcast on CommonJS and ESM, and read some more of *The Object-Oriented Thought Process*.
+
+- In the morning I listened to the latest episode of the JS Party podcast, titled [Modernizing packages to ESM](https://changelog.com/jsparty/290).
+	- The hosts talked about how CommonJS is still widely used and in some cases can load faster than ESM.
+ 	- They do believe that as time goes by less and less people will be using CommonJS, but they also believe that it will never actually die.
+- In the afternoon I read some more of *The Object-Oriented Thought Process*.
+
+I really enjoyed learning more about the history of ESM and how different projects adapted (or failed to adapt) to its introduction to the language.
