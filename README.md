@@ -4820,3 +4820,14 @@ Today I listened to a podcast on CommonJS and ESM, and read some more of *The Ob
 - In the afternoon I read some more of *The Object-Oriented Thought Process*.
 
 I really enjoyed learning more about the history of ESM and how different projects adapted (or failed to adapt) to its introduction to the language.
+
+
+## Day 168
+*20230903*
+
+Today I did not have much spare time so I only managed to do a bit of reading.
+
+- In the morning I read a few pages of *Python Crash Course*.
+- In the afternoon I spent some time reading more of *The Object-Oriented Thought Process*.
+
+I am glad to have done a little bit of reading even though I did not have much free time today.
