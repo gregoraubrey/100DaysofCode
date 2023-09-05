@@ -4831,3 +4831,18 @@ Today I did not have much spare time so I only managed to do a bit of reading.
 - In the afternoon I spent some time reading more of *The Object-Oriented Thought Process*.
 
 I am glad to have done a little bit of reading even though I did not have much free time today.
+
+
+## Day 169
+*20230904*
+
+Today I listened to a couple of SyntaxFM podcast episodes.
+
+- In the morning I listened to [Supper Club × Shipping ESM with Mark Erikson](https://syntax.fm/show/661/supper-club-shipping-esm-with-mark-erikson).
+	- This is the second podcast I have listened to recently featuring Mark Erikson and a lot of the talking points were similar to the JS Party episode that I listened to a few days ago.
+ 	- The hosts talked about the value of understanding the history of JS in terms of understanding where things are at now and why they are that way.
+- In the afternoon I listened to [JavaScript Closures & Scope Explained](https://syntax.fm/show/662/javascript-closures-and-scope-explained).
+	- I have never looked into closures so I learned a lot from this episode.
+ 	- The hosts talked about lexical scoping in JS which I need to look into further, as I am not sure I fully understand it right now.
+
+I really enjoyed the podcasts I listened to today and cannot wait for SyntaxFM to put more episodes out!
