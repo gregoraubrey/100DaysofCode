@@ -4846,3 +4846,16 @@ Today I listened to a couple of SyntaxFM podcast episodes.
  	- The hosts talked about lexical scoping in JS which I need to look into further, as I am not sure I fully understand it right now.
 
 I really enjoyed the podcasts I listened to today and cannot wait for SyntaxFM to put more episodes out!
+
+
+## Day 170
+*20230905*
+
+Today I spent most of the day out and about enjoying the sun so I did not spend much time coding, although I did listen to a podcast.
+
+- I listened to the latest episode of the Developer Tea podcast, titled [Two Tips for Better Retros - Add Specificity, Respect Uncertainty](https://developertea.com/episodes/3203f500-d0bc-408d-9017-f4d38e3daff5).
+	- The host talked about the importance of being specific about the actions you will take if your alert channel gets too noisy.
+ 	- He suggests viewing changes made in retros as experiments rather than fixes.
+- I read a few more pages of *The Object-Oriented Thought Process*.
+
+I did not get much done today but I made the most of the sunshine so I am not concerned.
