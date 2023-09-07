@@ -4859,3 +4859,16 @@ Today I spent most of the day out and about enjoying the sun so I did not spend 
 - I read a few more pages of *The Object-Oriented Thought Process*.
 
 I did not get much done today but I made the most of the sunshine so I am not concerned.
+
+
+## Day 171
+*20230906*
+
+Today I did some more reading and listened to a couple of podcasts.
+
+- I spent the morning reading some more of *Python Crash Course*.
+- In the afternoon I listened to the latest SyntaxFM podcast, titled [Potluck × Soft Skills × Release Notes × Headless CMS × Organizing Code × Inet CSS?](https://syntax.fm/show/663/potluck-soft-skills-release-notes-headless-cms-organizing-code-inet-css).
+	- The hosts discussed **conventional commits** which I had never heard of before today.
+ 	- Apparently, if you write conventional commits then there are various services that can generate release notes for your software automatically.
+
+It was interesting to learn about conventional commits today, and I feel like I should look into them further.
