@@ -4872,3 +4872,33 @@ Today I did some more reading and listened to a couple of podcasts.
  	- Apparently, if you write conventional commits then there are various services that can generate release notes for your software automatically.
 
 It was interesting to learn about conventional commits today, and I feel like I should look into them further.
+
+
+## Day 172
+*20230907*
+
+Today I listened to a podcast and did a Code Wars kata.
+
+- I started the day by listening to the latest FLOSS Weekly episode, titled [FLOSS WEEKLY 748 SHOW ME THE PROOFMODE](https://twit.tv/shows/floss-weekly/episodes/748?autostart=false).
+	- I learned about the [Proofmode](https://proofmode.org/) software project that aims to let mobile users turn their "photos and videos into secure, signed visual evidence".
+- In the afternoon I saw that a friend had posted on LinkedIn about a Code Wars kata that they had tackled.
+	- I decided that I would give it a go too:
+- [The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript)
+```js
+function generateHashtag (str) {
+  if (str.trim() === "") {
+    return false;
+  }
+  let arr = str.trim().split(" ");
+  arr = arr.map(x => x.charAt(0).toUpperCase() + x.slice(1))
+  arr[0] = "#" + arr[0];
+  let result = arr.join("");
+  if (result.length > 140) {
+    return false;
+  }
+  return result
+}
+```
+- This **5 kyuu** kata was fine, with the only issues being that I forgot to add `.trim()` to the first `if` statement, and I forgot to add `x.slice(1)` to the `map` function at first.
+
+Today was an enjoyable day and it felt good to solve a **5 kyuu** kata with relative ease.
