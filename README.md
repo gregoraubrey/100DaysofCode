@@ -4902,3 +4902,17 @@ function generateHashtag (str) {
 - This **5 kyuu** kata was fine, with the only issues being that I forgot to add `.trim()` to the first `if` statement, and I forgot to add `x.slice(1)` to the `map` function at first.
 
 Today was an enjoyable day and it felt good to solve a **5 kyuu** kata with relative ease.
+
+
+## Day 173
+*20230908*
+
+Today I listened to a couple of interesting podcast episodes.
+
+- I listened to the latest JS Party podcast episodde, titled [A view to a transitions API](https://changelog.com/jsparty/291).
+	- The hosts talked about their concerns when it comes to using frameworks built by VC-backed companies in the web development process.
+- In the afternoon I listened to the latest Go Time podcast episode, titled [Prototyping with Go](https://changelog.com/gotime/290).
+	- The hosts tried to make a distinction between prototyping and exploration, with the latter focused on learning about the language without the expectation of producing any useful code.
+	- They debated the usefulness of Go in prototyping when compared to other languages, such as PHP and Python, which are popular due to their simplicity.
+
+I really enjoyed these two podcast episodes today and took a lot away from them.
