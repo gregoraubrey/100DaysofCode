@@ -4929,3 +4929,17 @@ Today I did not have much free time, but I managed to get some reading in.
  	- In fact, in many cases I can still remember writing the code itself and the scenarios that I and my pair programming partners were in.
 
 Despite being busy today, I still managed to get a bit of learning done which I am very happy with.
+
+
+## Day 175
+*20230910*
+
+Today I listened to a podcast and watched a video on conventional commits in Git.
+
+- I listened to the latest episode of the SyntaxFM podcast, titled [Supper Club x What's New With Astro with Fred Schott](https://open.spotify.com/episode/5E5a38mCaV6gwTmfj91Jxc?si=5c9b98fd40e2426c).
+	- The hosts talked to one of the Astro developers, Fred Schott, about the latest changes to Astro now that Astro 3.0 has come out.
+ 	- They talked about how Astro allows you to build apps that run fast and avoid the complexity of a JS app architecture by being much more HTML-first.
+	- They also talked about Vite as a tool for building JS apps, which a friend had recommended to me just a few days ago.
+- In the evening I watched a video on [conventional commits in Git](https://www.youtube.com/watch?v=JlfCRlFHmd8) to build on what I learned about them from another SyntaxFM podcast earlier this week.
+
+I am interested in trying out Astro after hearing all about it today. I should also spend some more time researching conventional commits, since it would be good to get into the habit of writing expressive commit messages as early into my career as possible.
