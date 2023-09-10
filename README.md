@@ -4916,3 +4916,16 @@ Today I listened to a couple of interesting podcast episodes.
 	- They debated the usefulness of Go in prototyping when compared to other languages, such as PHP and Python, which are popular due to their simplicity.
 
 I really enjoyed these two podcast episodes today and took a lot away from them.
+
+
+## Day 174
+*20230909*
+
+Today I did not have much free time, but I managed to get some reading in.
+
+- I read some more of *The Object-Oriented Thought Process* in the morning.
+- In the afternoon, I spent some time reading over some of the code I had written for hackathons.
+	- It has been a good few months now since I wrote most of this code, but it all feels familiar, which is good to see.
+ 	- In fact, in many cases I can still remember writing the code itself and the scenarios that I and my pair programming partners were in.
+
+Despite being busy today, I still managed to get a bit of learning done which I am very happy with.
