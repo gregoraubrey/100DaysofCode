@@ -4943,3 +4943,15 @@ Today I listened to a podcast and watched a video on conventional commits in Git
 - In the evening I watched a video on [conventional commits in Git](https://www.youtube.com/watch?v=JlfCRlFHmd8) to build on what I learned about them from another SyntaxFM podcast earlier this week.
 
 I am interested in trying out Astro after hearing all about it today. I should also spend some more time researching conventional commits, since it would be good to get into the habit of writing expressive commit messages as early into my career as possible.
+
+
+## Day 176
+*20230911*
+
+Today was my first day working as a Junior Software Engineer!
+
+- I started at my company today as a Junior Software Engineer.
+- I met the software team, who all seem lovely.
+- I started learning about Docker, which I have not used before.
+
+Now that I have a job, most of the coding I do will be to do with company work, and as such I feel like now is a good time to finally end my public coding journal, or at least stop posting daily updates. I have got so much out of putting pen to paper and verbalising my thoughts, feelings, and what I have learned throughout my time learning to code, and I hope that I will be able to look back on these words (all 55,000 of them!) and remember what it was like learning to code. Perhaps it will serve as motivation in the future when I am struggling with a new project. Either way, I am glad that I was able to stick to it and I will always be able to add to it in the future as and when I see fit.
